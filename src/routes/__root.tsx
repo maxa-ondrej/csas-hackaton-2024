@@ -29,6 +29,14 @@ function RootComponent() {
           }}
         >
           About
+        </Link>{' '}
+        <Link
+          to="/sas"
+          activeProps={{
+            className: 'font-bold',
+          }}
+        >
+          SAS
         </Link>
       </div>
       <hr />
