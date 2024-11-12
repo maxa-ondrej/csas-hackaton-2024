@@ -7,6 +7,7 @@ import { routeTree } from './routeTree.gen';
 const router = createRouter({
   routeTree,
   defaultPreload: 'intent',
+  basepath: '/csas-hackaton-2024/',
 });
 
 // Register things for typesafety
