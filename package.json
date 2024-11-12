@@ -8,14 +8,20 @@
     "dev": "vite --port=3001",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "test": "vitest --coverage",
+    "lint": "biome check .",
+    "format": "biome check --write ."
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tanstack/router-plugin": "^1.79.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@tanstack/router-plugin": "^1.79.0",
     "@vitejs/plugin-react": "^4.3.2",
-    "vite": "^5.4.8"
+    "@vitest/coverage-v8": "2.1.4",
+    "vite": "^5.4.8",
+    "vitest": "2.1.4"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.81.4",

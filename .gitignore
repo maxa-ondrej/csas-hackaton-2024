@@ -11,6 +11,7 @@ dist/
 .vercel
 .netlify
 .wrangler
+coverage/
 
 # IDE
 .vscode/*
