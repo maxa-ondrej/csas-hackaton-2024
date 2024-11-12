@@ -5,6 +5,8 @@
     "jsx": "react-jsx",
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Bundler"
-  }
+    "moduleResolution": "Bundler",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules", "dist"]
 }
