@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "adpyke.codesnap",
+    "vivaxy.vscode-conventional-commits",
+    "bierner.color-info",
+    "naumovs.color-highlight",
+    "ryanluker.vscode-coverage-gutters",
+    "usernamehw.errorlens",
+    "waderyan.gitblame",
+    "YoavBls.pretty-ts-errors",
+    "SonarSource.sonarlint-vscode",
+    "vitest.explorer"
+  ]
+}
