@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
+  base: '/csas-hackaton-2024/',
   plugins: [TanStackRouterVite({}), react()],
   test: {
     watch: false,
