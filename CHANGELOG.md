@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.2...v1.0.3) (2024-11-12)
+
+
+### Bug Fixes
+
+* configure client and add sas page ([7495859](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/7495859a025eb6bfb610b994868d11c366cfec66))
+* reformat code ([9a2a6a5](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/9a2a6a577b16a6bc926b7fc60d10ab1c0a8708b5))
+
 ## [1.0.2](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.1...v1.0.2) (2024-11-12)
 
 
