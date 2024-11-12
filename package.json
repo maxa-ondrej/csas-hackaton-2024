@@ -12,26 +12,30 @@
     "test": "vitest --coverage",
     "lint": "biome check .",
     "format": "biome check --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "openapi-ts -c @hey-api/client-fetch -i openapi.yaml -o src/lib/client -p @tanstack/react-query"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@hey-api/openapi-ts": "^0.55.2",
     "@tanstack/router-plugin": "^1.79.0",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
     "@vitest/coverage-v8": "2.1.4",
-    "husky": "^9.1.6",
-    "typescript": "^5.6.3",
     "autoprefixer": "^10.4.20",
+    "husky": "^9.1.6",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
     "vite": "^5.4.8",
     "vitest": "2.1.4"
   },
   "dependencies": {
+    "@hey-api/client-fetch": "^0.4.3",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-query": "^5.59.20",
     "@tanstack/react-router": "^1.81.4",
     "@tanstack/router-devtools": "^1.81.4",
     "class-variance-authority": "^0.7.0",

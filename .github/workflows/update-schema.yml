@@ -1,0 +1,66 @@
+name: Update API schema
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6,10,14,18 * * *'
+
+jobs:
+  update-schema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+
+      - name: Setup yq
+        uses: chrisdickinson/setup-yq@latest
+
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+    
+      - name: Extract version from current api docs
+        run: |
+          VERSION="$(yq .info.version openapi.yaml -r)"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+        id: before
+
+      - name: Fetch schema
+        run: wget -qO openapi.yaml https://hackaton-api.fly.dev/api/v1/docs
+    
+      - name: Extract version from latest api docs
+        run: |
+          VERSION="$(yq .info.version openapi.yaml -r)"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+        id: after
+
+      - name: Check if schema has changed
+        run: echo "::notice title=version::${{ steps.after.outputs.version }}"
+
+      - name: Format schema
+        run: biome check --write openapi.yaml
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        id: cpr
+        with:
+          token: ${{ secrets.UPDATE_SCHEMA_TOKEN }}
+          title: 'fix(api-docs): update schema from ${{ steps.before.outputs.version }} to ${{ steps.after.outputs.version }}'
+          commit-message: 'fix(api-docs): update schema from ${{ steps.before.outputs.version }} to ${{ steps.after.outputs.version }}'
+          body: 'Fetch and format the latest API schema.'
+          branch: update-schema--${{ github.ref_name }}
+          delete-branch: true
+          labels: bot,📙 openapi
+
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.UPDATE_SCHEMA_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: rebase

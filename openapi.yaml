@@ -1,0 +1,618 @@
+openapi: 3.0.0
+info:
+  title: CSAS Hackaton API
+  version: 1.0.0
+servers:
+  - url: https://hackaton-api.fly.dev/api/v1
+    description: API server
+paths:
+  /automations:
+    get:
+      tags: [Automations]
+      description: List automations
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/search'
+        - $ref: '#/components/parameters/[propety]_[operation]'
+      responses:
+        '200':
+          $ref: '#/components/responses/AutomationPageResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+  /automations/{id}:
+    get:
+      tags: [Automations]
+      description: Get automation
+      security:
+        - basicAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID of the automation
+      responses:
+        '200':
+          $ref: '#/components/responses/AutomationSingleResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':
+          $ref: '#/components/responses/EntityNotFoundResponse'
+  /automations/{id}/logs:
+    get:
+      tags: [Automations]
+      description: Get automation logs
+      security:
+        - basicAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID of the automation
+      responses:
+        '200':
+          $ref: '#/components/responses/AutomationLogResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':
+          $ref: '#/components/responses/EntityNotFoundResponse'
+  /automation-types:
+    get:
+      tags: [Automations]
+      description: List automation types
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/search'
+        - $ref: '#/components/parameters/[propety]_[operation]'
+      responses:
+        '200':
+          $ref: '#/components/responses/AutomationTypePageResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+  /automation-types/{type}:
+    get:
+      tags: [Automations]
+      description: Get automation type
+      security:
+        - basicAuth: []
+      parameters:
+        - in: path
+          name: type
+          schema:
+            type: string
+          required: true
+          description: The automation type
+      responses:
+        '200':
+          $ref: '#/components/responses/AutomationTypeSingleResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':
+          $ref: '#/components/responses/EntityNotFoundResponse'
+  /sas:
+    get:
+      tags: [SAS]
+      description: List SAS
+      security:
+        - basicAuth: []
+      responses:
+        '200':
+          $ref: '#/components/responses/SASResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+  /runners:
+    get:
+      tags: [Runners]
+      description: List runners
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/search'
+        - $ref: '#/components/parameters/[propety]_[operation]'
+      responses:
+        '200':
+          $ref: '#/components/responses/RunnerPageResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+          
+  /runners/{id}:
+    get:
+      tags: [Runners]
+      description: Get runner
+      security:
+       - basicAuth: []
+      parameters:
+       - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          $ref: '#/components/responses/RunnerSingleResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':
+          $ref: '#/components/responses/EntityNotFoundResponse'
+       
+  /jobs:
+    get:
+      tags: [Runners]
+      description: List jobs
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/search'
+        - $ref: '#/components/parameters/[propety]_[operation]'
+      responses:
+        '200':
+          $ref: '#/components/responses/JobPageResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+       
+        
+  /jobs/{id}:
+    get:
+      tags: [Runners]
+      description: Get job
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          $ref: '#/components/responses/JobSingleResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':  
+          $ref: '#/components/responses/EntityNotFoundResponse'
+       
+
+  /metrics:
+    get:
+      tags: [Runners]
+      description: List metrics
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+        - $ref: '#/components/parameters/order'
+        - $ref: '#/components/parameters/search'
+      responses:
+        '200':
+          $ref: '#/components/responses/MetricsPageResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+
+  /metrics/{id}:
+    get:
+      tags: [Runners]
+      description: Get metrics by runner
+      security:
+        - basicAuth: []
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          $ref: '#/components/responses/MetricsSingleResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedResponse'
+        '404':
+          $ref: '#/components/responses/EntityNotFoundResponse'
+
+components:
+  parameters:
+    id:
+      name: 'id'
+      in: path
+      description: 'Id of the entity to be returned.'
+      required: true
+      schema:
+        type: string
+    page:
+      name: 'page'
+      in: query
+      description: 'Enable pagination. Supplied value used as page number'
+      required: false
+      schema:
+        type: integer
+        default: 1
+    limit:
+      name: 'limit'
+      in: query
+      description: 'Number of records to be returned.'
+      required: false
+      schema:
+        type: integer
+        default: 10
+    sort:
+      name: 'sort'
+      in: query
+      description: ' You can sort by any property in the objects (strings or numbers)'
+      required: false
+      schema:
+        type: string 
+    order:
+      name: 'order'
+      in: query
+      description: 'You can order by either ascending or descending order'
+      required: false
+      schema:
+        type: string
+        enum:
+          - asc
+          - desc
+    search:
+      name: 'search'
+      in: query
+      description: 'To search an array, you can use the search query parameter. Search is a special kind of filter that will look for a partial match in any values (with nesting) in the array'
+      required: false
+      schema:
+        type: string
+
+    '[propety]_[operation]':
+      name: '[propety]_[operation]'
+      in: query
+      description: | 
+        """
+        To filter an array, you can use query parameters in the form [property]_[operator]
+        Available operators:
+          eq  	Filters by equality	
+          ne  	Filters by inequality
+          gt  	Filters by greater
+          gte 	Filters by greater or equal
+          lt  	Filters by lower
+          lte 	Filters by lower or equal
+          like	Filters by partial match *	
+          start	Filters properties that start with a value *
+          end   Filters properties that end with a value *
+        """
+      required: false
+      schema:
+        type: string
+
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+  headers:
+    X-Total-Count:
+      schema:
+        type: integer
+      description: total number of items in the bucket
+    X-Filtered-Count:
+      schema:
+        type: integer
+      description: number of items after filtering (not taking into account pagination)
+  schemas:
+    State:
+      type: string
+    AutomationTypeId:
+      type: string
+    Automation:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          $ref: '#/components/schemas/AutomationTypeId'
+        state:
+          $ref: '#/components/schemas/State'
+        last_activity:
+          type: string
+          format: date-time
+      required:
+        - id
+        - type
+        - state
+        - last_activity
+    AutomationLog:
+      type: object
+      properties:
+        automation_id:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        level:
+          type: string
+        type:
+          $ref: '#/components/schemas/AutomationTypeId'
+        from_state:
+          $ref: '#/components/schemas/State'
+        to_state:
+          $ref: '#/components/schemas/State'
+        description:
+          type: string
+      required:
+        - automation_id
+        - timestamp
+        - level
+        - type
+        - from_state
+        - to_state
+        - description
+    AutomationType:
+      type: object
+      properties:
+        type:
+          $ref: '#/components/schemas/AutomationTypeId'
+        states:
+          type: array
+          items:
+            $ref: '#/components/schemas/State'
+        initial_state:
+          $ref: '#/components/schemas/State'
+        end_state:
+          $ref: '#/components/schemas/State'
+        transitions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Transition'
+      required:
+        - id
+        - name
+        - description
+        - created_at
+        - updated_at
+    Transition:
+      type: object
+      properties:
+        from_state:
+          $ref: '#/components/schemas/State'
+        to_state:
+          $ref: '#/components/schemas/State'
+        event:
+          type: string
+          nullable: true
+        action:
+          type: string
+          nullable: true
+    SAS:
+      type: string
+    RunnerState:
+      type: string
+      enum: [idle, active, failed, offline]
+    Runner:
+      type: object
+      properties:
+        id:
+          type: string
+        state:
+          $ref: '#/components/schemas/RunnerState'
+        runner_group:
+          type: string
+        organization:
+          type: string
+    JobState:
+      type: string
+      enum: [success, failed, queued, in_progress]
+    Job:
+      type: object
+      properties:
+        id:
+          type: string
+        state:
+          $ref: '#/components/schemas/JobState'
+        organization:
+          type: string
+        SAS:
+          $ref: '#/components/schemas/SAS'
+        runner:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+    Metric:
+      type: object
+      properties:
+        cpu:
+          type: number
+          format: float
+        memory:
+          type: number
+        network_receive:
+          type: number
+        network_transmit:
+          type: number
+        fs_reads:
+          type: number
+        fs_writes:
+          type: number
+    MetricWithRunner:
+      type: object
+      properties:
+        runner:
+          type: string
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/Metric'
+
+    # ---------------------------------- ERROR -----------------------------------------------------
+    ErrorResponse:
+      type: object
+      required:
+        - id
+        - code
+        - message
+      properties:
+        code:
+          type: string
+        error:
+          type: string
+        message:
+          type: string
+
+    EmptyResponse:
+      type: object
+      properties:
+        data:
+          type: object          
+
+# ---------------------------------- RESPONSES ---------------------------------------------------
+  responses:
+    AutomationSingleResponse:
+      description: Automation response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Automation'
+
+    AutomationPageResponse:
+      description: Collection of automation instances response
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Filtered-Count:
+          $ref: '#/components/headers/X-Filtered-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Automation'
+
+    AutomationLogResponse:
+      description: Collection of automation instance logs
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Filtered-Count:
+          $ref: '#/components/headers/X-Filtered-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/AutomationLog'
+
+    AutomationTypeSingleResponse:
+      description: Automation type response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AutomationType'
+
+    AutomationTypePageResponse:
+      description: Collection of automation types response
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Filtered-Count:
+          $ref: '#/components/headers/X-Filtered-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/AutomationType'
+
+    SASResponse:
+      description: Collection of SAS response
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/SAS'
+
+    RunnerSingleResponse:
+      description: Single runner pod response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Runner'
+
+    RunnerPageResponse:
+      description: Collection of runner pods instances response
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Filtered-Count:
+          $ref: '#/components/headers/X-Filtered-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Runner'
+      
+    JobSingleResponse:
+      description: Single job response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Job'
+
+    JobPageResponse:
+      description: Collection of jobs response
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Filtered-Count:
+          $ref: '#/components/headers/X-Filtered-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Job'
+
+    MetricsSingleResponse:
+      description: Single metrics response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Metric'
+
+    MetricsPageResponse:
+      description: Collection of metrics response
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Metric'
+
+    # ---------------------------------- GENERIC RESPONSES -----------------------------------------
+    EntityNotFoundResponse:
+      description: 'An Entity with the specified ID was not found'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/EmptyResponse'
+
+    MethodNotAllowedResponse:
+      description: 'Method not Allowed'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    UnauthorizedResponse:
+      description: 'Unauthorized'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+

@@ -7,7 +7,13 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["dist", "node_modules", "coverage", "src/routeTree.gen.ts"]
+    "ignore": [
+      "dist",
+      "node_modules",
+      "coverage",
+      "src/routeTree.gen.ts",
+      "src/lib/client"
+    ]
   },
   "formatter": {
     "enabled": true,
