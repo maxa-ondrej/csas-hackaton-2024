@@ -1,3 +1,6 @@
+*.gen.ts
+coverage/
+
 # Local
 .DS_Store
 *.local
@@ -11,7 +14,6 @@ dist/
 .vercel
 .netlify
 .wrangler
-coverage/
 
 # IDE
 .vscode/*
