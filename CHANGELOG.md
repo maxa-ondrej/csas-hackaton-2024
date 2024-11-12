@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.1...v1.0.2) (2024-11-12)
+
+
+### Bug Fixes
+
+* add basepath to router ([186e2ae](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/186e2ae399df1bf4699da9218519192716a06838))
+* add current version to __root ([4c95613](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/4c956137964c9e3d529fecd1dce02e120ab16454))
+
 ## [1.0.1](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.0...v1.0.1) (2024-11-12)
 
 
