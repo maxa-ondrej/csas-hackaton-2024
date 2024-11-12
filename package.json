@@ -1,6 +1,6 @@
 {
   "name": "csas-hackaton-2024",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "type": "module",
   "scripts": {
