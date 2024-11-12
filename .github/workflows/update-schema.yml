@@ -14,11 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
-        with:
-          version: latest
       
       - name: Extract version from current api docs
         id: before
@@ -37,9 +32,6 @@ jobs:
 
       - name: Check if schema has changed
         run: echo "::notice title=version::${{ steps.after.outputs.result }}"
-
-      - name: Format schema
-        run: biome check --write openapi.yaml
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
