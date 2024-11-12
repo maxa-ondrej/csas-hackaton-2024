@@ -15,32 +15,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-
-      - name: Setup yq
-        uses: chrisdickinson/setup-yq@latest
-
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
         with:
           version: latest
-    
+      
       - name: Extract version from current api docs
-        run: |
-          VERSION="$(yq .info.version openapi.yaml -r)"
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
         id: before
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '.info.version' 'openapi.yaml'
 
       - name: Fetch schema
         run: wget -qO openapi.yaml https://hackaton-api.fly.dev/api/v1/docs
     
       - name: Extract version from latest api docs
-        run: |
-          VERSION="$(yq .info.version openapi.yaml -r)"
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
         id: after
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '.info.version' 'openapi.yaml'
 
       - name: Check if schema has changed
-        run: echo "::notice title=version::${{ steps.after.outputs.version }}"
+        run: echo "::notice title=version::${{ steps.after.outputs.result }}"
 
       - name: Format schema
         run: biome check --write openapi.yaml
@@ -50,8 +46,8 @@ jobs:
         id: cpr
         with:
           token: ${{ secrets.UPDATE_SCHEMA_TOKEN }}
-          title: 'fix(api-docs): update schema from ${{ steps.before.outputs.version }} to ${{ steps.after.outputs.version }}'
-          commit-message: 'fix(api-docs): update schema from ${{ steps.before.outputs.version }} to ${{ steps.after.outputs.version }}'
+          title: 'fix(api-docs): update schema from ${{ steps.before.outputs.result }} to ${{ steps.after.outputs.result }}'
+          commit-message: 'fix(api-docs): update schema from ${{ steps.before.outputs.result }} to ${{ steps.after.outputs.result }}'
           body: 'Fetch and format the latest API schema.'
           branch: update-schema--${{ github.ref_name }}
           delete-branch: true
