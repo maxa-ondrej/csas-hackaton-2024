@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: CSAS Hackaton API
-  version: 1.0.0
+  version: 1.0.1
 servers:
   - url: https://hackaton-api.fly.dev/api/v1
     description: API server
