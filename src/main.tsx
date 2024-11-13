@@ -1,11 +1,13 @@
 import { RouterProvider, createRouter } from '@tanstack/react-router';
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
+import * as Layout from './components/layout';
 import { client } from './lib/client';
 import { routeTree } from './routeTree.gen';
 
 // Set up a Router instance
 const router = createRouter({
+  ...Layout.routerConfig,
   routeTree,
   defaultPreload: 'intent',
   basepath: '/csas-hackaton-2024/',
@@ -22,7 +24,7 @@ client.setConfig({
   baseUrl: 'https://hackaton-api.fly.dev/api/v1',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
+    // Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
   },
 });
 
@@ -31,5 +33,9 @@ const rootElement = document.getElementById('app')!;
 
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
-  root.render(<RouterProvider router={router} />);
+  root.render(
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>,
+  );
 }

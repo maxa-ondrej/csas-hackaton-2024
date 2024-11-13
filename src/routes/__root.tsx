@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import '../index.css';
+import { Toaster } from '@/components/ui/sonner';
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import * as React from 'react';
@@ -12,6 +13,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
+      <Toaster />
       <div className="p-2 flex gap-2 text-lg text-blue-400">
         <Link
           to="/"
