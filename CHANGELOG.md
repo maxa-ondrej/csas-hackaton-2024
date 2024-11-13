@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.4...v1.0.5) (2024-11-13)
+
+
+### Bug Fixes
+
+* setup error and loading pages ([4d73d5a](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/4d73d5ada18b5523424481bd59eb5a105cf9d34e))
+
 ## [1.0.4](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.3...v1.0.4) (2024-11-12)
 
 
