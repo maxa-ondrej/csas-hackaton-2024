@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.5...v1.0.6) (2024-11-13)
+
+
+### Bug Fixes
+
+* reauthorize ([6e360b0](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/6e360b0a66a7e2f671eda9bac92f1b07aad42ac7))
+
 ## [1.0.5](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.4...v1.0.5) (2024-11-13)
 
 
