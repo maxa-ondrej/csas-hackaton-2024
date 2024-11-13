@@ -12,7 +12,6 @@
     "test": "vitest --coverage",
     "lint": "biome check .",
     "format": "biome check --write .",
-    "prepare": "husky",
     "postinstall": "openapi-ts -c @hey-api/client-fetch -i openapi.yaml -o src/lib/client -p @tanstack/react-query"
   },
   "devDependencies": {
@@ -25,7 +24,6 @@
     "@vitejs/plugin-react": "^4.3.2",
     "@vitest/coverage-v8": "2.1.4",
     "autoprefixer": "^10.4.20",
-    "husky": "^9.1.6",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
