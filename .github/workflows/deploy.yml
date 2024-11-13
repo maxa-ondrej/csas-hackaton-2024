@@ -1,6 +1,7 @@
 name: Deploy
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - v*.*.*
@@ -27,6 +28,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm build
+
+      - name: Change index.html to 4040.html
+        run: mv dist/index.html dist/404.html
 
       - name: Upload static files as artifact
         id: deployment
