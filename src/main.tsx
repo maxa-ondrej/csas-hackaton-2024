@@ -24,7 +24,7 @@ client.setConfig({
   baseUrl: 'https://hackaton-api.fly.dev/api/v1',
   headers: {
     'Content-Type': 'application/json',
-    // Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
+    Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
   },
 });
 
