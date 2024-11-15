@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: CSAS Hackaton API
-  version: 1.0.1
+  version: 1.0.2
 servers:
   - url: https://hackaton-api.fly.dev/api/v1
     description: API server
@@ -444,6 +444,19 @@ components:
         runner:
           type: string
         metrics:
+          description: |
+            """
+            Array of last N metrics. From the oldest to the newest.
+
+            1 fixed point in time:
+            For offline runners - from unspecified past to the runner termination (equal to the timestamp of the runner's job with success or failed state).
+            For idle runners - from unspecified past to the present.
+            - steps between metrics are unspecified, choose a reasonable constant.
+
+            2 fixed points in time:
+            For active runners - from the runner start (equal to the timestamp of the runner's job with in_progress state) to the present.
+            - steps between metrics should be scaled to the runner activity time window.
+            """
           type: array
           items:
             $ref: '#/components/schemas/Metric'
