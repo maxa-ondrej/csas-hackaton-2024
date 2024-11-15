@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.6...v1.0.7) (2024-11-15)
+
+
+### Bug Fixes
+
+* **api-docs:** update schema from 1.0.1 to 1.0.2 ([d146fa9](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/d146fa9607bf5941a9198c15ef9e1d1a8c89373e))
+* **deps:** bump the all-dependencies group with 5 updates ([bf64e08](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/bf64e08b8823db81cc4811cd96925f5a3dbd9228))
+
 ## [1.0.6](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.5...v1.0.6) (2024-11-13)
 
 
