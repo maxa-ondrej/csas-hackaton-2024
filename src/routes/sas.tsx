@@ -1,6 +1,5 @@
 import { getSas } from '@/lib/client';
-import { createFileRoute, notFound } from '@tanstack/react-router';
-import * as React from 'react';
+import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/sas')({
   component: RouteComponent,
@@ -11,7 +10,6 @@ export const Route = createFileRoute('/sas')({
     });
     return { sases: sases.data };
   },
-  staleTime: Number.POSITIVE_INFINITY,
 });
 
 function RouteComponent() {
