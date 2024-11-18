@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.6...v1.1.0) (2024-11-18)
+
+
+### Features
+
+* add shadcn components for tables and sidebar ([62bf035](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/62bf0358cd6a8355866f0561751fcbf8f4384e07))
+* add sidebar ([661a27c](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/661a27cbc5ad789d2f9f2d3c397f6949cb524ab5))
+
+
+### Bug Fixes
+
+* **api-docs:** update schema from 1.0.1 to 1.0.2 ([d146fa9](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/d146fa9607bf5941a9198c15ef9e1d1a8c89373e))
+* **deps:** bump the all-dependencies group with 5 updates ([bf64e08](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/bf64e08b8823db81cc4811cd96925f5a3dbd9228))
+* **lint:** fix linting ([e4c02a3](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/e4c02a3cef00a10d9e3fdbec3092a880449cb894))
+
 ## [1.0.6](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.0.5...v1.0.6) (2024-11-13)
 
 
