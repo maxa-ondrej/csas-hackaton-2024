@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: CSAS Hackaton API
-  version: 1.0.2
+  version: 1.1.0
 servers:
   - url: https://hackaton-api.fly.dev/api/v1
     description: API server
@@ -315,6 +315,8 @@ components:
           type: string
         type:
           $ref: '#/components/schemas/AutomationTypeId'
+        sas:
+          $ref: '#/components/schemas/SAS'
         state:
           $ref: '#/components/schemas/State'
         last_activity:
@@ -323,6 +325,7 @@ components:
       required:
         - id
         - type
+        - sas
         - state
         - last_activity
     AutomationLog:
