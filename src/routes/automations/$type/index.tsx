@@ -1,5 +1,13 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 import { type Automation, getAutomations } from '@/lib/client';
-import { createFileRoute } from '@tanstack/react-router';
+import { Link, createFileRoute } from '@tanstack/react-router';
 import type { ColumnDef } from '@tanstack/react-table';
 
 export const Route = createFileRoute('/automations/$type/')({
@@ -23,5 +31,35 @@ const columns: ColumnDef<Automation>[] = [
 ];
 
 function RouteComponent() {
-  return;
+  const { automations } = Route.useLoaderData();
+  const { type } = Route.useParams();
+
+  return (
+    <>
+      <h1 className="font-bold">{type}</h1>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>ID</TableHead>
+            <TableHead>Last activity</TableHead>
+            <TableHead>State</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {automations.map((automation) => (
+            <Link
+              to={`/automations/${type}/${automation.id}/logs`}
+              key={automation.id}
+            >
+              <TableRow key={automation.id}>
+                <TableCell>{automation.id}</TableCell>
+                <TableCell>{automation.last_activity}</TableCell>
+                <TableCell>{automation.state}</TableCell>
+              </TableRow>
+            </Link>
+          ))}
+        </TableBody>
+      </Table>
+    </>
+  );
 }

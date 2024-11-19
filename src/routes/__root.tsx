@@ -94,10 +94,12 @@ function RootComponent() {
           </SidebarGroup>
         </SidebarContent>
       </Sidebar>
-      <Outlet />
-      <p>
-        <small>Current version: v{version}</small>
-      </p>
+      <main className="container mx-auto py-8">
+        <Outlet />
+        <p>
+          <small>Current version: v{version}</small>
+        </p>
+      </main>
       <TanStackRouterDevtools position="bottom-right" />
     </SidebarProvider>
   );
