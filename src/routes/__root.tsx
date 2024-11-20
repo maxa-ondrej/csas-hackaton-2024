@@ -26,9 +26,9 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
-import type { Context } from '@/main';
 import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
+import type { Context } from '@/main';
 
 export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
