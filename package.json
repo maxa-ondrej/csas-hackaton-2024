@@ -12,11 +12,14 @@
     "test": "vitest --coverage",
     "lint": "biome check .",
     "format": "biome check --write .",
-    "postinstall": "openapi-ts -c @hey-api/client-fetch -i openapi.yaml -o src/lib/client -p @tanstack/react-query"
+    "generate:routes": "tsr generate",
+    "generate:api": "openapi-ts -c @hey-api/client-fetch -i openapi.yaml -o src/lib/client -p @tanstack/react-query",
+    "postinstall": "pnpm run generate:routes && pnpm run generate:api"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@hey-api/openapi-ts": "^0.55.3",
+    "@tanstack/router-cli": "1.81.9",
     "@tanstack/router-plugin": "^1.81.9",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.3",

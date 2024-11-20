@@ -17,27 +17,25 @@ import {
   SidebarProvider,
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
-import { getAutomationTypes } from '@/lib/client';
 import {
   Link,
   Outlet,
-  createRootRoute,
+  createRootRouteWithContext,
   useMatch,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
+import type { Context } from '@/main';
+import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
 
-export const Route = createRootRoute({
+export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
-  loader: async ({ abortController }) => {
-    const automationTypes = await getAutomationTypes({
-      signal: abortController.signal,
-      throwOnError: true,
-    });
-
-    return { automationTypes: automationTypes.data };
-  },
+  loader: ({ context }) =>
+    createLoader({
+      automationTypes: context.client.fetchQuery(getAutomationTypesOptions()),
+    }),
 });
 
 function RootComponent() {

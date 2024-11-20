@@ -1,15 +1,13 @@
-import { getAutomationTypes } from '@/lib/client';
+import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
 import { Link, createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/automations/')({
   component: RouteComponent,
-  loader: async ({ abortController }) => {
-    const automations = await getAutomationTypes({
-      signal: abortController.signal,
-      throwOnError: true,
-    });
-    return { automations: automations.data };
-  },
+  loader: ({ context }) =>
+    createLoader({
+      automations: context.client.fetchQuery(getAutomationTypesOptions()),
+    }),
 });
 
 function RouteComponent() {

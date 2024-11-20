@@ -1,15 +1,13 @@
-import { getSas } from '@/lib/client';
+import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/sas')({
   component: RouteComponent,
-  loader: async ({ abortController }) => {
-    const sases = await getSas({
-      signal: abortController.signal,
-      throwOnError: true,
-    });
-    return { sases: sases.data };
-  },
+  loader: ({ context }) =>
+    createLoader({
+      sases: context.client.fetchQuery(getSasOptions()),
+    }),
 });
 
 function RouteComponent() {
