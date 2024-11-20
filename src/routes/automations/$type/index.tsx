@@ -6,21 +6,21 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { getAutomations } from '@/lib/client';
+import { getAutomationsOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { formatDistanceToNow } from 'date-fns';
 
 export const Route = createFileRoute('/automations/$type/')({
   component: RouteComponent,
-  loader: async ({ params, abortController }) => {
-    const automations = await getAutomations({
-      signal: abortController.signal,
-      throwOnError: true,
-      query: { type_eq: params.type },
-    });
-
-    return { automations: automations.data };
-  },
+  loader: ({ params, context }) =>
+    createLoader({
+      automations: context.client.fetchQuery(
+        getAutomationsOptions({
+          query: { type_eq: params.type },
+        }),
+      ),
+    }),
 });
 
 function RouteComponent() {

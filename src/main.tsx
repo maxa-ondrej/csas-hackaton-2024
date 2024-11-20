@@ -1,9 +1,10 @@
 import { RouterProvider, createRouter } from '@tanstack/react-router';
-import React, { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import * as Layout from './components/layout';
 import { client } from './lib/client';
 import { routeTree } from './routeTree.gen';
+import { QueryClient } from '@tanstack/react-query';
 
 // Set up a Router instance
 const router = createRouter({
@@ -11,7 +12,20 @@ const router = createRouter({
   routeTree,
   defaultPreload: 'intent',
   basepath: '/csas-hackaton-2024/',
+  context: {
+    client: new QueryClient({
+      defaultOptions: {
+        queries: {
+          staleTime: 1000 * 60 * 5,
+        },
+      },
+    }),
+  },
 });
+
+export type Context = {
+  client: QueryClient;
+};
 
 // Register things for typesafety
 declare module '@tanstack/react-router' {
