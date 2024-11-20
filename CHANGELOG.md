@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.1.1...v1.1.2) (2024-11-20)
+
+
+### Bug Fixes
+
+* add tanstack query ([e6f985a](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/e6f985aed714810f8366e5eb243295f904a27900))
+* **api-docs:** update schema from 1.0.2 to 1.1.0 ([2809c20](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/2809c209c8c58af97d2c49b8ff14f154219934f6))
+
 ## [1.1.1](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.1.0...v1.1.1) (2024-11-18)
 
 
