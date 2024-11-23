@@ -21,6 +21,7 @@
     "@hey-api/openapi-ts": "^0.56.1",
     "@tanstack/router-cli": "1.81.9",
     "@tanstack/router-plugin": "^1.81.9",
+    "@types/lodash": "^4.17.13",
     "@types/node": "^22.9.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -52,6 +53,7 @@
     "next-themes": "^0.4.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "recharts": "^2.13.3",
     "sonner": "^1.7.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"

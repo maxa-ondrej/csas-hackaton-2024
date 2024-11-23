@@ -90,12 +90,14 @@ function RootComponent() {
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
+          <SidebarGroup className="mt-auto">
+            <p className="text-right">
+              <small className="font-mono">v{version}</small>
+            </p>
+          </SidebarGroup>
         </SidebarContent>
       </Sidebar>
       <Outlet />
-      <p>
-        <small>Current version: v{version}</small>
-      </p>
       <TanStackRouterDevtools position="bottom-right" />
     </SidebarProvider>
   );
