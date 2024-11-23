@@ -1,7 +1,7 @@
-openapi: 3.0.0
+openapi: 3.1.0
 info:
   title: CSAS Hackaton API
-  version: 1.0.2
+  version: 1.1.0
 servers:
   - url: https://hackaton-api.fly.dev/api/v1
     description: API server
@@ -13,17 +13,17 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/page'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/sort'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/search'
-        - $ref: '#/components/parameters/[propety]_[operation]'
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/sort"
+        - $ref: "#/components/parameters/order"
+        - $ref: "#/components/parameters/search"
+        - $ref: "#/components/parameters/[propety]_[operation]"
       responses:
-        '200':
-          $ref: '#/components/responses/AutomationPageResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
+        "200":
+          $ref: "#/components/responses/AutomationPageResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
   /automations/{id}:
     get:
       tags: [Automations]
@@ -38,12 +38,12 @@ paths:
           required: true
           description: ID of the automation
       responses:
-        '200':
-          $ref: '#/components/responses/AutomationSingleResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':
-          $ref: '#/components/responses/EntityNotFoundResponse'
+        "200":
+          $ref: "#/components/responses/AutomationSingleResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
   /automations/{id}/logs:
     get:
       tags: [Automations]
@@ -58,12 +58,12 @@ paths:
           required: true
           description: ID of the automation
       responses:
-        '200':
-          $ref: '#/components/responses/AutomationLogResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':
-          $ref: '#/components/responses/EntityNotFoundResponse'
+        "200":
+          $ref: "#/components/responses/AutomationLogResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
   /automation-types:
     get:
       tags: [Automations]
@@ -71,17 +71,17 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/page'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/sort'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/search'
-        - $ref: '#/components/parameters/[propety]_[operation]'
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/sort"
+        - $ref: "#/components/parameters/order"
+        - $ref: "#/components/parameters/search"
+        - $ref: "#/components/parameters/[propety]_[operation]"
       responses:
-        '200':
-          $ref: '#/components/responses/AutomationTypePageResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
+        "200":
+          $ref: "#/components/responses/AutomationTypePageResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
   /automation-types/{type}:
     get:
       tags: [Automations]
@@ -96,12 +96,12 @@ paths:
           required: true
           description: The automation type
       responses:
-        '200':
-          $ref: '#/components/responses/AutomationTypeSingleResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':
-          $ref: '#/components/responses/EntityNotFoundResponse'
+        "200":
+          $ref: "#/components/responses/AutomationTypeSingleResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
   /sas:
     get:
       tags: [SAS]
@@ -109,10 +109,10 @@ paths:
       security:
         - basicAuth: []
       responses:
-        '200':
-          $ref: '#/components/responses/SASResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
+        "200":
+          $ref: "#/components/responses/SASResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
   /runners:
     get:
       tags: [Runners]
@@ -120,34 +120,34 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/page'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/sort'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/search'
-        - $ref: '#/components/parameters/[propety]_[operation]'
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/sort"
+        - $ref: "#/components/parameters/order"
+        - $ref: "#/components/parameters/search"
+        - $ref: "#/components/parameters/[propety]_[operation]"
       responses:
-        '200':
-          $ref: '#/components/responses/RunnerPageResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-          
+        "200":
+          $ref: "#/components/responses/RunnerPageResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+
   /runners/{id}:
     get:
       tags: [Runners]
       description: Get runner
       security:
-       - basicAuth: []
+        - basicAuth: []
       parameters:
-       - $ref: '#/components/parameters/id'
+        - $ref: "#/components/parameters/id"
       responses:
-        '200':
-          $ref: '#/components/responses/RunnerSingleResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':
-          $ref: '#/components/responses/EntityNotFoundResponse'
-       
+        "200":
+          $ref: "#/components/responses/RunnerSingleResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
+
   /jobs:
     get:
       tags: [Runners]
@@ -155,19 +155,18 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/page'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/sort'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/search'
-        - $ref: '#/components/parameters/[propety]_[operation]'
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/sort"
+        - $ref: "#/components/parameters/order"
+        - $ref: "#/components/parameters/search"
+        - $ref: "#/components/parameters/[propety]_[operation]"
       responses:
-        '200':
-          $ref: '#/components/responses/JobPageResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-       
-        
+        "200":
+          $ref: "#/components/responses/JobPageResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+
   /jobs/{id}:
     get:
       tags: [Runners]
@@ -175,15 +174,14 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/id'
+        - $ref: "#/components/parameters/id"
       responses:
-        '200':
-          $ref: '#/components/responses/JobSingleResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':  
-          $ref: '#/components/responses/EntityNotFoundResponse'
-       
+        "200":
+          $ref: "#/components/responses/JobSingleResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
 
   /metrics:
     get:
@@ -192,16 +190,16 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/page'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/sort'
-        - $ref: '#/components/parameters/order'
-        - $ref: '#/components/parameters/search'
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/sort"
+        - $ref: "#/components/parameters/order"
+        - $ref: "#/components/parameters/search"
       responses:
-        '200':
-          $ref: '#/components/responses/MetricsPageResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
+        "200":
+          $ref: "#/components/responses/MetricsPageResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
 
   /metrics/{id}:
     get:
@@ -210,51 +208,51 @@ paths:
       security:
         - basicAuth: []
       parameters:
-        - $ref: '#/components/parameters/id'
+        - $ref: "#/components/parameters/id"
       responses:
-        '200':
-          $ref: '#/components/responses/MetricsSingleResponse'
-        '401':
-          $ref: '#/components/responses/UnauthorizedResponse'
-        '404':
-          $ref: '#/components/responses/EntityNotFoundResponse'
+        "200":
+          $ref: "#/components/responses/MetricsSingleResponse"
+        "401":
+          $ref: "#/components/responses/UnauthorizedResponse"
+        "404":
+          $ref: "#/components/responses/EntityNotFoundResponse"
 
 components:
   parameters:
     id:
-      name: 'id'
+      name: "id"
       in: path
-      description: 'Id of the entity to be returned.'
+      description: "Id of the entity to be returned."
       required: true
       schema:
         type: string
     page:
-      name: 'page'
+      name: "page"
       in: query
-      description: 'Enable pagination. Supplied value used as page number'
+      description: "Enable pagination. Supplied value used as page number"
       required: false
       schema:
         type: integer
         default: 1
     limit:
-      name: 'limit'
+      name: "limit"
       in: query
-      description: 'Number of records to be returned.'
+      description: "Number of records to be returned."
       required: false
       schema:
         type: integer
         default: 10
     sort:
-      name: 'sort'
+      name: "sort"
       in: query
-      description: ' You can sort by any property in the objects (strings or numbers)'
+      description: " You can sort by any property in the objects (strings or numbers)"
       required: false
       schema:
-        type: string 
+        type: string
     order:
-      name: 'order'
+      name: "order"
       in: query
-      description: 'You can order by either ascending or descending order'
+      description: "You can order by either ascending or descending order"
       required: false
       schema:
         type: string
@@ -262,17 +260,17 @@ components:
           - asc
           - desc
     search:
-      name: 'search'
+      name: "search"
       in: query
-      description: 'To search an array, you can use the search query parameter. Search is a special kind of filter that will look for a partial match in any values (with nesting) in the array'
+      description: "To search an array, you can use the search query parameter. Search is a special kind of filter that will look for a partial match in any values (with nesting) in the array"
       required: false
       schema:
         type: string
 
-    '[propety]_[operation]':
-      name: '[propety]_[operation]'
+    "[propety]_[operation]":
+      name: "[propety]_[operation]"
       in: query
-      description: | 
+      description: |
         """
         To filter an array, you can use query parameters in the form [property]_[operator]
         Available operators:
@@ -314,15 +312,18 @@ components:
         id:
           type: string
         type:
-          $ref: '#/components/schemas/AutomationTypeId'
+          $ref: "#/components/schemas/AutomationTypeId"
+        sas:
+          $ref: "#/components/schemas/SAS"
         state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         last_activity:
           type: string
           format: date-time
       required:
         - id
         - type
+        - sas
         - state
         - last_activity
     AutomationLog:
@@ -336,11 +337,11 @@ components:
         level:
           type: string
         type:
-          $ref: '#/components/schemas/AutomationTypeId'
+          $ref: "#/components/schemas/AutomationTypeId"
         from_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         to_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         description:
           type: string
       required:
@@ -355,19 +356,19 @@ components:
       type: object
       properties:
         type:
-          $ref: '#/components/schemas/AutomationTypeId'
+          $ref: "#/components/schemas/AutomationTypeId"
         states:
           type: array
           items:
-            $ref: '#/components/schemas/State'
+            $ref: "#/components/schemas/State"
         initial_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         end_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         transitions:
           type: array
           items:
-            $ref: '#/components/schemas/Transition'
+            $ref: "#/components/schemas/Transition"
       required:
         - id
         - name
@@ -378,9 +379,9 @@ components:
       type: object
       properties:
         from_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         to_state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         event:
           type: string
           nullable: true
@@ -398,7 +399,7 @@ components:
         id:
           type: string
         state:
-          $ref: '#/components/schemas/RunnerState'
+          $ref: "#/components/schemas/RunnerState"
         runner_group:
           type: string
         organization:
@@ -412,11 +413,11 @@ components:
         id:
           type: string
         state:
-          $ref: '#/components/schemas/JobState'
+          $ref: "#/components/schemas/JobState"
         organization:
           type: string
         SAS:
-          $ref: '#/components/schemas/SAS'
+          $ref: "#/components/schemas/SAS"
         runner:
           type: string
         timestamp:
@@ -459,7 +460,7 @@ components:
             """
           type: array
           items:
-            $ref: '#/components/schemas/Metric'
+            $ref: "#/components/schemas/Metric"
 
     # ---------------------------------- ERROR -----------------------------------------------------
     ErrorResponse:
@@ -480,65 +481,65 @@ components:
       type: object
       properties:
         data:
-          type: object          
+          type: object
 
-# ---------------------------------- RESPONSES ---------------------------------------------------
+  # ---------------------------------- RESPONSES ---------------------------------------------------
   responses:
     AutomationSingleResponse:
       description: Automation response
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Automation'
+            $ref: "#/components/schemas/Automation"
 
     AutomationPageResponse:
       description: Collection of automation instances response
       headers:
         X-Total-Count:
-          $ref: '#/components/headers/X-Total-Count'
+          $ref: "#/components/headers/X-Total-Count"
         X-Filtered-Count:
-          $ref: '#/components/headers/X-Filtered-Count'
+          $ref: "#/components/headers/X-Filtered-Count"
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Automation'
+              $ref: "#/components/schemas/Automation"
 
     AutomationLogResponse:
       description: Collection of automation instance logs
       headers:
         X-Total-Count:
-          $ref: '#/components/headers/X-Total-Count'
+          $ref: "#/components/headers/X-Total-Count"
         X-Filtered-Count:
-          $ref: '#/components/headers/X-Filtered-Count'
+          $ref: "#/components/headers/X-Filtered-Count"
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/AutomationLog'
+              $ref: "#/components/schemas/AutomationLog"
 
     AutomationTypeSingleResponse:
       description: Automation type response
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/AutomationType'
+            $ref: "#/components/schemas/AutomationType"
 
     AutomationTypePageResponse:
       description: Collection of automation types response
       headers:
         X-Total-Count:
-          $ref: '#/components/headers/X-Total-Count'
+          $ref: "#/components/headers/X-Total-Count"
         X-Filtered-Count:
-          $ref: '#/components/headers/X-Filtered-Count'
+          $ref: "#/components/headers/X-Filtered-Count"
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/AutomationType'
+              $ref: "#/components/schemas/AutomationType"
 
     SASResponse:
       description: Collection of SAS response
@@ -547,56 +548,56 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/SAS'
+              $ref: "#/components/schemas/SAS"
 
     RunnerSingleResponse:
       description: Single runner pod response
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Runner'
+            $ref: "#/components/schemas/Runner"
 
     RunnerPageResponse:
       description: Collection of runner pods instances response
       headers:
         X-Total-Count:
-          $ref: '#/components/headers/X-Total-Count'
+          $ref: "#/components/headers/X-Total-Count"
         X-Filtered-Count:
-          $ref: '#/components/headers/X-Filtered-Count'
+          $ref: "#/components/headers/X-Filtered-Count"
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Runner'
-      
+              $ref: "#/components/schemas/Runner"
+
     JobSingleResponse:
       description: Single job response
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Job'
+            $ref: "#/components/schemas/Job"
 
     JobPageResponse:
       description: Collection of jobs response
       headers:
         X-Total-Count:
-          $ref: '#/components/headers/X-Total-Count'
+          $ref: "#/components/headers/X-Total-Count"
         X-Filtered-Count:
-          $ref: '#/components/headers/X-Filtered-Count'
+          $ref: "#/components/headers/X-Filtered-Count"
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Job'
+              $ref: "#/components/schemas/Job"
 
     MetricsSingleResponse:
       description: Single metrics response
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Metric'
+            $ref: "#/components/schemas/Metric"
 
     MetricsPageResponse:
       description: Collection of metrics response
@@ -605,27 +606,26 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Metric'
+              $ref: "#/components/schemas/Metric"
 
     # ---------------------------------- GENERIC RESPONSES -----------------------------------------
     EntityNotFoundResponse:
-      description: 'An Entity with the specified ID was not found'
+      description: "An Entity with the specified ID was not found"
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/EmptyResponse'
+            $ref: "#/components/schemas/EmptyResponse"
 
     MethodNotAllowedResponse:
-      description: 'Method not Allowed'
+      description: "Method not Allowed"
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ErrorResponse'
+            $ref: "#/components/schemas/ErrorResponse"
 
     UnauthorizedResponse:
-      description: 'Unauthorized'
+      description: "Unauthorized"
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ErrorResponse'
-
+            $ref: "#/components/schemas/ErrorResponse"

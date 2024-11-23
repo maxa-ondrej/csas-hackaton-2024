@@ -12,7 +12,7 @@ import {
 import { createFileRoute } from '@tanstack/react-router';
 
 import '@xyflow/react/dist/style.css';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 
 export const Route = createFileRoute('/automations/$type/$id/logs')({
   component: RouteComponent,
@@ -33,6 +33,19 @@ export const Route = createFileRoute('/automations/$type/$id/logs')({
   },
 });
 
+function levelToColor(level: string) {
+  switch (level) {
+    case 'INFO':
+      return 'text-green-500';
+    case 'WARNING':
+      return 'text-yellow-500';
+    case 'ERROR':
+      return 'text-red-500';
+    default:
+      return 'text-gray-500';
+  }
+}
+
 function LogCard({
   logs,
   from_state,
@@ -46,13 +59,18 @@ function LogCard({
     [logs, from_state, to_state],
   );
 
+  const [open, setOpen] = useState(false);
+
   return logs.length === 0 ? null : (
-    <Card>
-      <Collapsible>
+    <Card className="px-8 py-4" onClick={() => setOpen(!open)}>
+      <Collapsible open={open} onOpenChange={setOpen}>
         <CollapsibleTrigger>{filtered.length} logs</CollapsibleTrigger>
-        <CollapsibleContent>
+        <CollapsibleContent className="font-mono bg-gray-900 rounded p-2 mt-2 text-white">
           {filtered.map((log) => (
-            <div key={log.timestamp}>{log.description}</div>
+            <div key={log.timestamp}>
+              <span className={levelToColor(log.level)}>{log.level}</span>{' '}
+              {log.description}
+            </div>
           ))}
         </CollapsibleContent>
       </Collapsible>
@@ -64,7 +82,7 @@ function RouteComponent() {
   const { logs, type } = Route.useLoaderData();
   return (
     <>
-      <div>{logs[0].automation_id}</div>
+      <div className="text-2xl mb-6">{logs[0].automation_id}</div>
       {type.states?.map((state, index) => (
         <>
           {index !== 0 && (
@@ -76,7 +94,7 @@ function RouteComponent() {
           )}
           <h4
             key={state}
-            className="font-mono border-l-2 stroke-border h-8 px-16 py-10"
+            className="font-mono border-l-2 stroke-border h-8 px-8 py-10 pt-6 ml-4"
           >
             {state}
           </h4>

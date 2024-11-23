@@ -6,9 +6,9 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { type Automation, getAutomations } from '@/lib/client';
-import { Link, createFileRoute } from '@tanstack/react-router';
-import type { ColumnDef } from '@tanstack/react-table';
+import { getAutomations } from '@/lib/client';
+import { createFileRoute, useNavigate } from '@tanstack/react-router';
+import { formatDistanceToNow } from 'date-fns';
 
 export const Route = createFileRoute('/automations/$type/')({
   component: RouteComponent,
@@ -23,40 +23,41 @@ export const Route = createFileRoute('/automations/$type/')({
   },
 });
 
-const columns: ColumnDef<Automation>[] = [
-  {
-    accessorKey: 'state',
-    header: 'State',
-  },
-];
-
 function RouteComponent() {
   const { automations } = Route.useLoaderData();
   const { type } = Route.useParams();
+  const navigate = useNavigate();
 
   return (
     <>
-      <h1 className="font-bold">{type}</h1>
+      <h1 className="text-2xl mb-6">{type}</h1>
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead>ID</TableHead>
             <TableHead>Last activity</TableHead>
+            <TableHead>SAS</TableHead>
             <TableHead>State</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {automations.map((automation) => (
-            <Link
-              to={`/automations/${type}/${automation.id}/logs`}
+            <TableRow
               key={automation.id}
+              onClick={() =>
+                navigate({ to: `/automations/${type}/${automation.id}/logs` })
+              }
+              className="cursor-pointer"
             >
-              <TableRow key={automation.id}>
-                <TableCell>{automation.id}</TableCell>
-                <TableCell>{automation.last_activity}</TableCell>
-                <TableCell>{automation.state}</TableCell>
-              </TableRow>
-            </Link>
+              <TableCell>{automation.id}</TableCell>
+              <TableCell>
+                {formatDistanceToNow(Date.parse(automation.last_activity), {
+                  addSuffix: true,
+                })}
+              </TableCell>
+              <TableCell>{automation.sas}</TableCell>
+              <TableCell>{automation.state}</TableCell>
+            </TableRow>
           ))}
         </TableBody>
       </Table>
