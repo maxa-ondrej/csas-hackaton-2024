@@ -17,6 +17,9 @@ import {
   SidebarProvider,
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
+import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
+import type { Context } from '@/main';
 import {
   Link,
   Outlet,
@@ -26,9 +29,6 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
-import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
-import { createLoader } from '@/lib/loader';
-import type { Context } from '@/main';
 
 export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
@@ -90,13 +90,15 @@ function RootComponent() {
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
+          <SidebarGroup className="mt-auto">
+            <p className="text-right">
+              <small className="font-mono">v{version}</small>
+            </p>
+          </SidebarGroup>
         </SidebarContent>
       </Sidebar>
       <main className="container mx-auto py-8">
         <Outlet />
-        <p>
-          <small>Current version: v{version}</small>
-        </p>
       </main>
       <TanStackRouterDevtools position="bottom-right" />
     </SidebarProvider>
