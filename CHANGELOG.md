@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.2.0...v1.2.1) (2024-11-23)
+
+
+### Bug Fixes
+
+* **deps:** bump the all-dependencies group across 1 directory with 5 updates ([df4d12f](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/df4d12f354ccd5a1fbc52ab6b86339a4095f296d))
+
 ## [1.2.0](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.1.3...v1.2.0) (2024-11-23)
 
 
