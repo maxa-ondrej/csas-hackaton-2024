@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.1.3...v1.2.0) (2024-11-23)
+
+
+### Features
+
+* new sas view and minor improvements ([7856117](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/78561174a37ba4c49f7a00ad42cc1ee64e64d526))
+* new sas view and minor improvements ([3880ed2](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/3880ed20a03c80b19616d3d23fa6163a815df4bd))
+
+
+### Bug Fixes
+
+* added missing types lib ([01dd55e](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/01dd55e4776e2532246acd44f589abc1fe5a9e9b))
+
 ## [1.1.3](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.1.2...v1.1.3) (2024-11-20)
 
 
