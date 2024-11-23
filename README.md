@@ -1,3 +1,3 @@
 # CSAS Hackaton 2024
 
-Version: 1.1.3 <!-- x-release-please-version -->
+Version: 1.2.0 <!-- x-release-please-version -->
