@@ -20,6 +20,7 @@ import { Toaster } from '@/components/ui/sonner';
 import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
 import type { Context } from '@/main';
+import { QueryClientProvider } from '@tanstack/react-query';
 import {
   Link,
   Outlet,
@@ -39,68 +40,74 @@ export const Route = createRootRouteWithContext<Context>()({
 });
 
 function RootComponent() {
+  const { client } = Route.useRouteContext();
   const { automationTypes } = Route.useLoaderData();
   const route = useMatch({ from: '/automations/$type/', shouldThrow: false });
   return (
-    <SidebarProvider>
-      <Toaster />
-      <Sidebar>
-        <SidebarContent>
-          <SidebarGroup>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                <Link to="/" activeProps={{ className: 'font-bold' }}>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton>Home</SidebarMenuButton>
-                  </SidebarMenuItem>
-                </Link>
-                <Collapsible
-                  defaultOpen={route !== undefined}
-                  className="group/collapsible"
-                >
-                  <SidebarMenuItem>
-                    <CollapsibleTrigger asChild>
-                      <SidebarMenuButton>Automations</SidebarMenuButton>
-                    </CollapsibleTrigger>
-                    <CollapsibleContent>
-                      <SidebarMenuSub>
-                        {automationTypes.map((automationType) => (
-                          <Link
-                            key={automationType.type}
-                            to={`/automations/${automationType.type}`}
-                            activeProps={{ className: 'font-bold' }}
-                            className="text-xs"
-                          >
-                            <SidebarMenuSubItem>
-                              <SidebarMenuSubButton>
-                                {automationType.type}
-                              </SidebarMenuSubButton>
-                            </SidebarMenuSubItem>
-                          </Link>
-                        ))}
-                      </SidebarMenuSub>
-                    </CollapsibleContent>
-                  </SidebarMenuItem>
-                </Collapsible>
-                <Link to="/sas" activeProps={{ className: 'font-bold' }}>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton>SAS</SidebarMenuButton>
-                  </SidebarMenuItem>
-                </Link>
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-          <SidebarGroup className="mt-auto">
-            <p className="text-right">
-              <small className="font-mono">v{version}</small>
-            </p>
-          </SidebarGroup>
-        </SidebarContent>
-      </Sidebar>
-      <main className="container mx-auto py-8">
+    <QueryClientProvider client={client}>
+      <SidebarProvider>
+        <Toaster />
+        <Sidebar>
+          <SidebarContent>
+            <SidebarGroup>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  <Link to="/" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>Home</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
+                  <Collapsible
+                    defaultOpen={route !== undefined}
+                    className="group/collapsible"
+                  >
+                    <SidebarMenuItem>
+                      <CollapsibleTrigger asChild>
+                        <SidebarMenuButton>Automations</SidebarMenuButton>
+                      </CollapsibleTrigger>
+                      <CollapsibleContent>
+                        <SidebarMenuSub>
+                          {automationTypes.map((automationType) => (
+                            <Link
+                              key={automationType.type}
+                              to={`/automations/${automationType.type}`}
+                              activeProps={{ className: 'font-bold' }}
+                              className="text-xs"
+                            >
+                              <SidebarMenuSubItem>
+                                <SidebarMenuSubButton>
+                                  {automationType.type}
+                                </SidebarMenuSubButton>
+                              </SidebarMenuSubItem>
+                            </Link>
+                          ))}
+                        </SidebarMenuSub>
+                      </CollapsibleContent>
+                    </SidebarMenuItem>
+                  </Collapsible>
+                  <Link to="/sas" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>SAS</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
+                  <Link to="/runners" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>Runners</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </SidebarGroup>
+            <SidebarGroup className="mt-auto">
+              <p className="text-right">
+                <small className="font-mono">v{version}</small>
+              </p>
+            </SidebarGroup>
+          </SidebarContent>
+        </Sidebar>
         <Outlet />
-      </main>
-      <TanStackRouterDevtools position="bottom-right" />
-    </SidebarProvider>
+        <TanStackRouterDevtools position="bottom-right" />
+      </SidebarProvider>
+    </QueryClientProvider>
   );
 }
