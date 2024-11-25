@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { createFileRoute, Link } from '@tanstack/react-router';
 import { Button } from '@/components/ui/button';
+import { Link, createFileRoute } from '@tanstack/react-router';
+import * as React from 'react';
 
 export const Route = createFileRoute('/sas/')({
   component: RouteComponent,
