@@ -39,10 +39,26 @@ let kbarActions: Action[] = [
     id: "home",
     name: "Home",
     shortcut: ["h"],
-    keywords: "home main",
+    keywords: "home main index",
     perform: () => window.location.pathname = "/csas-hackaton-2024/",
     section: 'Navigation',
   },
+  {
+    id: "sas",
+    name: "SAS",
+    shortcut: ["s"],
+    keywords: "sas",
+    perform: () => window.location.pathname = "/csas-hackaton-2024/sas",
+    section: 'Navigation',
+  },
+  {
+    id: "runners",
+    name: "Runners",
+    shortcut: ["r"],
+    keywords: "runners",
+    perform: () => window.location.pathname = "/csas-hackaton-2024/runners",
+    section: 'Navigation',
+  }
 ];
 
 const initializeActions = async () => {
@@ -78,27 +94,22 @@ const initializeActions = async () => {
       section: 'Automations',
     }));
 
-    // Create SAS actions
     const uniqueSAS = [...new Set(jobs.map(job => job.SAS))];
     const sasActions = uniqueSAS.map(sas => ({
       id: `sas-${sas}`,
-      name: `SAS: ${sas}`,
+      name: `View ${sas}`,
       shortcut: [],
       keywords: `sas ${sas.toLowerCase()} view`,
       perform: () => {
-        // Check if we're already on the SAS page
         const isOnSasPage = window.location.pathname.endsWith('/sas');
         const urlParams = new URLSearchParams(window.location.search);
         const currentKey = urlParams.get('key');
     
         if (isOnSasPage) {
-          // Update URL without page refresh
           const newUrl = `/csas-hackaton-2024/sas?key=${sas}`;
           window.history.pushState({}, '', newUrl);
-          // Trigger a custom event to notify the SAS page component
           window.dispatchEvent(new CustomEvent('sasKeyChange', { detail: { key: sas } }));
         } else {
-          // Regular navigation if not on SAS page
           window.location.href = `/csas-hackaton-2024/sas?key=${sas}`;
         }
       },
