@@ -1,3 +1,10 @@
+import {
+  ArrowTopRightOnSquareIcon,
+  CommandLineIcon,
+  ComputerDesktopIcon,
+  HomeIcon,
+  ServerIcon,
+} from '@heroicons/react/24/outline';
 import { QueryClient } from '@tanstack/react-query';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 import {
@@ -61,6 +68,7 @@ let kbarActions: Action[] = [
         to: '/',
       }),
     section: 'Navigation',
+    icon: <HomeIcon className="w-5 h-5" />,
   },
   {
     id: 'sas',
@@ -72,6 +80,7 @@ let kbarActions: Action[] = [
         to: '/sas',
       }),
     section: 'Navigation',
+    icon: <ServerIcon className="w-5 h-5" />,
   },
   {
     id: 'runners',
@@ -83,6 +92,7 @@ let kbarActions: Action[] = [
         to: '/runners',
       }),
     section: 'Navigation',
+    icon: <ComputerDesktopIcon className="w-5 h-5" />,
   },
 ];
 
@@ -172,6 +182,9 @@ function RenderResults() {
               active ? 'bg-gray-100' : 'bg-white'
             }`}
           >
+            {item.icon && (
+              <span className="flex items-center">{item.icon}</span>
+            )}
             <span className="text-gray-800">{item.name}</span>
             {(item.shortcut?.length ?? 0) > 0 && (
               <span className="flex gap-1">
