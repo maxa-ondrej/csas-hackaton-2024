@@ -25,9 +25,12 @@ import {
 
 // This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
 import jobs from '@/lib/mock/jobs.json';
+import type { State } from '@/lib/client';
 
 type SearchParams = {
   key?: string;
+  dateFrom?: string;
+  state?: State;
 };
 
 export const Route = createFileRoute('/sas/jobs/')({
@@ -62,16 +65,40 @@ const getColor = (state: string) => {
 function RouteComponent() {
   const { sases, jobs } = Route.useLoaderData();
   const { key } = useSearch({ from: Route.id });
+  const { dateFrom } = useSearch({ from: Route.id });
+  const { state } = useSearch({ from: Route.id });
   const selectedCardRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const [currentKey, setCurrentKey] = useState<string | undefined>(key);
+  const [currentDateFrom, setCurrentDateFrom] = useState<string | undefined>(
+    dateFrom,
+  );
+  const [currentState, setCurrentState] = useState<string | undefined>(state);
 
   useEffect(() => {
     const handleSasKeyChange = (event: CustomEvent) => {
       setCurrentKey(event.detail.key);
       navigate({
-        to: '/sas',
+        to: '/sas/jobs',
         search: { key: event.detail.key },
+        replace: true,
+      });
+    };
+
+    const handleDateFromChange = (event: CustomEvent) => {
+      setCurrentDateFrom(event.detail.dateFrom);
+      navigate({
+        to: '/sas/jobs',
+        search: { dateFrom: event.detail.dateFrom },
+        replace: true,
+      });
+    };
+
+    const handleStateChange = (event: CustomEvent) => {
+      setCurrentState(event.detail.state);
+      navigate({
+        to: '/sas/jobs',
+        search: { state: event.detail.state },
         replace: true,
       });
     };
@@ -81,10 +108,26 @@ function RouteComponent() {
       handleSasKeyChange as EventListener,
     );
 
+    window.addEventListener(
+      'dateFromChange',
+      handleDateFromChange as EventListener,
+    );
+
+    window.addEventListener('stateChange', handleStateChange as EventListener);
+
     return () => {
       window.removeEventListener(
         'sasKeyChange',
         handleSasKeyChange as EventListener,
+      );
+      window.removeEventListener(
+        'dateFromChange',
+        handleDateFromChange as EventListener,
+      );
+
+      window.removeEventListener(
+        'stateChange',
+        handleStateChange as EventListener,
       );
     };
   }, [navigate]);
@@ -103,7 +146,13 @@ function RouteComponent() {
   }, [currentKey]);
 
   const sasesPreprocessed = sases.map((sas) => {
-    const jobsFiltered = jobs.filter((job) => job.SAS === sas);
+    const jobsFiltered = jobs.filter(
+      (job) =>
+        job.SAS === sas &&
+        new Date(job.timestamp).getTime() >=
+          new Date(currentDateFrom ?? '1970-01-01').getTime() &&
+        (!currentState || job.state === currentState),
+    );
     return {
       sas,
       lastJob: jobsFiltered[0],
