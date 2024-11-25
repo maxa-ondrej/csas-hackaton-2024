@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
-import { useSearch, useNavigate } from '@tanstack/react-router';
 import { JobStat } from '@/components/elements/jobStat';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -14,7 +12,9 @@ import {
   getSasOptions,
 } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
+import { useNavigate, useSearch } from '@tanstack/react-router';
 import { createFileRoute } from '@tanstack/react-router';
+import { useEffect, useRef, useState } from 'react';
 import {
   Bar,
   BarChart,
@@ -60,7 +60,7 @@ const getColor = (state: string) => {
 
 function RouteComponent() {
   const { sases, jobs } = Route.useLoaderData();
-  const { key } = useSearch({ from: Route.fullPath });
+  const { key } = useSearch({ from: Route.id });
   const selectedCardRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const [currentKey, setCurrentKey] = useState<string | undefined>(key);
@@ -69,16 +69,22 @@ function RouteComponent() {
     const handleSasKeyChange = (event: CustomEvent) => {
       setCurrentKey(event.detail.key);
       navigate({
-        to: '/sas/',
+        to: '/sas',
         search: { key: event.detail.key },
         replace: true,
       });
     };
 
-    window.addEventListener('sasKeyChange', handleSasKeyChange as EventListener);
+    window.addEventListener(
+      'sasKeyChange',
+      handleSasKeyChange as EventListener,
+    );
 
     return () => {
-      window.removeEventListener('sasKeyChange', handleSasKeyChange as EventListener);
+      window.removeEventListener(
+        'sasKeyChange',
+        handleSasKeyChange as EventListener,
+      );
     };
   }, [navigate]);
 
@@ -88,9 +94,9 @@ function RouteComponent() {
 
   useEffect(() => {
     if (currentKey && selectedCardRef.current) {
-      selectedCardRef.current.scrollIntoView({ 
+      selectedCardRef.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'center'
+        block: 'center',
       });
     }
   }, [currentKey]);
@@ -183,7 +189,7 @@ function RouteComponent() {
       </div>
       <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
         {sasesPreprocessed.map((sas) => (
-          <Card 
+          <Card
             key={sas.sas}
             ref={sas.sas === currentKey ? selectedCardRef : undefined}
             className={`transition-all duration-200 ${

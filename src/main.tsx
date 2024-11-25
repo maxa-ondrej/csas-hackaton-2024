@@ -1,20 +1,20 @@
 import { QueryClient } from '@tanstack/react-query';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
+import {
+  type Action,
+  KBarAnimator,
+  KBarPortal,
+  KBarPositioner,
+  KBarProvider,
+  KBarResults,
+  KBarSearch,
+  useMatches,
+} from 'kbar';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import * as Layout from './components/layout';
 import { client } from './lib/client';
 import { routeTree } from './routeTree.gen';
-import {
-  KBarProvider,
-  KBarPortal,
-  KBarPositioner,
-  KBarAnimator,
-  KBarSearch,
-  KBarResults,
-  useMatches,
-  Action,
-} from "kbar";
 
 interface Automation {
   id: string;
@@ -34,56 +34,89 @@ interface Job {
   timestamp: string;
 }
 
+const router = createRouter({
+  ...Layout.routerConfig,
+  routeTree,
+  defaultPreload: 'intent',
+  basepath: '/csas-hackaton-2024/',
+  context: {
+    client: new QueryClient({
+      defaultOptions: {
+        queries: {
+          staleTime: 1000 * 60 * 5,
+        },
+      },
+    }),
+  },
+});
+
 let kbarActions: Action[] = [
   {
-    id: "home",
-    name: "Home",
-    shortcut: ["h"],
-    keywords: "home main index",
-    perform: () => window.location.pathname = "/csas-hackaton-2024/",
+    id: 'home',
+    name: 'Home',
+    shortcut: ['h'],
+    keywords: 'home main index',
+    perform: () =>
+      router.navigate({
+        to: '/',
+      }),
     section: 'Navigation',
   },
   {
-    id: "sas",
-    name: "SAS",
-    shortcut: ["s"],
-    keywords: "sas",
-    perform: () => window.location.pathname = "/csas-hackaton-2024/sas",
+    id: 'sas',
+    name: 'SAS',
+    shortcut: ['s'],
+    keywords: 'sas',
+    perform: () =>
+      router.navigate({
+        to: '/sas',
+      }),
     section: 'Navigation',
   },
   {
-    id: "runners",
-    name: "Runners",
-    shortcut: ["r"],
-    keywords: "runners",
-    perform: () => window.location.pathname = "/csas-hackaton-2024/runners",
+    id: 'runners',
+    name: 'Runners',
+    shortcut: ['r'],
+    keywords: 'runners',
+    perform: () =>
+      router.navigate({
+        to: '/runners',
+      }),
     section: 'Navigation',
-  }
+  },
 ];
 
 const initializeActions = async () => {
   try {
     // Fetch automations
-    const automationsResponse = await fetch('https://hackaton-api.fly.dev/api/v1/automations?page=1&limit=100&order=asc', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Basic ZG9wbzpEZXZPcHMyMDI0'
-      }
-    });
+    const automationsResponse = await fetch(
+      'https://hackaton-api.fly.dev/api/v1/automations?page=1&limit=100&order=asc',
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
+        },
+      },
+    );
     const automations: Automation[] = await automationsResponse.json();
 
     // Fetch jobs
-    const jobsResponse = await fetch('https://hackaton-api.fly.dev/api/v1/jobs?page=1&limit=100&order=asc', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Basic ZG9wbzpEZXZPcHMyMDI0'
-      }
-    });
+    const jobsResponse = await fetch(
+      'https://hackaton-api.fly.dev/api/v1/jobs?page=1&limit=100&order=asc',
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: 'Basic ZG9wbzpEZXZPcHMyMDI0',
+        },
+      },
+    );
     const jobs: Job[] = await jobsResponse.json();
 
     // Create automation actions
-    const uniqueTypes = [...new Set(automations.map(automation => automation.type))];
-    const automationActions = uniqueTypes.map(type => ({
+    const uniqueTypes = [
+      ...new Set(automations.map((automation) => automation.type)),
+    ];
+    const automationActions = uniqueTypes.map((type) => ({
       id: `automation-${type}`,
       name: `View ${type}`,
       shortcut: [],
@@ -94,8 +127,8 @@ const initializeActions = async () => {
       section: 'Automations',
     }));
 
-    const uniqueSAS = [...new Set(jobs.map(job => job.SAS))];
-    const sasActions = uniqueSAS.map(sas => ({
+    const uniqueSAS = [...new Set(jobs.map((job) => job.SAS))];
+    const sasActions = uniqueSAS.map((sas) => ({
       id: `sas-${sas}`,
       name: `View ${sas}`,
       shortcut: [],
@@ -104,11 +137,13 @@ const initializeActions = async () => {
         const isOnSasPage = window.location.pathname.endsWith('/sas');
         const urlParams = new URLSearchParams(window.location.search);
         const currentKey = urlParams.get('key');
-    
+
         if (isOnSasPage) {
           const newUrl = `/csas-hackaton-2024/sas?key=${sas}`;
           window.history.pushState({}, '', newUrl);
-          window.dispatchEvent(new CustomEvent('sasKeyChange', { detail: { key: sas } }));
+          window.dispatchEvent(
+            new CustomEvent('sasKeyChange', { detail: { key: sas } }),
+          );
         } else {
           window.location.href = `/csas-hackaton-2024/sas?key=${sas}`;
         }
@@ -129,19 +164,22 @@ function RenderResults() {
     <KBarResults
       items={results}
       onRender={({ item, active }) =>
-        typeof item === "string" ? (
+        typeof item === 'string' ? (
           <div className="px-4 py-2 text-sm text-gray-500">{item}</div>
         ) : (
           <div
             className={`px-4 py-2 flex items-center gap-2 cursor-pointer ${
-              active ? "bg-gray-100" : "bg-white"
+              active ? 'bg-gray-100' : 'bg-white'
             }`}
           >
             <span className="text-gray-800">{item.name}</span>
-            {item.shortcut?.length > 0 && (
+            {(item.shortcut?.length ?? 0) > 0 && (
               <span className="flex gap-1">
-                {item.shortcut.map((shortcut: string) => (
-                  <kbd key={shortcut} className="px-2 py-1 text-xs bg-gray-200 rounded">
+                {item.shortcut?.map((shortcut: string) => (
+                  <kbd
+                    key={shortcut}
+                    className="px-2 py-1 text-xs bg-gray-200 rounded"
+                  >
                     {shortcut}
                   </kbd>
                 ))}
@@ -172,22 +210,6 @@ function KBarWrapper({ children }: { children: React.ReactNode }) {
   );
 }
 
-const router = createRouter({
-  ...Layout.routerConfig,
-  routeTree,
-  defaultPreload: 'intent',
-  basepath: '/csas-hackaton-2024/',
-  context: {
-    client: new QueryClient({
-      defaultOptions: {
-        queries: {
-          staleTime: 1000 * 60 * 5,
-        },
-      },
-    }),
-  },
-});
-
 export type Context = {
   client: QueryClient;
 };
@@ -206,6 +228,7 @@ client.setConfig({
   },
 });
 
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
 const rootElement = document.getElementById('app')!;
 
 if (!rootElement.innerHTML) {

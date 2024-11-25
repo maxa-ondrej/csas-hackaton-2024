@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@hey-api/openapi-ts": "^0.57.1",
+    "@hey-api/openapi-ts": "0.57.0",
     "@tanstack/router-cli": "1.81.9",
     "@tanstack/router-plugin": "^1.81.9",
     "@types/lodash": "^4.17.13",
@@ -35,7 +35,7 @@
     "vitest": "2.1.5"
   },
   "dependencies": {
-    "@hey-api/client-fetch": "^0.5.0",
+    "@hey-api/client-fetch": "0.4.4",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-collapsible": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",

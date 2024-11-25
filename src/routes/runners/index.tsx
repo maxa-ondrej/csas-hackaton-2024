@@ -1,12 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { useInfiniteQuery } from '@tanstack/react-query';
-import {
-  getRunnersInfiniteOptions,
-  getRunnersOptions,
-} from '@/lib/client/@tanstack/react-query.gen';
 import { Button } from '@/components/ui/button';
-import { getRunners } from '@/lib/client';
+import { getRunnersOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
+import { createFileRoute } from '@tanstack/react-router';
 import React from 'react';
 
 export const Route = createFileRoute('/runners/')({
