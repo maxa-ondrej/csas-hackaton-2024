@@ -7,10 +7,10 @@ import {
   ChartTooltipContent,
 } from '@/components/ui/chart';
 import { Separator } from '@/components/ui/separator';
-import { H1 } from '@/components/ui/typography';
+import { H1, H5 } from '@/components/ui/typography';
 import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
-import { useNavigate, useSearch } from '@tanstack/react-router';
+import { Link, useNavigate, useSearch } from '@tanstack/react-router';
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -125,74 +125,116 @@ function RouteComponent() {
   }));
 
   return (
-    <section className="p-8 w-full overflow-auto">
+    <section className="p-4 md:p-8 w-full overflow-auto">
       <H1>Job statistics for SASes</H1>
-      <div className="pt-16 overflow-x-auto overflow-y-hidden w-full max-w-full">
-        <ChartContainer
-          config={{
-            success: {
-              color: '#34d399',
-            },
-          }}
-          className="h-[50vh] w-full"
-        >
-          <BarChart data={chartData} layout="vertical" margin={{ left: 64 }}>
-            <XAxis
-              type="number"
-              axisLine={false}
-              tickLine={false}
-              dataKey="jobs"
-            />
-            <YAxis
-              dataKey="name"
-              tickLine={false}
-              axisLine={false}
-              display="none"
-              type="category"
-            />
-            <CartesianGrid />
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent indicator="dot" />}
-            />
-            {states.map((state) => (
-              <Bar
-                key={state}
-                dataKey={state}
-                fill={getColor(state)}
-                stackId="a"
-                radius={state === 'success' ? [4, 0, 0, 4] : [0, 4, 4, 0]}
+      <div className="w-full mt-16 grid gap-4 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3">
+        <Card className="p-8 h-[max(512px,50vh)] xl:h-full w-full max-w-full 2xl:col-span-2">
+          <H5>Jobs by SAS</H5>
+          <div className="mt-8 overflow-x-auto overflow-y-hidden h-full pb-16 w-full max-w-full">
+            <ChartContainer
+              config={{
+                success: {
+                  color: '#34d399',
+                },
+              }}
+              className="h-full w-full"
+            >
+              <BarChart
+                data={chartData}
+                layout="vertical"
+                margin={{ left: 42 }}
               >
-                {chartData.map((entry) => {
-                  const keys = Object.keys(entry);
-                  const values = Object.values(entry);
+                <XAxis
+                  type="number"
+                  axisLine={false}
+                  tickLine={false}
+                  dataKey="jobs"
+                />
+                <YAxis
+                  dataKey="name"
+                  tickLine={false}
+                  axisLine={false}
+                  display="none"
+                  type="category"
+                />
+                <CartesianGrid />
+                <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent indicator="dot" />}
+                />
+                {states.map((state) => (
+                  <Bar
+                    key={state}
+                    dataKey={state}
+                    fill={getColor(state)}
+                    stackId="a"
+                    radius={state === 'success' ? [4, 0, 0, 4] : [0, 4, 4, 0]}
+                  >
+                    {chartData.map((entry) => {
+                      const keys = Object.keys(entry);
+                      const values = Object.values(entry);
 
-                  const stateNameIndex = keys.findIndex((key) => key === state);
-                  const lastBarIndex = values.findLastIndex(
-                    (value) => value !== 0,
-                  );
-                  const firstBarIndex = values.findIndex(
-                    (value, index) => value !== 0 && index !== 0,
-                  );
+                      const stateNameIndex = keys.findIndex(
+                        (key) => key === state,
+                      );
+                      const lastBarIndex = values.findLastIndex(
+                        (value) => value !== 0,
+                      );
+                      const firstBarIndex = values.findIndex(
+                        (value, index) => value !== 0 && index !== 0,
+                      );
 
-                  if (
-                    stateNameIndex === lastBarIndex ||
-                    stateNameIndex === firstBarIndex
-                  ) {
-                    return <Cell key={`cell-${state}-${entry.name}`} />;
-                  }
+                      if (
+                        stateNameIndex === lastBarIndex ||
+                        stateNameIndex === firstBarIndex
+                      ) {
+                        return <Cell key={`cell-${state}-${entry.name}`} />;
+                      }
 
-                  return (
-                    <Cell key={`cell-${state}-${entry.name}`} radius={0} />
-                  );
-                })}
-                {state === 'success' && (
-                  <LabelList dataKey="name" position="left" fill="#000" />
-                )}
-              </Bar>
+                      return (
+                        <Cell key={`cell-${state}-${entry.name}`} radius={0} />
+                      );
+                    })}
+                    {state === 'success' && (
+                      <LabelList dataKey="name" position="left" fill="#000" />
+                    )}
+                  </Bar>
+                ))}
+              </BarChart>
+            </ChartContainer>
+          </div>
+        </Card>
+        <Card className="p-8 w-full max-w-full">
+          <H5>Latest jobs</H5>
+          <div className="flex flex-col">
+            {jobs.slice(0, 6).map((job) => (
+              <div key={job.id}>
+                <Separator className="mt-2 mb-2" />
+                <Link href={`/sas/jobs/?key=${job.SAS}`}>
+                  <CardHeader className="p-2 flex flex-row items-center justify-between">
+                    <CardTitle>{job.SAS}</CardTitle>
+                    <Status value={job.state} color={getColor(job.state)} />
+                  </CardHeader>
+                  <CardContent className="p-2 pt-0">
+                    <div className="text-sm text-muted-foreground">
+                      {new Date(job.timestamp).toLocaleDateString('cs-CZ', {
+                        year: 'numeric',
+                        month: 'numeric',
+                        day: 'numeric',
+                      })}
+                      {', '}
+                      {new Date(job.timestamp).toLocaleTimeString('cs-CZ', {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit',
+                      })}
+                    </div>
+                  </CardContent>
+                </Link>
+              </div>
             ))}
-          </BarChart>
-        </ChartContainer>
+          </div>
+        </Card>
       </div>
       <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
         {sasesPreprocessed.map((sas) => (
