@@ -388,6 +388,11 @@ components:
         action:
           type: string
           nullable: true
+      required:
+        - from_state
+        - to_state
+        - event
+        - action
     SAS:
       type: string
     RunnerState:
@@ -404,6 +409,11 @@ components:
           type: string
         organization:
           type: string
+      required:
+        - id
+        - state
+        - runner_group
+        - organization
     JobState:
       type: string
       enum: [success, failed, queued, in_progress]
@@ -423,6 +433,13 @@ components:
         timestamp:
           type: string
           format: date-time
+      required:
+        - id
+        - state
+        - organization
+        - SAS
+        - runner
+        - timestamp
     Metric:
       type: object
       properties:
@@ -439,6 +456,13 @@ components:
           type: number
         fs_writes:
           type: number
+      required:
+        - cpu
+        - memory
+        - network_receive
+        - network_transmit
+        - fs_reads
+        - fs_writes
     MetricWithRunner:
       type: object
       properties:
