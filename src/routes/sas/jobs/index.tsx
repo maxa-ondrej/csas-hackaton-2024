@@ -248,6 +248,25 @@ function RouteComponent() {
             <SelectItem value="in_progress">In Progress</SelectItem>
           </SelectContent>
         </Select>
+        <DatePickerWithRange
+          onValueChange={(date) => {
+            console.log(date);
+            if (date?.from) {
+              window.dispatchEvent(
+                new CustomEvent('dateFromChange', {
+                  detail: { dateFrom: date.from.toISOString().split('T')[0] },
+                }),
+              );
+            }
+            if (date?.to) {
+              window.dispatchEvent(
+                new CustomEvent('dateToChange', {
+                  detail: { dateFrom: date.to.toISOString().split('T')[0] },
+                }),
+              );
+            }
+          }}
+        />
         <Select
           value={currentDateFrom}
           onValueChange={(value) => {
