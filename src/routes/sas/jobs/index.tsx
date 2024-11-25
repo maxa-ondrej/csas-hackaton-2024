@@ -1,11 +1,23 @@
+// This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
+import jobs from '@/lib/mock/jobs.json';
+
 import { JobStat } from '@/components/elements/jobStat';
 import { Status } from '@/components/elements/status';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
+import { DatePickerWithRange } from '@/components/ui/datepicker';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { H1, H5 } from '@/components/ui/typography';
 import type { State } from '@/lib/client';
@@ -24,12 +36,10 @@ import {
   YAxis,
 } from 'recharts';
 
-// This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
-import jobs from '@/lib/mock/jobs.json';
-
 type SearchParams = {
   key?: string;
   dateFrom?: string;
+  dateTo?: string;
   state?: State;
 };
 
@@ -66,12 +76,16 @@ function RouteComponent() {
   const { sases, jobs } = Route.useLoaderData();
   const { key } = useSearch({ from: Route.id });
   const { dateFrom } = useSearch({ from: Route.id });
+  const { dateTo } = useSearch({ from: Route.id });
   const { state } = useSearch({ from: Route.id });
   const selectedCardRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const [currentKey, setCurrentKey] = useState<string | undefined>(key);
   const [currentDateFrom, setCurrentDateFrom] = useState<string | undefined>(
     dateFrom,
+  );
+  const [currentDateTo, setCurrentDateTo] = useState<string | undefined>(
+    dateTo,
   );
   const [currentState, setCurrentState] = useState<string | undefined>(state);
 
@@ -80,7 +94,12 @@ function RouteComponent() {
       setCurrentKey(event.detail.key);
       navigate({
         to: '/sas/jobs',
-        search: { key: event.detail.key },
+        search: {
+          key: event.detail.key,
+          dateFrom: currentDateFrom,
+          dateTo: currentDateTo,
+          state: currentState,
+        },
         replace: true,
       });
     };
@@ -89,7 +108,26 @@ function RouteComponent() {
       setCurrentDateFrom(event.detail.dateFrom);
       navigate({
         to: '/sas/jobs',
-        search: { dateFrom: event.detail.dateFrom },
+        search: {
+          key: currentKey,
+          dateFrom: event.detail.dateFrom,
+          dateTo: currentDateTo,
+          state: currentState,
+        },
+        replace: true,
+      });
+    };
+
+    const handleDateToChange = (event: CustomEvent) => {
+      setCurrentDateTo(event.detail.dateTo);
+      navigate({
+        to: '/sas/jobs',
+        search: {
+          key: currentKey,
+          dateFrom: currentDateFrom,
+          dateTo: event.detail.dateTo,
+          state: currentState,
+        },
         replace: true,
       });
     };
@@ -98,7 +136,12 @@ function RouteComponent() {
       setCurrentState(event.detail.state);
       navigate({
         to: '/sas/jobs',
-        search: { state: event.detail.state },
+        search: {
+          key: currentKey,
+          dateFrom: currentDateFrom,
+          dateTo: currentDateTo,
+          state: event.detail.state,
+        },
         replace: true,
       });
     };
@@ -113,6 +156,11 @@ function RouteComponent() {
       handleDateFromChange as EventListener,
     );
 
+    window.addEventListener(
+      'dateToChange',
+      handleDateToChange as EventListener,
+    );
+
     window.addEventListener('stateChange', handleStateChange as EventListener);
 
     return () => {
@@ -124,13 +172,16 @@ function RouteComponent() {
         'dateFromChange',
         handleDateFromChange as EventListener,
       );
-
+      window.removeEventListener(
+        'dateToChange',
+        handleDateToChange as EventListener,
+      );
       window.removeEventListener(
         'stateChange',
         handleStateChange as EventListener,
       );
     };
-  }, [navigate]);
+  }, [navigate, currentKey, currentDateFrom, currentDateTo, currentState]);
 
   useEffect(() => {
     setCurrentKey(key);
@@ -151,11 +202,11 @@ function RouteComponent() {
         job.SAS === sas &&
         new Date(job.timestamp).getTime() >=
           new Date(currentDateFrom ?? '1970-01-01').getTime() &&
-        (!currentState || job.state === currentState),
+        (!currentState || currentState === 'all' || job.state === currentState),
     );
     return {
       sas,
-      lastJob: jobsFiltered[0],
+      lastJob: jobs.filter((job) => job.SAS === sas)[0],
       jobs: jobsFiltered,
       success: jobsFiltered.filter((job) => job.state === 'success'),
       inProgress: jobsFiltered.filter((job) => job.state === 'in_progress'),
@@ -176,7 +227,81 @@ function RouteComponent() {
   return (
     <section className="p-4 md:p-8 w-full overflow-auto">
       <H1>Job statistics for SASes</H1>
-      <div className="w-full mt-16 grid gap-4 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3">
+
+      <div className="flex items-center space-x-4 mt-16">
+        <Select
+          value={currentState}
+          onValueChange={(value) => {
+            window.dispatchEvent(
+              new CustomEvent('stateChange', { detail: { state: value } }),
+            );
+          }}
+        >
+          <SelectTrigger className="w-64">
+            <SelectValue placeholder="Filter by state" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">All states</SelectItem>
+            <SelectItem value="success">Success</SelectItem>
+            <SelectItem value="failed">Failed</SelectItem>
+            <SelectItem value="queued">Queued</SelectItem>
+            <SelectItem value="in_progress">In Progress</SelectItem>
+          </SelectContent>
+        </Select>
+        <Select
+          value={currentDateFrom}
+          onValueChange={(value) => {
+            window.dispatchEvent(
+              new CustomEvent('dateFromChange', {
+                detail: { dateFrom: value },
+              }),
+            );
+          }}
+        >
+          <SelectTrigger className="w-64">
+            <SelectValue placeholder="Filter by date" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="1970-01-01">All time</SelectItem>
+            <SelectItem
+              value={
+                new Date(new Date().setMonth(new Date().getMonth() - 1))
+                  .toISOString()
+                  .split('T')[0]
+              }
+            >
+              This month
+            </SelectItem>
+            <SelectItem
+              value={
+                new Date(new Date().setMonth(new Date().getMonth() - 2))
+                  .toISOString()
+                  .split('T')[0]
+              }
+            >
+              Last month
+            </SelectItem>
+          </SelectContent>
+        </Select>
+
+        <Button
+          onClick={() => {
+            window.dispatchEvent(
+              new CustomEvent('sasKeyChange', { detail: {} }),
+            );
+            window.dispatchEvent(
+              new CustomEvent('dateFromChange', { detail: {} }),
+            );
+            window.dispatchEvent(
+              new CustomEvent('stateChange', { detail: {} }),
+            );
+          }}
+        >
+          Reset filters
+        </Button>
+      </div>
+
+      <div className="w-full mt-4 grid gap-4 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3">
         <Card className="p-8 h-[max(512px,50vh)] xl:h-full w-full max-w-full 2xl:col-span-2">
           <H5>Jobs by SAS</H5>
           <div className="mt-8 overflow-x-auto overflow-y-hidden h-full pb-16 w-full max-w-full">
@@ -257,30 +382,45 @@ function RouteComponent() {
           <H5>Latest jobs</H5>
           <div className="flex flex-col">
             {jobs.slice(0, 6).map((job) => (
-              <div key={job.id}>
+              <button
+                key={job.id}
+                type="button"
+                onClick={() => {
+                  window.dispatchEvent(
+                    new CustomEvent('sasKeyChange', {
+                      detail: { key: job.SAS },
+                    }),
+                  );
+                }}
+                onKeyDown={() => {
+                  window.dispatchEvent(
+                    new CustomEvent('sasKeyChange', {
+                      detail: { key: job.SAS },
+                    }),
+                  );
+                }}
+              >
                 <Separator className="mt-2 mb-2" />
-                <Link href={`/sas/jobs/?key=${job.SAS}`}>
-                  <CardHeader className="p-2 flex flex-row items-center justify-between">
-                    <CardTitle>{job.SAS}</CardTitle>
-                    <Status value={job.state} color={getColor(job.state)} />
-                  </CardHeader>
-                  <CardContent className="p-2 pt-0">
-                    <div className="text-sm text-muted-foreground">
-                      {new Date(job.timestamp).toLocaleDateString('cs-CZ', {
-                        year: 'numeric',
-                        month: 'numeric',
-                        day: 'numeric',
-                      })}
-                      {', '}
-                      {new Date(job.timestamp).toLocaleTimeString('cs-CZ', {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                        second: '2-digit',
-                      })}
-                    </div>
-                  </CardContent>
-                </Link>
-              </div>
+                <CardHeader className="p-2 flex flex-row items-center justify-between">
+                  <CardTitle>{job.SAS}</CardTitle>
+                  <Status value={job.state} color={getColor(job.state)} />
+                </CardHeader>
+                <CardContent className="p-2 pt-0">
+                  <div className="text-sm text-muted-foreground">
+                    {new Date(job.timestamp).toLocaleDateString('cs-CZ', {
+                      year: 'numeric',
+                      month: 'numeric',
+                      day: 'numeric',
+                    })}
+                    {', '}
+                    {new Date(job.timestamp).toLocaleTimeString('cs-CZ', {
+                      hour: '2-digit',
+                      minute: '2-digit',
+                      second: '2-digit',
+                    })}
+                  </div>
+                </CardContent>
+              </button>
             ))}
           </div>
         </Card>
