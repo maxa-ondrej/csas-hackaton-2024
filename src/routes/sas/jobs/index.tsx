@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/chart';
 import { Separator } from '@/components/ui/separator';
 import { H1, H5 } from '@/components/ui/typography';
+import type { State } from '@/lib/client';
 import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
 import { Link, useNavigate, useSearch } from '@tanstack/react-router';
@@ -25,7 +26,6 @@ import {
 
 // This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
 import jobs from '@/lib/mock/jobs.json';
-import type { State } from '@/lib/client';
 
 type SearchParams = {
   key?: string;
