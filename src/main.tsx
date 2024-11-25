@@ -15,6 +15,13 @@ import ReactDOM from 'react-dom/client';
 import * as Layout from './components/layout';
 import { client } from './lib/client';
 import { routeTree } from './routeTree.gen';
+import { 
+  HomeIcon, 
+  ServerIcon, 
+  ComputerDesktopIcon,
+  CommandLineIcon,
+  ArrowTopRightOnSquareIcon,
+} from '@heroicons/react/24/outline';
 
 interface Automation {
   id: string;
@@ -61,6 +68,7 @@ let kbarActions: Action[] = [
         to: '/',
       }),
     section: 'Navigation',
+    icon: <HomeIcon className="w-5 h-5" />
   },
   {
     id: 'sas',
@@ -72,6 +80,7 @@ let kbarActions: Action[] = [
         to: '/sas',
       }),
     section: 'Navigation',
+    icon: <ServerIcon className="w-5 h-5" />
   },
   {
     id: 'runners',
@@ -83,8 +92,10 @@ let kbarActions: Action[] = [
         to: '/runners',
       }),
     section: 'Navigation',
+    icon: <ComputerDesktopIcon className="w-5 h-5" />
   },
 ];
+
 
 const initializeActions = async () => {
   try {
@@ -172,6 +183,11 @@ function RenderResults() {
               active ? 'bg-gray-100' : 'bg-white'
             }`}
           >
+            {item.icon && (
+              <span className="flex items-center">
+                {item.icon}
+              </span>
+            )}
             <span className="text-gray-800">{item.name}</span>
             {(item.shortcut?.length ?? 0) > 0 && (
               <span className="flex gap-1">
