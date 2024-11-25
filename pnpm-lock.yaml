@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hey-api/client-fetch':
-        specifier: ^0.5.0
-        version: 0.5.0
+        specifier: 0.4.4
+        version: 0.4.4
       '@radix-ui/react-accordion':
         specifier: ^1.2.1
         version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -82,8 +82,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@hey-api/openapi-ts':
-        specifier: ^0.57.1
-        version: 0.57.1(magicast@0.3.5)(typescript@5.7.2)
+        specifier: 0.57.0
+        version: 0.57.0(magicast@0.3.5)(typescript@5.7.2)
       '@tanstack/router-cli':
         specifier: 1.81.9
         version: 1.81.9
@@ -589,11 +589,11 @@ packages:
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
 
-  '@hey-api/client-fetch@0.5.0':
-    resolution: {integrity: sha512-dAgsc4ypMuA0tYZL+8Gz5Mpc3OE3+daIO8eCmfRDw2Tjt0G6CoNKIGTRxJQxBGro5m8Z3k2np0MUc8gzE9RIFQ==}
+  '@hey-api/client-fetch@0.4.4':
+    resolution: {integrity: sha512-ebh1JjUdMAqes/Rg8OvbjDqGWGNhgHgmPtHlkIOUtj3y2mUXqX2g9sVoI/rSKW/FdADPng/90k5AL7bwT8W2lA==}
 
-  '@hey-api/openapi-ts@0.57.1':
-    resolution: {integrity: sha512-CZ2W1Ma4Z1zPI2M7mR5wfgTvDnxYenv/zAiX4wYgUX3n8GlWWjRkAQ02TgwBiHD3T9isR2zPyub/8rqyZ5yIsA==}
+  '@hey-api/openapi-ts@0.57.0':
+    resolution: {integrity: sha512-TFcr7CYAFYLJVjJzCNk8bbGpLhn5K7PR3SHvBizVCZM4PdrcbTx6++W7FyKq84TGXuptN70+LvM+8bOSf3PgCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2782,9 +2782,9 @@ snapshots:
 
   '@floating-ui/utils@0.2.8': {}
 
-  '@hey-api/client-fetch@0.5.0': {}
+  '@hey-api/client-fetch@0.4.4': {}
 
-  '@hey-api/openapi-ts@0.57.1(magicast@0.3.5)(typescript@5.7.2)':
+  '@hey-api/openapi-ts@0.57.0(magicast@0.3.5)(typescript@5.7.2)':
     dependencies:
       '@apidevtools/json-schema-ref-parser': 11.7.2
       c12: 2.0.1(magicast@0.3.5)
