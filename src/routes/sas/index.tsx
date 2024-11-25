@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+import { useSearch, useNavigate } from '@tanstack/react-router';
 import { JobStat } from '@/components/elements/jobStat';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -23,6 +25,10 @@ import {
   YAxis,
 } from 'recharts';
 
+type SearchParams = {
+  key?: string;
+};
+
 export const Route = createFileRoute('/sas/')({
   component: RouteComponent,
   loader: ({ context }) =>
@@ -30,6 +36,9 @@ export const Route = createFileRoute('/sas/')({
       sases: context.client.fetchQuery(getSasOptions()),
       jobs: context.client.fetchQuery(getJobsOptions()),
     }),
+  validateSearch: (search: Record<string, unknown>): SearchParams => {
+    return { key: search.key as string | undefined };
+  },
 });
 
 const states = ['success', 'failed', 'queued', 'in_progress'];
@@ -51,6 +60,41 @@ const getColor = (state: string) => {
 
 function RouteComponent() {
   const { sases, jobs } = Route.useLoaderData();
+  const { key } = useSearch({ from: Route.fullPath });
+  const selectedCardRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const [currentKey, setCurrentKey] = useState<string | undefined>(key);
+
+  useEffect(() => {
+    const handleSasKeyChange = (event: CustomEvent) => {
+      setCurrentKey(event.detail.key);
+      navigate({
+        to: '/sas/',
+        search: { key: event.detail.key },
+        replace: true,
+      });
+    };
+
+    window.addEventListener('sasKeyChange', handleSasKeyChange as EventListener);
+
+    return () => {
+      window.removeEventListener('sasKeyChange', handleSasKeyChange as EventListener);
+    };
+  }, [navigate]);
+
+  useEffect(() => {
+    setCurrentKey(key);
+  }, [key]);
+
+  useEffect(() => {
+    if (currentKey && selectedCardRef.current) {
+      selectedCardRef.current.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+  }, [currentKey]);
+
   const sasesPreprocessed = sases.map((sas) => ({
     sas,
     jobs: jobs.filter((job) => job.SAS === sas),
@@ -61,6 +105,7 @@ function RouteComponent() {
     failed: jobs.filter((job) => job.SAS === sas && job.state === 'failed'),
     queued: jobs.filter((job) => job.SAS === sas && job.state === 'queued'),
   }));
+
   const chartData = sasesPreprocessed.map((sas) => ({
     name: sas.sas,
     success: sas.success.length,
@@ -68,6 +113,7 @@ function RouteComponent() {
     queued: sas.queued.length,
     in_progress: sas.inProgress.length,
   }));
+
   return (
     <section className="p-8 w-full overflow-auto">
       <H1>SAS</H1>
@@ -137,7 +183,13 @@ function RouteComponent() {
       </div>
       <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
         {sasesPreprocessed.map((sas) => (
-          <Card key={sas.sas}>
+          <Card 
+            key={sas.sas}
+            ref={sas.sas === currentKey ? selectedCardRef : undefined}
+            className={`transition-all duration-200 ${
+              sas.sas === currentKey ? 'ring-2 ring-primary shadow-lg' : ''
+            }`}
+          >
             <CardHeader className="pb-0">
               <CardTitle className="flex flex-row justify-between items-center">
                 {sas.sas}

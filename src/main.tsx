@@ -25,6 +25,15 @@ interface Automation {
   error?: string;
 }
 
+interface Job {
+  id: string;
+  state: string;
+  organization: string;
+  SAS: string;
+  runner: string;
+  timestamp: string;
+}
+
 let kbarActions: Action[] = [
   {
     id: "home",
@@ -38,17 +47,28 @@ let kbarActions: Action[] = [
 
 const initializeActions = async () => {
   try {
-    const response = await fetch('https://hackaton-api.fly.dev/api/v1/automations?page=1&limit=100&order=asc', {
+    // Fetch automations
+    const automationsResponse = await fetch('https://hackaton-api.fly.dev/api/v1/automations?page=1&limit=100&order=asc', {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Basic ZG9wbzpEZXZPcHMyMDI0'
       }
     });
-    const automations: Automation[] = await response.json();
+    const automations: Automation[] = await automationsResponse.json();
 
+    // Fetch jobs
+    const jobsResponse = await fetch('https://hackaton-api.fly.dev/api/v1/jobs?page=1&limit=100&order=asc', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Basic ZG9wbzpEZXZPcHMyMDI0'
+      }
+    });
+    const jobs: Job[] = await jobsResponse.json();
+
+    // Create automation actions
     const uniqueTypes = [...new Set(automations.map(automation => automation.type))];
     const automationActions = uniqueTypes.map(type => ({
-      id: type,
+      id: `automation-${type}`,
       name: `View ${type}`,
       shortcut: [],
       keywords: `automation ${type.toLowerCase()} view`,
@@ -58,9 +78,36 @@ const initializeActions = async () => {
       section: 'Automations',
     }));
 
-    kbarActions = [...kbarActions, ...automationActions];
+    // Create SAS actions
+    const uniqueSAS = [...new Set(jobs.map(job => job.SAS))];
+    const sasActions = uniqueSAS.map(sas => ({
+      id: `sas-${sas}`,
+      name: `SAS: ${sas}`,
+      shortcut: [],
+      keywords: `sas ${sas.toLowerCase()} view`,
+      perform: () => {
+        // Check if we're already on the SAS page
+        const isOnSasPage = window.location.pathname.endsWith('/sas');
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentKey = urlParams.get('key');
+    
+        if (isOnSasPage) {
+          // Update URL without page refresh
+          const newUrl = `/csas-hackaton-2024/sas?key=${sas}`;
+          window.history.pushState({}, '', newUrl);
+          // Trigger a custom event to notify the SAS page component
+          window.dispatchEvent(new CustomEvent('sasKeyChange', { detail: { key: sas } }));
+        } else {
+          // Regular navigation if not on SAS page
+          window.location.href = `/csas-hackaton-2024/sas?key=${sas}`;
+        }
+      },
+      section: 'SAS',
+    }));
+
+    kbarActions = [...kbarActions, ...automationActions, ...sasActions];
   } catch (error) {
-    console.error('Failed to initialize automation actions:', error);
+    console.error('Failed to initialize actions:', error);
   }
 };
 
