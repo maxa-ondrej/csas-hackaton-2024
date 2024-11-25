@@ -1,4 +1,5 @@
 import { JobStat } from '@/components/elements/jobStat';
+import { Status } from '@/components/elements/status';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   ChartContainer,
@@ -7,10 +8,7 @@ import {
 } from '@/components/ui/chart';
 import { Separator } from '@/components/ui/separator';
 import { H1 } from '@/components/ui/typography';
-import {
-  getJobsOptions,
-  getSasOptions,
-} from '@/lib/client/@tanstack/react-query.gen';
+import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
 import { useNavigate, useSearch } from '@tanstack/react-router';
 import { createFileRoute } from '@tanstack/react-router';
@@ -25,6 +23,9 @@ import {
   YAxis,
 } from 'recharts';
 
+// This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
+import jobs from '@/lib/mock/jobs.json';
+
 type SearchParams = {
   key?: string;
 };
@@ -34,7 +35,7 @@ export const Route = createFileRoute('/sas/jobs/')({
   loader: ({ context }) =>
     createLoader({
       sases: context.client.fetchQuery(getSasOptions()),
-      jobs: context.client.fetchQuery(getJobsOptions()),
+      jobs,
     }),
   validateSearch: (search: Record<string, unknown>): SearchParams => {
     return { key: search.key as string | undefined };
@@ -101,16 +102,18 @@ function RouteComponent() {
     }
   }, [currentKey]);
 
-  const sasesPreprocessed = sases.map((sas) => ({
-    sas,
-    jobs: jobs.filter((job) => job.SAS === sas),
-    success: jobs.filter((job) => job.SAS === sas && job.state === 'success'),
-    inProgress: jobs.filter(
-      (job) => job.SAS === sas && job.state === 'in_progress',
-    ),
-    failed: jobs.filter((job) => job.SAS === sas && job.state === 'failed'),
-    queued: jobs.filter((job) => job.SAS === sas && job.state === 'queued'),
-  }));
+  const sasesPreprocessed = sases.map((sas) => {
+    const jobsFiltered = jobs.filter((job) => job.SAS === sas);
+    return {
+      sas,
+      lastJob: jobsFiltered[0],
+      jobs: jobsFiltered,
+      success: jobsFiltered.filter((job) => job.state === 'success'),
+      inProgress: jobsFiltered.filter((job) => job.state === 'in_progress'),
+      failed: jobsFiltered.filter((job) => job.state === 'failed'),
+      queued: jobsFiltered.filter((job) => job.state === 'queued'),
+    };
+  });
 
   const chartData = sasesPreprocessed.map((sas) => ({
     name: sas.sas,
@@ -209,6 +212,10 @@ function RouteComponent() {
               </CardTitle>
             </CardHeader>
             <CardContent>
+              <Status
+                value={sas.lastJob.state ?? ''}
+                color={getColor(sas.lastJob.state ?? '')}
+              />
               <Separator className="mt-2 mb-2" />
               <JobStat
                 value={sas.success.length}
