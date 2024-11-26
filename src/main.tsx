@@ -276,7 +276,7 @@ const initializeActions = async () => {
       shortcut: [],
       keywords: `automation ${type.toLowerCase()} view`,
       perform: () => {
-        window.location.href = `/csas-hackaton-2024/automations/${type}`;
+        router.navigate({ to: `/automations/${type}` });
       },
       section: 'Automations',
     }));
