@@ -296,8 +296,14 @@ function RouteComponent() {
       inProgress: jobsFiltered.filter((job) => job.state === 'in_progress'),
       failed: jobsFiltered.filter((job) => job.state === 'failed'),
       queued: jobsFiltered.filter((job) => job.state === 'queued'),
+      hasFilteredJobs: jobsFiltered.length > 0,
     };
   });
+
+  const filteredSases = sasesPreprocessed.filter((sas) => sas.hasFilteredJobs);
+  const unfilteredSases = sasesPreprocessed.filter(
+    (sas) => !sas.hasFilteredJobs,
+  );
 
   const chartData = sasesPreprocessed.map((sas) => ({
     name: sas.sas,
@@ -358,7 +364,6 @@ function RouteComponent() {
 
         <DatePickerWithRange
           onValueChange={(date) => {
-            console.log(date);
             if (date?.from) {
               window.dispatchEvent(
                 new CustomEvent('dateFromChange', {
@@ -557,57 +562,114 @@ function RouteComponent() {
         </Card>
       </div>
 
-      <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
-        {sasesPreprocessed.map((sas) => (
-          <Card
-            key={sas.sas}
-            ref={sas.sas === currentKey ? selectedCardRef : undefined}
-            className={`transition-all duration-200 ${
-              sas.sas === currentKey ? 'ring-2 ring-primary shadow-lg' : ''
-            }`}
-          >
-            <CardHeader className="pb-0">
-              <CardTitle className="flex flex-row justify-between items-center">
-                {sas.sas}
-                <div className="m-l-auto text-muted-foreground text-sm">
-                  {sas.jobs.length} jobs
-                </div>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Status
-                value={sas.lastJob.state ?? ''}
-                color={getColor(sas.lastJob.state ?? '')}
-              />
-              <Separator className="mt-2 mb-2" />
-              <JobStat
-                value={sas.success.length}
-                total={sas.jobs.length}
-                color={getColor('success')}
-                text="successful jobs"
-              />
-              <JobStat
-                value={sas.failed.length}
-                total={sas.jobs.length}
-                color={getColor('failed')}
-                text="failed jobs"
-              />
-              <JobStat
-                value={sas.queued.length}
-                total={sas.jobs.length}
-                color={getColor('queued')}
-                text="queued jobs"
-              />
-              <JobStat
-                value={sas.inProgress.length}
-                total={sas.jobs.length}
-                color={getColor('in_progress')}
-                text="jobs in progress"
-              />
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+      {filteredSases.length > 0 && (
+        <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+          {filteredSases.map((sas) => (
+            <Card
+              key={sas.sas}
+              ref={sas.sas === currentKey ? selectedCardRef : undefined}
+              className={`transition-all duration-200 ${
+                sas.sas === currentKey ? 'ring-2 ring-primary shadow-lg' : ''
+              }`}
+            >
+              <CardHeader className="pb-0">
+                <CardTitle className="flex flex-row justify-between items-center">
+                  {sas.sas}
+                  <div className="m-l-auto text-muted-foreground text-sm">
+                    {sas.jobs.length} jobs
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Status
+                  value={sas.lastJob.state ?? ''}
+                  color={getColor(sas.lastJob.state ?? '')}
+                />
+                <Separator className="mt-2 mb-2" />
+                <JobStat
+                  value={sas.success.length}
+                  total={sas.jobs.length}
+                  color={getColor('success')}
+                  text="successful jobs"
+                />
+                <JobStat
+                  value={sas.failed.length}
+                  total={sas.jobs.length}
+                  color={getColor('failed')}
+                  text="failed jobs"
+                />
+                <JobStat
+                  value={sas.queued.length}
+                  total={sas.jobs.length}
+                  color={getColor('queued')}
+                  text="queued jobs"
+                />
+                <JobStat
+                  value={sas.inProgress.length}
+                  total={sas.jobs.length}
+                  color={getColor('in_progress')}
+                  text="jobs in progress"
+                />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
+
+      {unfilteredSases.length > 0 && (
+        <>
+          <Separator className="my-8" />
+          <H5 className="text-muted-foreground mb-4">Other SASes</H5>
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+            {unfilteredSases.map((sas) => (
+              <Card
+                key={sas.sas}
+                className="opacity-50 hover:opacity-100 transition-opacity"
+              >
+                <CardHeader className="pb-0">
+                  <CardTitle className="flex flex-row justify-between items-center">
+                    {sas.sas}
+                    <div className="m-l-auto text-muted-foreground text-sm">
+                      {sas.jobs.length} jobs
+                    </div>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Status
+                    value={sas.lastJob.state ?? ''}
+                    color={getColor(sas.lastJob.state ?? '')}
+                  />
+                  <Separator className="mt-2 mb-2" />
+                  <JobStat
+                    value={sas.success.length}
+                    total={sas.jobs.length}
+                    color={getColor('success')}
+                    text="successful jobs"
+                  />
+                  <JobStat
+                    value={sas.failed.length}
+                    total={sas.jobs.length}
+                    color={getColor('failed')}
+                    text="failed jobs"
+                  />
+                  <JobStat
+                    value={sas.queued.length}
+                    total={sas.jobs.length}
+                    color={getColor('queued')}
+                    text="queued jobs"
+                  />
+                  <JobStat
+                    value={sas.inProgress.length}
+                    total={sas.jobs.length}
+                    color={getColor('in_progress')}
+                    text="jobs in progress"
+                  />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </>
+      )}
     </section>
   );
 }
