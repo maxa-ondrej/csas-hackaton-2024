@@ -1,19 +1,19 @@
 .chat {
   text-align: center;
 }
-  
+
 .markdown a {
-  color: theme("colors.pink.300");
+  color: #ff7eb6;
 }
 
 .markdown th {
   text-align: start;
-  border: 1px solid theme("colors.slate.400");
+  border: 1px solid #aaa;
   padding: 0.5rem;
 }
 
 .markdown table {
-  border: 1px solid theme("colors.slate.400");
+  border: 1px solid #aaa;
   border-collapse: collapse;
   border-radius: 2px;
   margin-top: 1rem;
@@ -21,7 +21,7 @@
 }
 
 .markdown table td {
-  border: 1px solid theme("colors.slate.400");
+  border: 1px solid #aaa;
   padding: 0.5rem;
 }
 
