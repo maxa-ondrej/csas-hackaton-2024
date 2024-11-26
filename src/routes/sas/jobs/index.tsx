@@ -24,6 +24,7 @@ import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
 import { useNavigate, useSearch } from '@tanstack/react-router';
 import { createFileRoute } from '@tanstack/react-router';
+import { addDays } from 'date-fns';
 import { useEffect, useRef, useState } from 'react';
 import {
   Bar,
@@ -34,7 +35,6 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-import { addDays } from 'date-fns';
 
 type SearchParams = {
   key?: string;
@@ -257,7 +257,9 @@ function RouteComponent() {
           new Date(currentDateFrom ?? '1970-01-01').getTime() &&
         new Date(job.timestamp).getTime() <=
           new Date(currentDateTo ?? new Date()).getTime() &&
-        (!currentState || currentState === 'all' || job.state === currentState) &&
+        (!currentState ||
+          currentState === 'all' ||
+          job.state === currentState) &&
         (!currentState ||
           currentState === 'all' ||
           job.state === currentState) &&
