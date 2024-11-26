@@ -22,7 +22,7 @@ import { H1, H5 } from '@/components/ui/typography';
 import type { State } from '@/lib/client';
 import { getSasOptions } from '@/lib/client/@tanstack/react-query.gen';
 import { createLoader } from '@/lib/loader';
-import { Link, useNavigate, useSearch } from '@tanstack/react-router';
+import { useNavigate, useSearch } from '@tanstack/react-router';
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -34,6 +34,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { addDays } from 'date-fns';
 
 type SearchParams = {
   key?: string;
@@ -147,28 +148,14 @@ function RouteComponent() {
       });
     };
 
-    const handleDateFromChange = (event: CustomEvent) => {
+    const handleDateChange = (event: CustomEvent) => {
       setCurrentDateFrom(event.detail.dateFrom);
-      navigate({
-        to: '/sas/jobs',
-        search: {
-          key: currentKey,
-          dateFrom: event.detail.dateFrom,
-          dateTo: currentDateTo,
-          state: currentState,
-          deployType: currentDeployType,
-        },
-        replace: true,
-      });
-    };
-
-    const handleDateToChange = (event: CustomEvent) => {
       setCurrentDateTo(event.detail.dateTo);
       navigate({
         to: '/sas/jobs',
         search: {
           key: currentKey,
-          dateFrom: currentDateFrom,
+          dateFrom: event.detail.dateFrom,
           dateTo: event.detail.dateTo,
           state: currentState,
           deployType: currentDeployType,
@@ -211,14 +198,7 @@ function RouteComponent() {
       'sasKeyChange',
       handleSasKeyChange as EventListener,
     );
-    window.addEventListener(
-      'dateFromChange',
-      handleDateFromChange as EventListener,
-    );
-    window.addEventListener(
-      'dateToChange',
-      handleDateToChange as EventListener,
-    );
+    window.addEventListener('dateChange', handleDateChange as EventListener);
     window.addEventListener('stateChange', handleStateChange as EventListener);
     window.addEventListener(
       'deployTypeChange',
@@ -231,12 +211,8 @@ function RouteComponent() {
         handleSasKeyChange as EventListener,
       );
       window.removeEventListener(
-        'dateFromChange',
-        handleDateFromChange as EventListener,
-      );
-      window.removeEventListener(
-        'dateToChange',
-        handleDateToChange as EventListener,
+        'dateChange',
+        handleDateChange as EventListener,
       );
       window.removeEventListener(
         'stateChange',
@@ -279,6 +255,9 @@ function RouteComponent() {
         job.SAS === sas &&
         new Date(job.timestamp).getTime() >=
           new Date(currentDateFrom ?? '1970-01-01').getTime() &&
+        new Date(job.timestamp).getTime() <=
+          new Date(currentDateTo ?? new Date()).getTime() &&
+        (!currentState || currentState === 'all' || job.state === currentState) &&
         (!currentState ||
           currentState === 'all' ||
           job.state === currentState) &&
@@ -364,58 +343,18 @@ function RouteComponent() {
 
         <DatePickerWithRange
           onValueChange={(date) => {
-            if (date?.from) {
+            if (date?.from || date?.to) {
               window.dispatchEvent(
-                new CustomEvent('dateFromChange', {
-                  detail: { dateFrom: date.from.toISOString().split('T')[0] },
-                }),
-              );
-            }
-            if (date?.to) {
-              window.dispatchEvent(
-                new CustomEvent('dateToChange', {
-                  detail: { dateFrom: date.to.toISOString().split('T')[0] },
+                new CustomEvent('dateChange', {
+                  detail: {
+                    dateFrom: date?.from?.toISOString().split('T')[0],
+                    dateTo: date?.to?.toISOString().split('T')[0],
+                  },
                 }),
               );
             }
           }}
         />
-
-        <Select
-          value={currentDateFrom}
-          onValueChange={(value) => {
-            window.dispatchEvent(
-              new CustomEvent('dateFromChange', {
-                detail: { dateFrom: value },
-              }),
-            );
-          }}
-        >
-          <SelectTrigger className="w-64">
-            <SelectValue placeholder="Filter by date" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="1970-01-01">All time</SelectItem>
-            <SelectItem
-              value={
-                new Date(new Date().setMonth(new Date().getMonth() - 1))
-                  .toISOString()
-                  .split('T')[0]
-              }
-            >
-              This month
-            </SelectItem>
-            <SelectItem
-              value={
-                new Date(new Date().setMonth(new Date().getMonth() - 2))
-                  .toISOString()
-                  .split('T')[0]
-              }
-            >
-              Last month
-            </SelectItem>
-          </SelectContent>
-        </Select>
 
         <Button
           onClick={() => {
@@ -423,7 +362,12 @@ function RouteComponent() {
               new CustomEvent('sasKeyChange', { detail: {} }),
             );
             window.dispatchEvent(
-              new CustomEvent('dateFromChange', { detail: {} }),
+              new CustomEvent('dateChange', {
+                detail: {
+                  dateFrom: addDays(new Date(), -30),
+                  dateTo: new Date(),
+                },
+              }),
             );
             window.dispatchEvent(
               new CustomEvent('stateChange', { detail: {} }),
