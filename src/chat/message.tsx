@@ -11,7 +11,7 @@ type Props = {
 export default function ChatMessage({ message, role }: Props) {
   const roleIcon =
     role === 'user' ? (
-      <div className="rounded-full h-8 w-8 bg-slate-600 flex items-center justify-center font-semibold text-slate-300 shrink-0">
+      <div className="rounded-full h-8 w-8 bg-slate-800 flex items-center justify-center font-semibold text-slate-300 shrink-0">
         M
       </div>
     ) : (
@@ -29,7 +29,7 @@ export default function ChatMessage({ message, role }: Props) {
         <div className="flex-col">
           <p className="font-semibold text-slate-400">{roleName}</p>
           <Markdown
-            className="text-slate-50 markdown"
+            className="text-slate-700 markdown"
             remarkPlugins={[remarkGfm]}
           >
             {message}

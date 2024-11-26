@@ -42,7 +42,7 @@ export function Chat() {
     });
 
   return (
-    <div className="md:container md:mx-auto lg:px-32 h-screen bg-slate-700 flex flex-col">
+    <div className="md:container md:mx-auto lg:px-32 h-screen bg-slate-100 flex flex-col">
       <Header onNewChat={clearThread} />
       <div className="flex flex-col-reverse grow overflow-scroll">
         {status !== undefined && <ChatStatusIndicator status={status} />}

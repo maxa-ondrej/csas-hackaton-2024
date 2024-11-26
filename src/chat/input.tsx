@@ -8,7 +8,7 @@ export default function ChatInput({
   const [message, setMessage] = useState('');
   return (
     <form
-      className="border-2 border-slate-400 rounded-lg p-2 flex flex-row m-2 text-slate-50"
+      className="border-2 border-slate-400 rounded-lg p-2 flex flex-row m-2 text-slate-900"
       onSubmit={(e) => {
         e.preventDefault();
         onSend(message);
@@ -18,8 +18,8 @@ export default function ChatInput({
     >
       <input
         name="message"
-        placeholder="What can I do for you today, Coder?"
-        className={'w-full ' + 'bg-slate-700 ' + 'focus:outline-none '}
+        placeholder="What can I do for you today?"
+        className={'w-full ' + 'bg-slate-100 ' + 'focus:outline-none '}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
@@ -27,7 +27,7 @@ export default function ChatInput({
         type="submit"
         disabled={disabled}
         className={
-          'bg-slate-500 ' +
+          'bg-slate-900 ' +
           'text-white ' +
           'font-bold ' +
           'py-2 px-4 ' +
