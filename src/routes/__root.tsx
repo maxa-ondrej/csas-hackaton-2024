@@ -90,6 +90,11 @@ function RootComponent() {
                       </CollapsibleContent>
                     </SidebarMenuItem>
                   </Collapsible>
+                  <Link to="/chat" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>Assistant</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
                 </SidebarMenu>
               </SidebarGroupContent>
             </SidebarGroup>
