@@ -39,6 +39,9 @@ const get = <T>(path: string): Promise<T> =>
     },
   }).then((res) => res.json());
 
+/**
+ * This is the client that is used to interact with the chat backend.
+ */
 export const client = {
   createThread: () =>
     post<{
