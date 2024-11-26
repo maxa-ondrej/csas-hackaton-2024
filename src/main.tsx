@@ -95,9 +95,37 @@ let kbarActions: Action[] = [
     icon: <ComputerDesktopIcon className="w-5 h-5" />,
   },
   {
+    id: 'state-all',
+    name: 'View All Jobs',
+    shortcut: ["j", "j"],
+    keywords: 'all jobs total everything',
+    perform: () => {
+        const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+        if (isOnSasPage) {
+            router.navigate({
+                to: '/sas/jobs',
+                search: {
+                    state: 'all',
+                },
+            });
+            window.dispatchEvent(
+                new CustomEvent('stateChange', { detail: { state: 'all' } })
+            );
+        } else {
+            router.navigate({
+                to: '/sas/jobs',
+                search: {
+                    state: 'all',
+                },
+            });
+        }
+    },
+},
+
+  {
     id: 'state-success',
     name: 'View Success Jobs',
-    shortcut: [],
+    shortcut: ['j', 's'],
     keywords: 'success successful completed',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -126,7 +154,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-failed',
     name: 'View Failed Jobs',
-    shortcut: [],
+    shortcut: ["j", "f"],
     keywords: 'failed failure error',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -155,7 +183,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-queued',
     name: 'View Queued Jobs',
-    shortcut: [],
+    shortcut: ["j", "q"],
     keywords: 'queued queue waiting',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -184,7 +212,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-in-progress',
     name: 'View In Progress Jobs',
-    shortcut: [],
+    shortcut: ["j", "p"],
     keywords: 'in progress running ongoing active',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
