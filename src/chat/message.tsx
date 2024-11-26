@@ -12,7 +12,7 @@ export default function ChatMessage({ message, role }: Props) {
   const roleIcon =
     role === 'user' ? (
       <div className="rounded-full h-8 w-8 bg-slate-600 flex items-center justify-center font-semibold text-slate-300 shrink-0">
-        C
+        M
       </div>
     ) : (
       <div className="rounded-full h-8 w-8 bg-pink-600 flex items-center justify-center font-semibold text-slate-50 shrink-0">
@@ -20,7 +20,7 @@ export default function ChatMessage({ message, role }: Props) {
       </div>
     );
 
-  const roleName = role === 'user' ? 'Coder' : 'Jarvis';
+  const roleName = role === 'user' ? 'Me' : 'Jarvis';
 
   return (
     <div className="flex flex-row mx-2 my-4">

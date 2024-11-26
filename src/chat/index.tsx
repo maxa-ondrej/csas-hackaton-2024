@@ -15,6 +15,8 @@ import type { Run } from './types';
 
 export function Chat() {
   const [run, setRun] = useState<Run | undefined>(undefined);
+  const [lastQuestion, setLastQuestion] = useState<string | null>(null);
+  const [polling, setPolling] = useState(false);
   const { threadId, messages, setActionMessages, clearThread } = useThread(
     run,
     setRun,
@@ -45,6 +47,10 @@ export function Chat() {
       <div className="flex flex-col-reverse grow overflow-scroll">
         {status !== undefined && <ChatStatusIndicator status={status} />}
         {processing && <Loading />}
+        {lastQuestion && (processing || polling) && (
+          // biome-ignore lint/a11y/useValidAriaRole: <explanation>
+          <ChatMessage message={lastQuestion} role="user" />
+        )}
         {messageList}
       </div>
       <div className="my-4">
@@ -53,7 +59,14 @@ export function Chat() {
             if (threadId === undefined) {
               return;
             }
-            client.postMessage(threadId, message).then(setRun);
+            setLastQuestion(message);
+            setPolling(true);
+            client
+              .postMessage(threadId, message)
+              .then(setRun)
+              .then(() => {
+                setPolling(false);
+              });
           }}
           disabled={processing}
         />
