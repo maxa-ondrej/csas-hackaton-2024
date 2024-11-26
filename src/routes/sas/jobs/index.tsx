@@ -1,4 +1,3 @@
-// This import is a mock for the jobs data with better date because the real data is not available for filters to work properly.
 import jobs from '@/lib/mock/jobs.json';
 
 import { JobStat } from '@/components/elements/jobStat';
@@ -42,17 +41,58 @@ type SearchParams = {
   dateFrom?: string;
   dateTo?: string;
   state?: State;
+  deployType?: string;
 };
+
+type DeployType = {
+  id: string;
+  name: string;
+  organization: string;
+  runnerGroup: string;
+};
+
+const deployTypes: DeployType[] = [
+  {
+    id: 'build',
+    name: 'Build aplikací',
+    organization: 'csas-dev',
+    runnerGroup: 'csas-linux',
+  },
+  {
+    id: 'test',
+    name: 'Testování aplikací',
+    organization: 'csas-dev',
+    runnerGroup: 'csas-linux-test',
+  },
+  {
+    id: 'deploy-nonprod',
+    name: 'Deploy do neprodukčního prostředí',
+    organization: 'csas-ops',
+    runnerGroup: 'csas-linux',
+  },
+  {
+    id: 'deploy-prod',
+    name: 'Deploy do produkčního prostředí',
+    organization: 'csas-ops',
+    runnerGroup: 'csas-linux-prod',
+  },
+];
 
 export const Route = createFileRoute('/sas/jobs/')({
   component: RouteComponent,
   loader: ({ context }) =>
     createLoader({
       sases: context.client.fetchQuery(getSasOptions()),
-      jobs,
+      jobs: jobs,
     }),
   validateSearch: (search: Record<string, unknown>): SearchParams => {
-    return { key: search.key as string | undefined };
+    return {
+      key: search.key as string | undefined,
+      dateFrom: search.dateFrom as string | undefined,
+      dateTo: search.dateTo as string | undefined,
+      state: search.state as State | undefined,
+      deployType: search.deployType as string | undefined,
+    };
   },
 });
 
@@ -75,10 +115,9 @@ const getColor = (state: string) => {
 
 function RouteComponent() {
   const { sases, jobs } = Route.useLoaderData();
-  const { key } = useSearch({ from: Route.id });
-  const { dateFrom } = useSearch({ from: Route.id });
-  const { dateTo } = useSearch({ from: Route.id });
-  const { state } = useSearch({ from: Route.id });
+  const { key, dateFrom, dateTo, state, deployType } = useSearch({
+    from: Route.id,
+  });
   const selectedCardRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const [currentKey, setCurrentKey] = useState<string | undefined>(key);
@@ -89,6 +128,9 @@ function RouteComponent() {
     dateTo,
   );
   const [currentState, setCurrentState] = useState<string | undefined>(state);
+  const [currentDeployType, setCurrentDeployType] = useState<
+    string | undefined
+  >(deployType);
 
   useEffect(() => {
     const handleSasKeyChange = (event: CustomEvent) => {
@@ -100,6 +142,7 @@ function RouteComponent() {
           dateFrom: currentDateFrom,
           dateTo: currentDateTo,
           state: currentState,
+          deployType: currentDeployType,
         },
         replace: true,
       });
@@ -115,6 +158,7 @@ function RouteComponent() {
           dateFrom: event.detail.dateFrom,
           dateTo: event.detail.dateTo,
           state: currentState,
+          deployType: currentDeployType,
         },
         replace: true,
       });
@@ -129,6 +173,22 @@ function RouteComponent() {
           dateFrom: currentDateFrom,
           dateTo: currentDateTo,
           state: event.detail.state,
+          deployType: currentDeployType,
+        },
+        replace: true,
+      });
+    };
+
+    const handleDeployTypeChange = (event: CustomEvent) => {
+      setCurrentDeployType(event.detail.deployType);
+      navigate({
+        to: '/sas/jobs',
+        search: {
+          key: currentKey,
+          dateFrom: currentDateFrom,
+          dateTo: currentDateTo,
+          state: currentState,
+          deployType: event.detail.deployType,
         },
         replace: true,
       });
@@ -138,9 +198,12 @@ function RouteComponent() {
       'sasKeyChange',
       handleSasKeyChange as EventListener,
     );
-
     window.addEventListener('dateChange', handleDateChange as EventListener);
     window.addEventListener('stateChange', handleStateChange as EventListener);
+    window.addEventListener(
+      'deployTypeChange',
+      handleDeployTypeChange as EventListener,
+    );
 
     return () => {
       window.removeEventListener(
@@ -155,8 +218,19 @@ function RouteComponent() {
         'stateChange',
         handleStateChange as EventListener,
       );
+      window.removeEventListener(
+        'deployTypeChange',
+        handleDeployTypeChange as EventListener,
+      );
     };
-  }, [navigate, currentKey, currentDateFrom, currentDateTo, currentState]);
+  }, [
+    navigate,
+    currentKey,
+    currentDateFrom,
+    currentDateTo,
+    currentState,
+    currentDeployType,
+  ]);
 
   useEffect(() => {
     setCurrentKey(key);
@@ -172,6 +246,10 @@ function RouteComponent() {
   }, [currentKey]);
 
   const sasesPreprocessed = sases.map((sas) => {
+    const selectedDeployType = deployTypes.find(
+      (dt) => dt.id === currentDeployType,
+    );
+
     const jobsFiltered = jobs.filter(
       (job) =>
         job.SAS === sas &&
@@ -179,8 +257,16 @@ function RouteComponent() {
           new Date(currentDateFrom ?? '1970-01-01').getTime() &&
         new Date(job.timestamp).getTime() <=
           new Date(currentDateTo ?? new Date()).getTime() &&
-        (!currentState || currentState === 'all' || job.state === currentState),
+        (!currentState || currentState === 'all' || job.state === currentState) &&
+        (!currentState ||
+          currentState === 'all' ||
+          job.state === currentState) &&
+        (!currentDeployType ||
+          currentDeployType === 'all' ||
+          (job.organization === selectedDeployType?.organization &&
+            job.runner_group === selectedDeployType?.runnerGroup)),
     );
+
     return {
       sas,
       lastJob: jobs.filter((job) => job.SAS === sas)[0],
@@ -189,8 +275,14 @@ function RouteComponent() {
       inProgress: jobsFiltered.filter((job) => job.state === 'in_progress'),
       failed: jobsFiltered.filter((job) => job.state === 'failed'),
       queued: jobsFiltered.filter((job) => job.state === 'queued'),
+      hasFilteredJobs: jobsFiltered.length > 0,
     };
   });
+
+  const filteredSases = sasesPreprocessed.filter((sas) => sas.hasFilteredJobs);
+  const unfilteredSases = sasesPreprocessed.filter(
+    (sas) => !sas.hasFilteredJobs,
+  );
 
   const chartData = sasesPreprocessed.map((sas) => ({
     name: sas.sas,
@@ -206,6 +298,29 @@ function RouteComponent() {
       <H1>Job statistics for SASes</H1>
 
       <div className="flex items-center space-x-4 mt-16">
+        <Select
+          value={currentDeployType}
+          onValueChange={(value) => {
+            window.dispatchEvent(
+              new CustomEvent('deployTypeChange', {
+                detail: { deployType: value },
+              }),
+            );
+          }}
+        >
+          <SelectTrigger className="w-64">
+            <SelectValue placeholder="Filter by deploy type" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">All types</SelectItem>
+            {deployTypes.map((dt) => (
+              <SelectItem key={dt.id} value={dt.id}>
+                {dt.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+
         <Select
           value={currentState}
           onValueChange={(value) => {
@@ -225,9 +340,9 @@ function RouteComponent() {
             <SelectItem value="in_progress">In Progress</SelectItem>
           </SelectContent>
         </Select>
+
         <DatePickerWithRange
           onValueChange={(date) => {
-            console.log(date);
             if (date?.from || date?.to) {
               window.dispatchEvent(
                 new CustomEvent('dateChange', {
@@ -256,6 +371,9 @@ function RouteComponent() {
             );
             window.dispatchEvent(
               new CustomEvent('stateChange', { detail: {} }),
+            );
+            window.dispatchEvent(
+              new CustomEvent('deployTypeChange', { detail: {} }),
             );
           }}
         >
@@ -387,57 +505,115 @@ function RouteComponent() {
           </div>
         </Card>
       </div>
-      <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
-        {sasesPreprocessed.map((sas) => (
-          <Card
-            key={sas.sas}
-            ref={sas.sas === currentKey ? selectedCardRef : undefined}
-            className={`transition-all duration-200 ${
-              sas.sas === currentKey ? 'ring-2 ring-primary shadow-lg' : ''
-            }`}
-          >
-            <CardHeader className="pb-0">
-              <CardTitle className="flex flex-row justify-between items-center">
-                {sas.sas}
-                <div className="m-l-auto text-muted-foreground text-sm">
-                  {sas.jobs.length} jobs
-                </div>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Status
-                value={sas.lastJob.state ?? ''}
-                color={getColor(sas.lastJob.state ?? '')}
-              />
-              <Separator className="mt-2 mb-2" />
-              <JobStat
-                value={sas.success.length}
-                total={sas.jobs.length}
-                color={getColor('success')}
-                text="successful jobs"
-              />
-              <JobStat
-                value={sas.failed.length}
-                total={sas.jobs.length}
-                color={getColor('failed')}
-                text="failed jobs"
-              />
-              <JobStat
-                value={sas.queued.length}
-                total={sas.jobs.length}
-                color={getColor('queued')}
-                text="queued jobs"
-              />
-              <JobStat
-                value={sas.inProgress.length}
-                total={sas.jobs.length}
-                color={getColor('in_progress')}
-                text="jobs in progress"
-              />
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+
+      {filteredSases.length > 0 && (
+        <div className="pt-16 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+          {filteredSases.map((sas) => (
+            <Card
+              key={sas.sas}
+              ref={sas.sas === currentKey ? selectedCardRef : undefined}
+              className={`transition-all duration-200 ${
+                sas.sas === currentKey ? 'ring-2 ring-primary shadow-lg' : ''
+              }`}
+            >
+              <CardHeader className="pb-0">
+                <CardTitle className="flex flex-row justify-between items-center">
+                  {sas.sas}
+                  <div className="m-l-auto text-muted-foreground text-sm">
+                    {sas.jobs.length} jobs
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Status
+                  value={sas.lastJob.state ?? ''}
+                  color={getColor(sas.lastJob.state ?? '')}
+                />
+                <Separator className="mt-2 mb-2" />
+                <JobStat
+                  value={sas.success.length}
+                  total={sas.jobs.length}
+                  color={getColor('success')}
+                  text="successful jobs"
+                />
+                <JobStat
+                  value={sas.failed.length}
+                  total={sas.jobs.length}
+                  color={getColor('failed')}
+                  text="failed jobs"
+                />
+                <JobStat
+                  value={sas.queued.length}
+                  total={sas.jobs.length}
+                  color={getColor('queued')}
+                  text="queued jobs"
+                />
+                <JobStat
+                  value={sas.inProgress.length}
+                  total={sas.jobs.length}
+                  color={getColor('in_progress')}
+                  text="jobs in progress"
+                />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
+
+      {unfilteredSases.length > 0 && (
+        <>
+          <Separator className="my-8" />
+          <H5 className="text-muted-foreground mb-4">Other SASes</H5>
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+            {unfilteredSases.map((sas) => (
+              <Card
+                key={sas.sas}
+                className="opacity-50 hover:opacity-100 transition-opacity"
+              >
+                <CardHeader className="pb-0">
+                  <CardTitle className="flex flex-row justify-between items-center">
+                    {sas.sas}
+                    <div className="m-l-auto text-muted-foreground text-sm">
+                      {sas.jobs.length} jobs
+                    </div>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Status
+                    value={sas.lastJob.state ?? ''}
+                    color={getColor(sas.lastJob.state ?? '')}
+                  />
+                  <Separator className="mt-2 mb-2" />
+                  <JobStat
+                    value={sas.success.length}
+                    total={sas.jobs.length}
+                    color={getColor('success')}
+                    text="successful jobs"
+                  />
+                  <JobStat
+                    value={sas.failed.length}
+                    total={sas.jobs.length}
+                    color={getColor('failed')}
+                    text="failed jobs"
+                  />
+                  <JobStat
+                    value={sas.queued.length}
+                    total={sas.jobs.length}
+                    color={getColor('queued')}
+                    text="queued jobs"
+                  />
+                  <JobStat
+                    value={sas.inProgress.length}
+                    total={sas.jobs.length}
+                    color={getColor('in_progress')}
+                    text="jobs in progress"
+                  />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </>
+      )}
     </section>
   );
 }

@@ -17,6 +17,10 @@ import {
   SidebarProvider,
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
+import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
+import type { Context } from '@/main';
+import { QueryClientProvider } from '@tanstack/react-query';
 import {
   Link,
   Outlet,
@@ -26,10 +30,9 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
-import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
-import { createLoader } from '@/lib/loader';
-import type { Context } from '@/main';
-import { QueryClientProvider } from '@tanstack/react-query';
+import { Separator } from '@/components/ui/separator';
+import { H3 } from '@/components/ui/typography';
+import { Rocket } from 'lucide-react';
 
 export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
@@ -51,10 +54,20 @@ function RootComponent() {
           <SidebarContent>
             <SidebarGroup>
               <SidebarGroupContent>
-                <SidebarMenu>
-                  <Link to="/" activeProps={{ className: 'font-bold' }}>
+                <SidebarMenu className="p-3">
+                  <H3 className="flex gap-4 items-center">
+                    <Rocket />
+                    Jarvis
+                  </H3>
+                  <Separator className="mt-4 mb-4" />
+                  <Link to="/sas/jobs" activeProps={{ className: 'font-bold' }}>
                     <SidebarMenuItem>
-                      <SidebarMenuButton>Home</SidebarMenuButton>
+                      <SidebarMenuButton>SAS Jobs</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
+                  <Link to="/runners" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>Runners</SidebarMenuButton>
                     </SidebarMenuItem>
                   </Link>
                   <Collapsible
@@ -85,14 +98,9 @@ function RootComponent() {
                       </CollapsibleContent>
                     </SidebarMenuItem>
                   </Collapsible>
-                  <Link to="/sas" activeProps={{ className: 'font-bold' }}>
+                  <Link to="/chat" activeProps={{ className: 'font-bold' }}>
                     <SidebarMenuItem>
-                      <SidebarMenuButton>SAS</SidebarMenuButton>
-                    </SidebarMenuItem>
-                  </Link>
-                  <Link to="/runners" activeProps={{ className: 'font-bold' }}>
-                    <SidebarMenuItem>
-                      <SidebarMenuButton>Runners</SidebarMenuButton>
+                      <SidebarMenuButton>Assistant</SidebarMenuButton>
                     </SidebarMenuItem>
                   </Link>
                 </SidebarMenu>
