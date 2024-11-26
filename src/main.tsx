@@ -149,13 +149,13 @@ const initializeActions = async () => {
         const currentKey = urlParams.get('key');
 
         if (isOnSasPage) {
-          const newUrl = `/csas-hackaton-2024/sas?key=${sas}`;
+          const newUrl = `/csas-hackaton-2024/sas/jobs?key=${sas}`;
           window.history.pushState({}, '', newUrl);
           window.dispatchEvent(
             new CustomEvent('sasKeyChange', { detail: { key: sas } }),
           );
         } else {
-          window.location.href = `/csas-hackaton-2024/sas?key=${sas}`;
+          window.location.href = `/csas-hackaton-2024/sas/jobs?key=${sas}`;
         }
       },
       section: 'SAS',
