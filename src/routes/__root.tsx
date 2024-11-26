@@ -52,9 +52,9 @@ function RootComponent() {
             <SidebarGroup>
               <SidebarGroupContent>
                 <SidebarMenu>
-                  <Link to="/sas" activeProps={{ className: 'font-bold' }}>
+                  <Link to="/sas/jobs" activeProps={{ className: 'font-bold' }}>
                     <SidebarMenuItem>
-                      <SidebarMenuButton>SAS</SidebarMenuButton>
+                      <SidebarMenuButton>SAS Jobs</SidebarMenuButton>
                     </SidebarMenuItem>
                   </Link>
                   <Link to="/runners" activeProps={{ className: 'font-bold' }}>
