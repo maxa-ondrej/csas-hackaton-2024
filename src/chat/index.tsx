@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import './index.css';
+import { client } from './client';
 import Header from './header';
-import ChatInput from './input';
-import ChatMessage from './message';
-import ChatVideoEmbedding from './video-embed';
-import ChatStatusIndicator from './status-indicator';
-import Loading from './loading';
-import { useThread } from './hooks/useThread';
 import { useRunPolling } from './hooks/useRunPollings';
 import { useRunRequiredActionsProcessing } from './hooks/useRunRequiredActionsProcessing';
 import { useRunStatus } from './hooks/useRunStatus';
-import { client } from './client';
+import { useThread } from './hooks/useThread';
+import ChatInput from './input';
+import Loading from './loading';
+import ChatMessage from './message';
+import ChatStatusIndicator from './status-indicator';
 import type { Run } from './types';
+import ChatVideoEmbedding from './video-embed';
 
 export function Chat() {
   const [run, setRun] = useState<Run | undefined>(undefined);

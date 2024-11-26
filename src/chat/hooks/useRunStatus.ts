@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { runFinishedStates } from './constants';
+import { useEffect, useState } from 'react';
 import type { Run } from '../types';
+import { runFinishedStates } from './constants';
 
 export const useRunStatus = (run: Run | undefined) => {
   const [status, setStatus] = useState<string | undefined>(undefined);

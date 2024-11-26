@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react';
 import { client } from '../client';
-import { useState, useEffect } from 'react';
-import { runFinishedStates } from './constants';
 import type { Run, Thread } from '../types';
+import { runFinishedStates } from './constants';
 
 export const useThread = (
   run: Run | undefined,

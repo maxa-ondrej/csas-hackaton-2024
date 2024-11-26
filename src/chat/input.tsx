@@ -1,5 +1,5 @@
-import { MdSend } from 'react-icons/md';
 import { useState } from 'react';
+import { MdSend } from 'react-icons/md';
 
 export default function ChatInput({
   disabled,

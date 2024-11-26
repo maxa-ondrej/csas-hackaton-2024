@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { runFinishedStates } from './constants';
-import type { Run } from '../types';
 import { client } from '../client';
+import type { Run } from '../types';
+import { runFinishedStates } from './constants';
 
 export const useRunPolling = (
   threadId: string | undefined,
