@@ -1,7 +1,6 @@
-import type { runFinishedStates } from './hooks/constants';
 import type OpenAI from 'openai';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://localhost:3100';
 
 export type Messages = OpenAI.Beta.Threads.MessagesPage['data'];
 
@@ -33,7 +32,7 @@ const post = <T>(path: string, data: object): Promise<T> =>
   }).then((res) => res.json());
 
 const get = <T>(path: string): Promise<T> =>
-  fetch(path, {
+  fetch(BASE_URL + path, {
     method: 'GET',
     headers: {
       Accept: 'application/json',
