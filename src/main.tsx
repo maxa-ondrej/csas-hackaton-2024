@@ -17,7 +17,7 @@ import {
   KBarSearch,
   useMatches,
 } from 'kbar';
-import { StrictMode } from 'react';
+import { StrictMode, useCallback } from 'react';
 import ReactDOM from 'react-dom/client';
 import * as Layout from './components/layout';
 import { client } from './lib/client';
@@ -59,13 +59,13 @@ const router = createRouter({
 
 let kbarActions: Action[] = [
   {
-    id: 'home',
-    name: 'Home',
-    shortcut: ['h'],
-    keywords: 'home main index',
+    id: 'chat',
+    name: 'Jarvis',
+    shortcut: ['c'],
+    keywords: 'chat ai gpt jarvis assistant',
     perform: () =>
       router.navigate({
-        to: '/',
+        to: '/chat',
       }),
     section: 'Navigation',
     icon: <HomeIcon className="w-5 h-5" />,
@@ -77,7 +77,7 @@ let kbarActions: Action[] = [
     keywords: 'sas',
     perform: () =>
       router.navigate({
-        to: '/sas',
+        to: '/sas/jobs',
       }),
     section: 'Navigation',
     icon: <ServerIcon className="w-5 h-5" />,
