@@ -268,6 +268,13 @@ const initializeActions = async () => {
             search: {
               key: sas,
             },
+          }).then(() => {
+            setTimeout(() => {
+              const element = document.querySelector(`[data-sas="${sas}"]`);
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }, 100);
           });
           window.dispatchEvent(
             new CustomEvent('sasKeyChange', { detail: { key: sas } })
@@ -278,13 +285,19 @@ const initializeActions = async () => {
             search: {
               key: sas,
             },
+          }).then(() => {
+            setTimeout(() => {
+              const element = document.querySelector(`[data-sas="${sas}"]`);
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }, 100);
           });
         }
       },
       section: 'SAS',
     }));
 
-    // Update kbarActions by adding new actions to existing ones
     kbarActions = [...kbarActions, ...automationActions, ...sasActions];
   } catch (error) {
     console.error('Failed to initialize actions:', error);
