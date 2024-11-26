@@ -1,5 +1,45 @@
 # Changelog
 
+## [1.3.0](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.2.2...v1.3.0) (2024-11-26)
+
+
+### Features
+
+* add latest jobs to the side of the sas page ([9b22efb](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/9b22efbdf1ff561444b0cd5691e9553ac75c3ff2))
+* advanced sas job view ([9e9e84e](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/9e9e84e99d8675968efd554db2c5d781011796c7))
+* better sidebar ([b2c7238](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/b2c72385820ce8da1d972b55ca13a0b643b3146a))
+* better sidebar ([da9fe8d](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/da9fe8df9fd6e14bd06e57a3e98862205fd7f32a))
+* chatbot ([9fbaff4](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/9fbaff427520fe0216d82246eb99e1b885922cf5))
+* filtering jobs now has UI ([7b31b03](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/7b31b03093e211f831e38d0d221d4bd69a420d4c))
+* global sas job filtration ([6a99ca5](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/6a99ca515f519298c575ed754faebf13be16c090))
+* improved sas job filtration ([57d3196](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/57d3196b11be7f71530c3da03d957b5885679de9))
+* job data is now mocked ([561ae62](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/561ae62987354b212adbc753135c260af7ae9955))
+* logs in a sidebar ([460fa28](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/460fa286a788a3645f44eb4e3e3191dc3bc85898))
+* logs in a sidebar ([bf92416](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/bf92416d5eb8eeeddd5b162d4199815eb931e8ce))
+* move sas job statistics to new route ([3ebf7ae](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/3ebf7ae8c636de0c0d86e3706dcc6d0210908e51))
+* runners page ([960d12c](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/960d12c901e4616c2d230b8a6474d8d5cd7264c7))
+* runners page ([d2bc724](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/d2bc72459298c963b78d6ad912d8346e964dbc43))
+* view logs for jobs ([fda00f2](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/fda00f28214d2525e38194facf6ebddd3af78e05))
+* view logs for jobs ([29bd839](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/29bd8394ac5f9ff54e29aa7b0279d6a9a295614f))
+
+
+### Bug Fixes
+
+* add to sidebar ([3ab9021](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/3ab9021f7c31de10a5250d25302e625eea37f85c))
+* **api-docs:** update schema from 1.1.0 to 1.1.0 ([e2a2407](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/e2a2407a6836dab4ef46d4e43eb03c5e26b12bbf))
+* design ([3b539f5](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/3b539f542e1b1b95f5c01d3677f2619e82fde28e))
+* fix ([13d35a0](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/13d35a0a6eb4d829a831cc9829c5490cc0ee030d))
+* fix ([31c9c9e](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/31c9c9e41f96e1759bf721323c5d174763dc41db))
+* format files ([aeb1690](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/aeb1690b11281f9501e340d9adef9053e7af01f1))
+* get thread ([feb1e3c](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/feb1e3cea45a01eb7bb50e9db8ce746a9d1ce276))
+* improvements to dashboards ([78090ad](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/78090adaddc842a58ea0cdf6f538b41e0c0c2a0b))
+* initial load ([c3cac89](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/c3cac89e8be24afb2c1bd8a039318e909c800ca9))
+* last chat ([9827240](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/9827240e952f31f0b6eafb6817f6e79fe0858c55))
+* lint ([f08a702](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/f08a702556469488673be8e97aade180a8cbc832))
+* lint ([dc8ed39](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/dc8ed39a19541ba49160b81420f54c98fcc690b7))
+* setup date picker with range ([3055ef9](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/3055ef90940c41172accd80a806f6744826b1a4d))
+* typecheck ([5140390](https://github.com/maxa-ondrej/csas-hackaton-2024/commit/5140390e1139221ac34240748f7758708107efb5))
+
 ## [1.2.2](https://github.com/maxa-ondrej/csas-hackaton-2024/compare/v1.2.1...v1.2.2) (2024-11-25)
 
 
