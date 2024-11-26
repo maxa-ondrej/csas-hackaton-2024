@@ -17,6 +17,10 @@ import {
   SidebarProvider,
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
+import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
+import { createLoader } from '@/lib/loader';
+import type { Context } from '@/main';
+import { QueryClientProvider } from '@tanstack/react-query';
 import {
   Link,
   Outlet,
@@ -26,10 +30,6 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
-import { getAutomationTypesOptions } from '@/lib/client/@tanstack/react-query.gen';
-import { createLoader } from '@/lib/loader';
-import type { Context } from '@/main';
-import { QueryClientProvider } from '@tanstack/react-query';
 
 export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
@@ -52,9 +52,14 @@ function RootComponent() {
             <SidebarGroup>
               <SidebarGroupContent>
                 <SidebarMenu>
-                  <Link to="/" activeProps={{ className: 'font-bold' }}>
+                  <Link to="/sas" activeProps={{ className: 'font-bold' }}>
                     <SidebarMenuItem>
-                      <SidebarMenuButton>Home</SidebarMenuButton>
+                      <SidebarMenuButton>SAS</SidebarMenuButton>
+                    </SidebarMenuItem>
+                  </Link>
+                  <Link to="/runners" activeProps={{ className: 'font-bold' }}>
+                    <SidebarMenuItem>
+                      <SidebarMenuButton>Runners</SidebarMenuButton>
                     </SidebarMenuItem>
                   </Link>
                   <Collapsible
@@ -85,16 +90,6 @@ function RootComponent() {
                       </CollapsibleContent>
                     </SidebarMenuItem>
                   </Collapsible>
-                  <Link to="/sas" activeProps={{ className: 'font-bold' }}>
-                    <SidebarMenuItem>
-                      <SidebarMenuButton>SAS</SidebarMenuButton>
-                    </SidebarMenuItem>
-                  </Link>
-                  <Link to="/runners" activeProps={{ className: 'font-bold' }}>
-                    <SidebarMenuItem>
-                      <SidebarMenuButton>Runners</SidebarMenuButton>
-                    </SidebarMenuItem>
-                  </Link>
                 </SidebarMenu>
               </SidebarGroupContent>
             </SidebarGroup>

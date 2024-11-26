@@ -62,7 +62,7 @@ function LogCard({
   const [open, setOpen] = useState(filtered.length > 0);
 
   return filtered.length === 0 ? null : (
-    <Card className="px-8 py-4" onClick={() => setOpen(!open)}>
+    <Card className="p-4" onClick={() => setOpen(!open)}>
       <Collapsible open={open} onOpenChange={setOpen}>
         <CollapsibleTrigger>{filtered.length} logs</CollapsibleTrigger>
         <CollapsibleContent className="font-mono bg-gray-900 rounded p-2 mt-2 text-white">
@@ -78,9 +78,11 @@ function LogCard({
   );
 }
 
-function RouteComponent() {
+export function RouteComponent() {
   const { logs, type } = Route.useLoaderData();
-  return (
+  return logs.length === 0 ? (
+    <Card>No logs</Card>
+  ) : (
     <section className="p-4 md:p-8 w-full overflow-auto">
       <div className="text-2xl mb-6">{logs[0].automation_id}</div>
       {type.states?.map((state, index) => (
@@ -94,7 +96,7 @@ function RouteComponent() {
           )}
           <h4
             key={state}
-            className="font-mono border-l-2 stroke-border h-8 px-8 py-10 pt-6 ml-4"
+            className="font-mono border-l-2 stroke-border h-8 px-8 py-10 pt-4 ml-4"
           >
             {state}
           </h4>
