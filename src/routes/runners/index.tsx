@@ -35,10 +35,12 @@ function RouteComponent() {
       runners.map((r) => ({
         ...r,
         metrics: {
-          cpu: !['failed', 'offline'].includes(r.state)
+          // biome-ignore lint/style/noNonNullAssertion: <explanation>
+          cpu: !['failed', 'offline'].includes(r.state!)
             ? `${Math.floor(Math.random() * 80 + 20 / (r.state === 'idle' ? 30 : 1))} %`
             : 'N/A',
-          ram: !['failed', 'offline'].includes(r.state)
+          // biome-ignore lint/style/noNonNullAssertion: <explanation>
+          ram: !['failed', 'offline'].includes(r.state!)
             ? `${Math.ceil(Math.random() * 80 + 20)} %`
             : 'N/A',
         },
