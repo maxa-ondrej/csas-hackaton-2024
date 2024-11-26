@@ -97,30 +97,30 @@ let kbarActions: Action[] = [
   {
     id: 'state-all',
     name: 'View All Jobs',
-    shortcut: ["j", "j"],
+    shortcut: ['j', 'j'],
     keywords: 'all jobs total everything',
     perform: () => {
-        const isOnSasPage = window.location.pathname.includes('/sas/jobs');
-        if (isOnSasPage) {
-            router.navigate({
-                to: '/sas/jobs',
-                search: {
-                    state: 'all',
-                },
-            });
-            window.dispatchEvent(
-                new CustomEvent('stateChange', { detail: { state: 'all' } })
-            );
-        } else {
-            router.navigate({
-                to: '/sas/jobs',
-                search: {
-                    state: 'all',
-                },
-            });
-        }
+      const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+      if (isOnSasPage) {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            state: 'all',
+          },
+        });
+        window.dispatchEvent(
+          new CustomEvent('stateChange', { detail: { state: 'all' } }),
+        );
+      } else {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            state: 'all',
+          },
+        });
+      }
     },
-},
+  },
 
   {
     id: 'state-success',
@@ -137,7 +137,7 @@ let kbarActions: Action[] = [
           },
         });
         window.dispatchEvent(
-          new CustomEvent('stateChange', { detail: { state: 'success' } })
+          new CustomEvent('stateChange', { detail: { state: 'success' } }),
         );
       } else {
         router.navigate({
@@ -154,7 +154,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-failed',
     name: 'View Failed Jobs',
-    shortcut: ["j", "f"],
+    shortcut: ['j', 'f'],
     keywords: 'failed failure error',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -166,7 +166,7 @@ let kbarActions: Action[] = [
           },
         });
         window.dispatchEvent(
-          new CustomEvent('stateChange', { detail: { state: 'failed' } })
+          new CustomEvent('stateChange', { detail: { state: 'failed' } }),
         );
       } else {
         router.navigate({
@@ -183,7 +183,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-queued',
     name: 'View Queued Jobs',
-    shortcut: ["j", "q"],
+    shortcut: ['j', 'q'],
     keywords: 'queued queue waiting',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -195,7 +195,7 @@ let kbarActions: Action[] = [
           },
         });
         window.dispatchEvent(
-          new CustomEvent('stateChange', { detail: { state: 'queued' } })
+          new CustomEvent('stateChange', { detail: { state: 'queued' } }),
         );
       } else {
         router.navigate({
@@ -212,7 +212,7 @@ let kbarActions: Action[] = [
   {
     id: 'state-in-progress',
     name: 'View In Progress Jobs',
-    shortcut: ["j", "p"],
+    shortcut: ['j', 'p'],
     keywords: 'in progress running ongoing active',
     perform: () => {
       const isOnSasPage = window.location.pathname.includes('/sas/jobs');
@@ -224,7 +224,7 @@ let kbarActions: Action[] = [
           },
         });
         window.dispatchEvent(
-          new CustomEvent('stateChange', { detail: { state: 'in_progress' } })
+          new CustomEvent('stateChange', { detail: { state: 'in_progress' } }),
         );
       } else {
         router.navigate({
@@ -291,36 +291,46 @@ const initializeActions = async () => {
       perform: () => {
         const isOnSasPage = window.location.pathname.includes('/sas/jobs');
         if (isOnSasPage) {
-          router.navigate({
-            to: '/sas/jobs',
-            search: {
-              key: sas,
-            },
-          }).then(() => {
-            setTimeout(() => {
-              const element = document.querySelector(`[data-sas="${sas}"]`);
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }
-            }, 100);
-          });
+          router
+            .navigate({
+              to: '/sas/jobs',
+              search: {
+                key: sas,
+              },
+            })
+            .then(() => {
+              setTimeout(() => {
+                const element = document.querySelector(`[data-sas="${sas}"]`);
+                if (element) {
+                  element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                  });
+                }
+              }, 100);
+            });
           window.dispatchEvent(
-            new CustomEvent('sasKeyChange', { detail: { key: sas } })
+            new CustomEvent('sasKeyChange', { detail: { key: sas } }),
           );
         } else {
-          router.navigate({
-            to: '/sas/jobs',
-            search: {
-              key: sas,
-            },
-          }).then(() => {
-            setTimeout(() => {
-              const element = document.querySelector(`[data-sas="${sas}"]`);
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }
-            }, 100);
-          });
+          router
+            .navigate({
+              to: '/sas/jobs',
+              search: {
+                key: sas,
+              },
+            })
+            .then(() => {
+              setTimeout(() => {
+                const element = document.querySelector(`[data-sas="${sas}"]`);
+                if (element) {
+                  element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                  });
+                }
+              }, 100);
+            });
         }
       },
       section: 'SAS',
@@ -331,7 +341,6 @@ const initializeActions = async () => {
     console.error('Failed to initialize actions:', error);
   }
 };
-
 
 function RenderResults() {
   const { results } = useMatches();
