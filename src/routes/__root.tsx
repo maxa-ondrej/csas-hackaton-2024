@@ -30,6 +30,9 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { version } from '../../package.json';
 import '../index.css';
+import { Separator } from '@/components/ui/separator';
+import { H3 } from '@/components/ui/typography';
+import { Rocket } from 'lucide-react';
 
 export const Route = createRootRouteWithContext<Context>()({
   component: RootComponent,
@@ -51,7 +54,12 @@ function RootComponent() {
           <SidebarContent>
             <SidebarGroup>
               <SidebarGroupContent>
-                <SidebarMenu>
+                <SidebarMenu className="p-3">
+                  <H3 className="flex gap-4 items-center">
+                    <Rocket />
+                    Jarvis
+                  </H3>
+                  <Separator className="mt-4 mb-4" />
                   <Link to="/sas/jobs" activeProps={{ className: 'font-bold' }}>
                     <SidebarMenuItem>
                       <SidebarMenuButton>SAS Jobs</SidebarMenuButton>
