@@ -240,6 +240,137 @@ let kbarActions: Action[] = [
   },
 ];
 
+const deployTypeActions: Action[] = [
+  {
+    id: 'deploy-type-build',
+    name: 'View Build Applications',
+    shortcut: ['d', 'b'],
+    keywords: 'build applications development',
+    perform: () => {
+      const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+      if (isOnSasPage) {
+        router.navigate({
+          to: '/sas/jobs',
+          search: (prev) => ({
+            ...prev,
+            deployType: 'build',
+          }),
+        });
+        window.dispatchEvent(
+          new CustomEvent('deployTypeChange', {
+            detail: { deployType: 'build' },
+          }),
+        );
+      } else {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            deployType: 'build',
+          },
+        });
+      }
+    },
+    section: 'Deploy Types',
+    icon: <CommandLineIcon className="w-5 h-5" />,
+  },
+  {
+    id: 'deploy-type-test',
+    name: 'View Test Applications',
+    shortcut: ['d', 't'],
+    keywords: 'test testing applications',
+    perform: () => {
+      const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+      if (isOnSasPage) {
+        router.navigate({
+          to: '/sas/jobs',
+          search: (prev) => ({
+            ...prev,
+            deployType: 'test',
+          }),
+        });
+        window.dispatchEvent(
+          new CustomEvent('deployTypeChange', {
+            detail: { deployType: 'test' },
+          }),
+        );
+      } else {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            deployType: 'test',
+          },
+        });
+      }
+    },
+    section: 'Deploy Types',
+    icon: <CommandLineIcon className="w-5 h-5" />,
+  },
+  {
+    id: 'deploy-type-nonprod',
+    name: 'View Non-Prod Deployments',
+    shortcut: ['d', 'n'],
+    keywords: 'deploy non-prod nonprod development',
+    perform: () => {
+      const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+      if (isOnSasPage) {
+        router.navigate({
+          to: '/sas/jobs',
+          search: (prev) => ({
+            ...prev,
+            deployType: 'deploy-nonprod',
+          }),
+        });
+        window.dispatchEvent(
+          new CustomEvent('deployTypeChange', {
+            detail: { deployType: 'deploy-nonprod' },
+          }),
+        );
+      } else {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            deployType: 'deploy-nonprod',
+          },
+        });
+      }
+    },
+    section: 'Deploy Types',
+    icon: <CommandLineIcon className="w-5 h-5" />,
+  },
+  {
+    id: 'deploy-type-prod',
+    name: 'View Prod Deployments',
+    shortcut: ['d', 'p'],
+    keywords: 'deploy prod production',
+    perform: () => {
+      const isOnSasPage = window.location.pathname.includes('/sas/jobs');
+      if (isOnSasPage) {
+        router.navigate({
+          to: '/sas/jobs',
+          search: (prev) => ({
+            ...prev,
+            deployType: 'deploy-prod',
+          }),
+        });
+        window.dispatchEvent(
+          new CustomEvent('deployTypeChange', {
+            detail: { deployType: 'deploy-prod' },
+          }),
+        );
+      } else {
+        router.navigate({
+          to: '/sas/jobs',
+          search: {
+            deployType: 'deploy-prod',
+          },
+        });
+      }
+    },
+    section: 'Deploy Types',
+    icon: <CommandLineIcon className="w-5 h-5" />,
+  },
+];
+
 const initializeActions = async () => {
   try {
     // Fetch automations
@@ -336,7 +467,12 @@ const initializeActions = async () => {
       section: 'SAS',
     }));
 
-    kbarActions = [...kbarActions, ...automationActions, ...sasActions];
+    kbarActions = [
+      ...kbarActions,
+      ...deployTypeActions,
+      ...automationActions,
+      ...sasActions,
+    ];
   } catch (error) {
     console.error('Failed to initialize actions:', error);
   }

@@ -5,7 +5,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-b5ci8",
-    "timestamp": "2024-11-25T19:25:07.348Z"
+    "timestamp": "2024-11-25T19:25:07.348Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22373456986",
@@ -13,7 +14,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-oxwcw",
-    "timestamp": "2024-11-25T18:25:38.690Z"
+    "timestamp": "2024-11-25T18:25:38.690Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "48753154062",
@@ -21,7 +23,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "none",
-    "timestamp": "2024-11-25T15:58:58.097Z"
+    "timestamp": "2024-11-25T15:58:58.097Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "76306031929",
@@ -29,7 +32,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-g9499",
-    "timestamp": "2024-11-25T15:20:16.869Z"
+    "timestamp": "2024-11-25T15:20:16.869Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "21348916852",
@@ -37,7 +41,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-kknjf",
-    "timestamp": "2024-11-25T11:02:38.570Z"
+    "timestamp": "2024-11-25T11:02:38.570Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "35363069208",
@@ -45,7 +50,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-prod-g98xv",
-    "timestamp": "2024-11-25T08:36:22.661Z"
+    "timestamp": "2024-11-25T08:36:22.661Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "82153040753",
@@ -53,7 +59,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-vrf3x",
-    "timestamp": "2024-11-25T07:21:32.329Z"
+    "timestamp": "2024-11-25T07:21:32.329Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "77540426988",
@@ -61,7 +68,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-pzygc",
-    "timestamp": "2024-11-25T06:38:14.021Z"
+    "timestamp": "2024-11-25T06:38:14.021Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30593684003",
@@ -69,7 +77,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-test-t4e89",
-    "timestamp": "2024-11-25T05:32:24.822Z"
+    "timestamp": "2024-11-25T05:32:24.822Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "90755622062",
@@ -77,7 +86,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-8naob",
-    "timestamp": "2024-11-25T04:51:06.545Z"
+    "timestamp": "2024-11-25T04:51:06.545Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56969082355",
@@ -85,7 +95,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-test-6ykdp",
-    "timestamp": "2024-11-25T01:36:15.588Z"
+    "timestamp": "2024-11-25T01:36:15.588Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "15398646163",
@@ -93,7 +104,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-prod-hhvzc",
-    "timestamp": "2024-11-24T23:36:29.382Z"
+    "timestamp": "2024-11-24T23:36:29.382Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85258737790",
@@ -101,7 +113,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-j00bg",
-    "timestamp": "2024-11-24T21:56:18.439Z"
+    "timestamp": "2024-11-24T21:56:18.439Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "27973822823",
@@ -109,7 +122,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-9o1no",
-    "timestamp": "2024-11-24T21:44:00.708Z"
+    "timestamp": "2024-11-24T21:44:00.708Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "34392757196",
@@ -117,7 +131,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-lkicc",
-    "timestamp": "2024-11-24T21:18:55.384Z"
+    "timestamp": "2024-11-24T21:18:55.384Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "39429805500",
@@ -125,7 +140,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-6pplo",
-    "timestamp": "2024-11-24T20:25:39.926Z"
+    "timestamp": "2024-11-24T20:25:39.926Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "85909302157",
@@ -133,7 +149,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-gsedi",
-    "timestamp": "2024-11-24T18:55:21.081Z"
+    "timestamp": "2024-11-24T18:55:21.081Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "41175991330",
@@ -141,7 +158,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-b9e70",
-    "timestamp": "2024-11-24T17:40:32.356Z"
+    "timestamp": "2024-11-24T17:40:32.356Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "36927792103",
@@ -149,7 +167,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-ba3tr",
-    "timestamp": "2024-11-24T15:00:34.426Z"
+    "timestamp": "2024-11-24T15:00:34.426Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "44147780173",
@@ -157,7 +176,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-hi3x9",
-    "timestamp": "2024-11-24T14:38:02.375Z"
+    "timestamp": "2024-11-24T14:38:02.375Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "18832286871",
@@ -165,7 +185,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-prod-r8joc",
-    "timestamp": "2024-11-24T14:12:11.634Z"
+    "timestamp": "2024-11-24T14:12:11.634Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "64857224241",
@@ -173,7 +194,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-qmgyu",
-    "timestamp": "2024-11-24T13:01:58.308Z"
+    "timestamp": "2024-11-24T13:01:58.308Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "34748294383",
@@ -181,7 +203,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-test-o45aj",
-    "timestamp": "2024-11-24T12:50:29.874Z"
+    "timestamp": "2024-11-24T12:50:29.874Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "46032960182",
@@ -189,7 +212,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-oe2m2",
-    "timestamp": "2024-11-24T12:13:50.499Z"
+    "timestamp": "2024-11-24T12:13:50.499Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "61725350574",
@@ -197,7 +221,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-ki1yn",
-    "timestamp": "2024-11-24T11:05:10.636Z"
+    "timestamp": "2024-11-24T11:05:10.636Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76148364406",
@@ -205,7 +230,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-test-unda6",
-    "timestamp": "2024-11-24T08:38:24.951Z"
+    "timestamp": "2024-11-24T08:38:24.951Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "27333378523",
@@ -213,7 +239,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-tpz9z",
-    "timestamp": "2024-11-24T08:19:02.035Z"
+    "timestamp": "2024-11-24T08:19:02.035Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "33868554919",
@@ -221,7 +248,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-o9lon",
-    "timestamp": "2024-11-24T06:46:04.277Z"
+    "timestamp": "2024-11-24T06:46:04.277Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "91120943323",
@@ -229,7 +257,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-prod-ptiqc",
-    "timestamp": "2024-11-24T04:55:49.276Z"
+    "timestamp": "2024-11-24T04:55:49.276Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "35111154827",
@@ -237,7 +266,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-93vyi",
-    "timestamp": "2024-11-23T23:17:18.959Z"
+    "timestamp": "2024-11-23T23:17:18.959Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "63665340387",
@@ -245,7 +275,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-a7xq3",
-    "timestamp": "2024-11-23T18:56:52.033Z"
+    "timestamp": "2024-11-23T18:56:52.033Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "35137718392",
@@ -253,7 +284,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-42vhq",
-    "timestamp": "2024-11-23T11:22:35.432Z"
+    "timestamp": "2024-11-23T11:22:35.432Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "46918982970",
@@ -261,7 +293,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-l6y1p",
-    "timestamp": "2024-11-23T10:09:26.964Z"
+    "timestamp": "2024-11-23T10:09:26.964Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "87970798096",
@@ -269,7 +302,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-ul8yu",
-    "timestamp": "2024-11-23T09:43:26.343Z"
+    "timestamp": "2024-11-23T09:43:26.343Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "49539519565",
@@ -277,7 +311,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-xrg5d",
-    "timestamp": "2024-11-23T09:22:11.122Z"
+    "timestamp": "2024-11-23T09:22:11.122Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "62270950567",
@@ -285,7 +320,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-mzanf",
-    "timestamp": "2024-11-23T08:52:39.933Z"
+    "timestamp": "2024-11-23T08:52:39.933Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "80495135691",
@@ -293,7 +329,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-0qv3v",
-    "timestamp": "2024-11-23T08:17:16.761Z"
+    "timestamp": "2024-11-23T08:17:16.761Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "55230764015",
@@ -301,7 +338,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-vhl1j",
-    "timestamp": "2024-11-23T03:40:50.529Z"
+    "timestamp": "2024-11-23T03:40:50.529Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "25340490218",
@@ -309,7 +347,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-m14qw",
-    "timestamp": "2024-11-23T03:08:29.749Z"
+    "timestamp": "2024-11-23T03:08:29.749Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "38789523962",
@@ -317,7 +356,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-0k83m",
-    "timestamp": "2024-11-22T23:31:11.444Z"
+    "timestamp": "2024-11-22T23:31:11.444Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "15770032651",
@@ -325,7 +365,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-sx8as",
-    "timestamp": "2024-11-22T21:42:46.752Z"
+    "timestamp": "2024-11-22T21:42:46.752Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "19071399746",
@@ -333,7 +374,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-test-tuy86",
-    "timestamp": "2024-11-22T20:28:14.617Z"
+    "timestamp": "2024-11-22T20:28:14.617Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "10937669333",
@@ -341,7 +383,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-ne0lt",
-    "timestamp": "2024-11-22T20:08:07.274Z"
+    "timestamp": "2024-11-22T20:08:07.274Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "98356558603",
@@ -349,7 +392,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "none",
-    "timestamp": "2024-11-22T19:44:17.307Z"
+    "timestamp": "2024-11-22T19:44:17.307Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "91468254947",
@@ -357,7 +401,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-2zrpf",
-    "timestamp": "2024-11-22T18:10:56.291Z"
+    "timestamp": "2024-11-22T18:10:56.291Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "44718326386",
@@ -365,7 +410,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-test-idtrv",
-    "timestamp": "2024-11-22T16:34:05.717Z"
+    "timestamp": "2024-11-22T16:34:05.717Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "32632237192",
@@ -373,7 +419,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-prod-4vjar",
-    "timestamp": "2024-11-22T16:23:49.082Z"
+    "timestamp": "2024-11-22T16:23:49.082Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "18512714134",
@@ -381,7 +428,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-imnbz",
-    "timestamp": "2024-11-22T15:01:16.082Z"
+    "timestamp": "2024-11-22T15:01:16.082Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "64732313287",
@@ -389,7 +437,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-dibkp",
-    "timestamp": "2024-11-22T14:19:37.612Z"
+    "timestamp": "2024-11-22T14:19:37.612Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23276899443",
@@ -397,7 +446,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-cqsl3",
-    "timestamp": "2024-11-22T06:10:18.577Z"
+    "timestamp": "2024-11-22T06:10:18.577Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "20950928177",
@@ -405,7 +455,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-iqhc7",
-    "timestamp": "2024-11-22T02:33:05.391Z"
+    "timestamp": "2024-11-22T02:33:05.391Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "95732978073",
@@ -413,7 +464,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-qm7pf",
-    "timestamp": "2024-11-22T01:33:15.856Z"
+    "timestamp": "2024-11-22T01:33:15.856Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "39604437697",
@@ -421,7 +473,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-nfuxo",
-    "timestamp": "2024-11-21T22:13:23.112Z"
+    "timestamp": "2024-11-21T22:13:23.112Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "92315730956",
@@ -429,7 +482,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-t2xsk",
-    "timestamp": "2024-11-21T21:50:08.432Z"
+    "timestamp": "2024-11-21T21:50:08.432Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "71891983333",
@@ -437,7 +491,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-7nalt",
-    "timestamp": "2024-11-21T15:09:06.569Z"
+    "timestamp": "2024-11-21T15:09:06.569Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "47260730202",
@@ -445,7 +500,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-tfc8d",
-    "timestamp": "2024-11-21T14:38:54.356Z"
+    "timestamp": "2024-11-21T14:38:54.356Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "90183813319",
@@ -453,7 +509,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-test-5vj4f",
-    "timestamp": "2024-11-21T14:22:01.758Z"
+    "timestamp": "2024-11-21T14:22:01.758Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "90410086025",
@@ -461,7 +518,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-1ewt4",
-    "timestamp": "2024-11-21T13:31:45.809Z"
+    "timestamp": "2024-11-21T13:31:45.809Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "44762087915",
@@ -469,7 +527,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-sv7ud",
-    "timestamp": "2024-11-21T13:20:43.436Z"
+    "timestamp": "2024-11-21T13:20:43.436Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22676114154",
@@ -477,7 +536,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-hnjd4",
-    "timestamp": "2024-11-21T10:02:19.973Z"
+    "timestamp": "2024-11-21T10:02:19.973Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "69876813620",
@@ -485,7 +545,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-z22zz",
-    "timestamp": "2024-11-21T08:49:36.746Z"
+    "timestamp": "2024-11-21T08:49:36.746Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "81569039867",
@@ -493,7 +554,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-prod-a6vjn",
-    "timestamp": "2024-11-21T04:27:50.739Z"
+    "timestamp": "2024-11-21T04:27:50.739Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "82488815148",
@@ -501,7 +563,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-prod-fw9je",
-    "timestamp": "2024-11-21T03:10:11.138Z"
+    "timestamp": "2024-11-21T03:10:11.138Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "76297002227",
@@ -509,7 +572,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-e4po3",
-    "timestamp": "2024-11-21T02:59:25.396Z"
+    "timestamp": "2024-11-21T02:59:25.396Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "27918912540",
@@ -517,7 +581,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-b24ub",
-    "timestamp": "2024-11-21T01:48:10.946Z"
+    "timestamp": "2024-11-21T01:48:10.946Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "65675046545",
@@ -525,7 +590,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-u23jd",
-    "timestamp": "2024-11-20T23:56:54.415Z"
+    "timestamp": "2024-11-20T23:56:54.415Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23771165267",
@@ -533,7 +599,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-kmibh",
-    "timestamp": "2024-11-20T22:40:53.115Z"
+    "timestamp": "2024-11-20T22:40:53.115Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "83312586484",
@@ -541,7 +608,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-ymzth",
-    "timestamp": "2024-11-20T22:27:43.947Z"
+    "timestamp": "2024-11-20T22:27:43.947Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "20477591498",
@@ -549,7 +617,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-vhm3a",
-    "timestamp": "2024-11-20T21:52:21.775Z"
+    "timestamp": "2024-11-20T21:52:21.775Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "43544176785",
@@ -557,7 +626,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-wueut",
-    "timestamp": "2024-11-20T20:50:47.810Z"
+    "timestamp": "2024-11-20T20:50:47.810Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "90615223969",
@@ -565,7 +635,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-ta63s",
-    "timestamp": "2024-11-20T16:14:29.213Z"
+    "timestamp": "2024-11-20T16:14:29.213Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "58167963557",
@@ -573,7 +644,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-a75iu",
-    "timestamp": "2024-11-20T15:25:19.204Z"
+    "timestamp": "2024-11-20T15:25:19.204Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "49358721583",
@@ -581,7 +653,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-hjlgu",
-    "timestamp": "2024-11-20T15:11:16.721Z"
+    "timestamp": "2024-11-20T15:11:16.721Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "15506567384",
@@ -589,7 +662,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-prod-iryfu",
-    "timestamp": "2024-11-20T10:50:55.624Z"
+    "timestamp": "2024-11-20T10:50:55.624Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "96999874379",
@@ -597,7 +671,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-uzqbg",
-    "timestamp": "2024-11-20T08:00:16.744Z"
+    "timestamp": "2024-11-20T08:00:16.744Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "76334968906",
@@ -605,7 +680,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-ugk3o",
-    "timestamp": "2024-11-20T02:55:12.949Z"
+    "timestamp": "2024-11-20T02:55:12.949Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47502900785",
@@ -613,7 +689,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-prod-njam3",
-    "timestamp": "2024-11-20T02:01:50.252Z"
+    "timestamp": "2024-11-20T02:01:50.252Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "94660103146",
@@ -621,7 +698,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-tnmsq",
-    "timestamp": "2024-11-19T22:01:50.345Z"
+    "timestamp": "2024-11-19T22:01:50.345Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "44363465367",
@@ -629,7 +707,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-prod-8shbz",
-    "timestamp": "2024-11-19T21:12:33.398Z"
+    "timestamp": "2024-11-19T21:12:33.398Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "58929566510",
@@ -637,7 +716,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-3ix2h",
-    "timestamp": "2024-11-19T20:28:20.326Z"
+    "timestamp": "2024-11-19T20:28:20.326Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "99729953155",
@@ -645,7 +725,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-unaz6",
-    "timestamp": "2024-11-19T19:45:42.937Z"
+    "timestamp": "2024-11-19T19:45:42.937Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "59195699901",
@@ -653,7 +734,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-xp1oh",
-    "timestamp": "2024-11-19T18:36:38.881Z"
+    "timestamp": "2024-11-19T18:36:38.881Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "53806997221",
@@ -661,7 +743,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-k0oka",
-    "timestamp": "2024-11-19T14:52:11.296Z"
+    "timestamp": "2024-11-19T14:52:11.296Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "15231429186",
@@ -669,7 +752,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-b1lor",
-    "timestamp": "2024-11-19T12:58:53.921Z"
+    "timestamp": "2024-11-19T12:58:53.921Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "84013179596",
@@ -677,7 +761,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-5msf8",
-    "timestamp": "2024-11-19T09:33:26.301Z"
+    "timestamp": "2024-11-19T09:33:26.301Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "32864812475",
@@ -685,7 +770,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-h1nfv",
-    "timestamp": "2024-11-19T07:15:34.365Z"
+    "timestamp": "2024-11-19T07:15:34.365Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "28946435949",
@@ -693,7 +779,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-kfnfa",
-    "timestamp": "2024-11-19T05:20:30.632Z"
+    "timestamp": "2024-11-19T05:20:30.632Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "45123918865",
@@ -701,7 +788,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-8za3z",
-    "timestamp": "2024-11-19T02:57:00.734Z"
+    "timestamp": "2024-11-19T02:57:00.734Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "43718737632",
@@ -709,7 +797,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-x6hkc",
-    "timestamp": "2024-11-19T00:52:22.555Z"
+    "timestamp": "2024-11-19T00:52:22.555Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "62495311689",
@@ -717,7 +806,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-sg62q",
-    "timestamp": "2024-11-18T23:51:41.183Z"
+    "timestamp": "2024-11-18T23:51:41.183Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "48128268989",
@@ -725,7 +815,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-4k1wy",
-    "timestamp": "2024-11-18T18:45:31.564Z"
+    "timestamp": "2024-11-18T18:45:31.564Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "24343873361",
@@ -733,7 +824,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-jfq2q",
-    "timestamp": "2024-11-18T17:39:25.775Z"
+    "timestamp": "2024-11-18T17:39:25.775Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "73215551335",
@@ -741,7 +833,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-0a4o2",
-    "timestamp": "2024-11-18T16:33:36.937Z"
+    "timestamp": "2024-11-18T16:33:36.937Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "53209167855",
@@ -749,7 +842,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-lwj0u",
-    "timestamp": "2024-11-18T12:41:43.977Z"
+    "timestamp": "2024-11-18T12:41:43.977Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "70179831842",
@@ -757,7 +851,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-9wqzy",
-    "timestamp": "2024-11-18T11:18:44.551Z"
+    "timestamp": "2024-11-18T11:18:44.551Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "50920640962",
@@ -765,7 +860,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-8zn4c",
-    "timestamp": "2024-11-18T10:40:48.287Z"
+    "timestamp": "2024-11-18T10:40:48.287Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85792597718",
@@ -773,7 +869,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-xuhlp",
-    "timestamp": "2024-11-18T09:47:59.334Z"
+    "timestamp": "2024-11-18T09:47:59.334Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "74273048995",
@@ -781,7 +878,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-snr7q",
-    "timestamp": "2024-11-18T09:02:06.061Z"
+    "timestamp": "2024-11-18T09:02:06.061Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "86773573686",
@@ -789,7 +887,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-llbic",
-    "timestamp": "2024-11-18T05:34:30.600Z"
+    "timestamp": "2024-11-18T05:34:30.600Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "94340621120",
@@ -797,7 +896,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-qogpa",
-    "timestamp": "2024-11-17T22:15:58.737Z"
+    "timestamp": "2024-11-17T22:15:58.737Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "10190856361",
@@ -805,7 +905,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-f9qew",
-    "timestamp": "2024-11-17T22:09:30.404Z"
+    "timestamp": "2024-11-17T22:09:30.404Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "75020828279",
@@ -813,7 +914,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-awbm1",
-    "timestamp": "2024-11-17T15:58:37.793Z"
+    "timestamp": "2024-11-17T15:58:37.793Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "33704236295",
@@ -821,7 +923,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-tfs6m",
-    "timestamp": "2024-11-17T10:01:25.858Z"
+    "timestamp": "2024-11-17T10:01:25.858Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "95125507390",
@@ -829,7 +932,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-prod-pjacw",
-    "timestamp": "2024-11-17T09:51:36.422Z"
+    "timestamp": "2024-11-17T09:51:36.422Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "33269745107",
@@ -837,7 +941,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-m31st",
-    "timestamp": "2024-11-17T09:44:14.003Z"
+    "timestamp": "2024-11-17T09:44:14.003Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "74505248968",
@@ -845,7 +950,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-test-1o6l0",
-    "timestamp": "2024-11-17T09:04:32.947Z"
+    "timestamp": "2024-11-17T09:04:32.947Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "43553003224",
@@ -853,7 +959,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-prod-w6qjn",
-    "timestamp": "2024-11-17T06:19:41.867Z"
+    "timestamp": "2024-11-17T06:19:41.867Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "30094867238",
@@ -861,7 +968,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-cexrk",
-    "timestamp": "2024-11-17T02:33:27.293Z"
+    "timestamp": "2024-11-17T02:33:27.293Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "92645856899",
@@ -869,7 +977,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-qlc97",
-    "timestamp": "2024-11-17T00:05:16.247Z"
+    "timestamp": "2024-11-17T00:05:16.247Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "91694188258",
@@ -877,7 +986,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-m86f3",
-    "timestamp": "2024-11-16T23:25:54.332Z"
+    "timestamp": "2024-11-16T23:25:54.332Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "91363624162",
@@ -885,7 +995,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-frsz2",
-    "timestamp": "2024-11-16T22:24:49.276Z"
+    "timestamp": "2024-11-16T22:24:49.276Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "97491999021",
@@ -893,7 +1004,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-wae1g",
-    "timestamp": "2024-11-16T21:28:02.984Z"
+    "timestamp": "2024-11-16T21:28:02.984Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "82759166740",
@@ -901,7 +1013,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-q5k4a",
-    "timestamp": "2024-11-16T21:15:07.543Z"
+    "timestamp": "2024-11-16T21:15:07.543Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "12623068537",
@@ -909,7 +1022,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-nrbs3",
-    "timestamp": "2024-11-16T19:53:58.077Z"
+    "timestamp": "2024-11-16T19:53:58.077Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "10445315714",
@@ -917,7 +1031,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-5l17b",
-    "timestamp": "2024-11-16T17:34:50.513Z"
+    "timestamp": "2024-11-16T17:34:50.513Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85663753199",
@@ -925,7 +1040,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-343oq",
-    "timestamp": "2024-11-16T17:25:23.019Z"
+    "timestamp": "2024-11-16T17:25:23.019Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85475742016",
@@ -933,7 +1049,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-1ewo2",
-    "timestamp": "2024-11-16T16:56:47.116Z"
+    "timestamp": "2024-11-16T16:56:47.116Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "68340049771",
@@ -941,7 +1058,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-dz9qs",
-    "timestamp": "2024-11-16T16:44:54.807Z"
+    "timestamp": "2024-11-16T16:44:54.807Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "98535912237",
@@ -949,7 +1067,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-rl38r",
-    "timestamp": "2024-11-16T14:51:14.630Z"
+    "timestamp": "2024-11-16T14:51:14.630Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30236180450",
@@ -957,7 +1076,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-swq46",
-    "timestamp": "2024-11-16T14:49:07.472Z"
+    "timestamp": "2024-11-16T14:49:07.472Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "92592913172",
@@ -965,7 +1085,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-a8thw",
-    "timestamp": "2024-11-16T12:41:04.714Z"
+    "timestamp": "2024-11-16T12:41:04.714Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "47784414812",
@@ -973,7 +1094,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-prod-8bs14",
-    "timestamp": "2024-11-16T12:02:16.575Z"
+    "timestamp": "2024-11-16T12:02:16.575Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "83774607543",
@@ -981,7 +1103,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-2dw7d",
-    "timestamp": "2024-11-16T11:55:33.722Z"
+    "timestamp": "2024-11-16T11:55:33.722Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "45560136991",
@@ -989,7 +1112,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-awr0v",
-    "timestamp": "2024-11-16T10:30:47.910Z"
+    "timestamp": "2024-11-16T10:30:47.910Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56541972861",
@@ -997,7 +1121,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-2dj5v",
-    "timestamp": "2024-11-16T05:57:58.732Z"
+    "timestamp": "2024-11-16T05:57:58.732Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "67535433024",
@@ -1005,7 +1130,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-3yiml",
-    "timestamp": "2024-11-16T05:57:21.921Z"
+    "timestamp": "2024-11-16T05:57:21.921Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "87429706539",
@@ -1013,7 +1139,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-oxps1",
-    "timestamp": "2024-11-16T05:53:25.163Z"
+    "timestamp": "2024-11-16T05:53:25.163Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85516509854",
@@ -1021,7 +1148,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-prod-52x7f",
-    "timestamp": "2024-11-16T02:34:25.338Z"
+    "timestamp": "2024-11-16T02:34:25.338Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "81050370637",
@@ -1029,7 +1157,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-n4y24",
-    "timestamp": "2024-11-15T18:51:46.825Z"
+    "timestamp": "2024-11-15T18:51:46.825Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "86853193405",
@@ -1037,7 +1166,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-zol1z",
-    "timestamp": "2024-11-15T16:52:38.434Z"
+    "timestamp": "2024-11-15T16:52:38.434Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "47140214402",
@@ -1045,7 +1175,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-886md",
-    "timestamp": "2024-11-15T10:13:10.929Z"
+    "timestamp": "2024-11-15T10:13:10.929Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "91960256583",
@@ -1053,7 +1184,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-74nyz",
-    "timestamp": "2024-11-15T07:20:56.251Z"
+    "timestamp": "2024-11-15T07:20:56.251Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "13528265355",
@@ -1061,7 +1193,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-3jf6n",
-    "timestamp": "2024-11-15T03:22:17.396Z"
+    "timestamp": "2024-11-15T03:22:17.396Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "40749382748",
@@ -1069,7 +1202,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-ob92f",
-    "timestamp": "2024-11-15T01:54:31.934Z"
+    "timestamp": "2024-11-15T01:54:31.934Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "45657501381",
@@ -1077,7 +1211,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-0i6r3",
-    "timestamp": "2024-11-14T22:36:48.103Z"
+    "timestamp": "2024-11-14T22:36:48.103Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "14268704201",
@@ -1085,7 +1220,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-prod-a6vbf",
-    "timestamp": "2024-11-14T18:36:13.548Z"
+    "timestamp": "2024-11-14T18:36:13.548Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "24706057018",
@@ -1093,7 +1229,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-prod-j7dx1",
-    "timestamp": "2024-11-14T17:27:04.186Z"
+    "timestamp": "2024-11-14T17:27:04.186Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "66137434504",
@@ -1101,7 +1238,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-b72cj",
-    "timestamp": "2024-11-14T16:19:25.145Z"
+    "timestamp": "2024-11-14T16:19:25.145Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "70202214846",
@@ -1109,7 +1247,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-13pad",
-    "timestamp": "2024-11-14T15:56:16.150Z"
+    "timestamp": "2024-11-14T15:56:16.150Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "90588394174",
@@ -1117,7 +1256,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-2yn0c",
-    "timestamp": "2024-11-14T13:44:38.667Z"
+    "timestamp": "2024-11-14T13:44:38.667Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "11275827855",
@@ -1125,7 +1265,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-5l6wa",
-    "timestamp": "2024-11-14T12:51:44.206Z"
+    "timestamp": "2024-11-14T12:51:44.206Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56617761389",
@@ -1133,7 +1274,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "none",
-    "timestamp": "2024-11-14T11:09:20.754Z"
+    "timestamp": "2024-11-14T11:09:20.754Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "14601271670",
@@ -1141,7 +1283,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-uyk9m",
-    "timestamp": "2024-11-14T10:28:07.043Z"
+    "timestamp": "2024-11-14T10:28:07.043Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "48124228037",
@@ -1149,7 +1292,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-n2yhg",
-    "timestamp": "2024-11-14T07:05:00.342Z"
+    "timestamp": "2024-11-14T07:05:00.342Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "24566067844",
@@ -1157,7 +1301,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-test-5be2f",
-    "timestamp": "2024-11-14T05:33:08.839Z"
+    "timestamp": "2024-11-14T05:33:08.839Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "34551068105",
@@ -1165,7 +1310,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-ld1pr",
-    "timestamp": "2024-11-14T04:31:17.435Z"
+    "timestamp": "2024-11-14T04:31:17.435Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "79450502600",
@@ -1173,7 +1319,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-0i52i",
-    "timestamp": "2024-11-14T02:27:55.365Z"
+    "timestamp": "2024-11-14T02:27:55.365Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "72253569888",
@@ -1181,7 +1328,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-test-4bbpb",
-    "timestamp": "2024-11-13T23:14:05.020Z"
+    "timestamp": "2024-11-13T23:14:05.020Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "14502972237",
@@ -1189,7 +1337,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-surls",
-    "timestamp": "2024-11-13T22:15:24.353Z"
+    "timestamp": "2024-11-13T22:15:24.353Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "11721650287",
@@ -1197,7 +1346,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-yhb4w",
-    "timestamp": "2024-11-13T21:07:16.845Z"
+    "timestamp": "2024-11-13T21:07:16.845Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30024050613",
@@ -1205,7 +1355,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-test-npc7i",
-    "timestamp": "2024-11-13T20:26:42.583Z"
+    "timestamp": "2024-11-13T20:26:42.583Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "46649368390",
@@ -1213,7 +1364,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-zoyuy",
-    "timestamp": "2024-11-13T14:41:33.556Z"
+    "timestamp": "2024-11-13T14:41:33.556Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "15727959144",
@@ -1221,7 +1373,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-prod-b5it8",
-    "timestamp": "2024-11-13T12:39:18.942Z"
+    "timestamp": "2024-11-13T12:39:18.942Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "62796148639",
@@ -1229,7 +1382,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-r2mpo",
-    "timestamp": "2024-11-13T11:23:45.330Z"
+    "timestamp": "2024-11-13T11:23:45.330Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "39043892916",
@@ -1237,7 +1391,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-xfjjn",
-    "timestamp": "2024-11-13T11:16:21.653Z"
+    "timestamp": "2024-11-13T11:16:21.653Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "29038341055",
@@ -1245,7 +1400,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-aw3xn",
-    "timestamp": "2024-11-13T11:02:15.918Z"
+    "timestamp": "2024-11-13T11:02:15.918Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "57616745985",
@@ -1253,7 +1409,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-bkww1",
-    "timestamp": "2024-11-13T07:12:23.879Z"
+    "timestamp": "2024-11-13T07:12:23.879Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "81013124493",
@@ -1261,7 +1418,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-mrzrf",
-    "timestamp": "2024-11-13T06:09:41.201Z"
+    "timestamp": "2024-11-13T06:09:41.201Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "86804250752",
@@ -1269,7 +1427,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-71rht",
-    "timestamp": "2024-11-13T04:31:41.402Z"
+    "timestamp": "2024-11-13T04:31:41.402Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "23962124005",
@@ -1277,7 +1436,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-prod-ewp07",
-    "timestamp": "2024-11-13T02:46:37.342Z"
+    "timestamp": "2024-11-13T02:46:37.342Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "24171989608",
@@ -1285,7 +1445,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-iprl9",
-    "timestamp": "2024-11-13T01:28:39.983Z"
+    "timestamp": "2024-11-13T01:28:39.983Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "37037663441",
@@ -1293,7 +1454,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-08zlg",
-    "timestamp": "2024-11-12T15:24:53.936Z"
+    "timestamp": "2024-11-12T15:24:53.936Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "36212490836",
@@ -1301,7 +1463,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-rrhj2",
-    "timestamp": "2024-11-12T15:08:35.406Z"
+    "timestamp": "2024-11-12T15:08:35.406Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "50346290590",
@@ -1309,7 +1472,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-bh8zg",
-    "timestamp": "2024-11-12T14:26:45.382Z"
+    "timestamp": "2024-11-12T14:26:45.382Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "39064569957",
@@ -1317,7 +1481,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-u4v3l",
-    "timestamp": "2024-11-12T13:17:15.344Z"
+    "timestamp": "2024-11-12T13:17:15.344Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "69525602954",
@@ -1325,7 +1490,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-atrc7",
-    "timestamp": "2024-11-12T12:44:56.068Z"
+    "timestamp": "2024-11-12T12:44:56.068Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22477916286",
@@ -1333,7 +1499,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-jfgl6",
-    "timestamp": "2024-11-12T11:52:46.095Z"
+    "timestamp": "2024-11-12T11:52:46.095Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "48804030099",
@@ -1341,7 +1508,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-ce82m",
-    "timestamp": "2024-11-12T11:38:22.876Z"
+    "timestamp": "2024-11-12T11:38:22.876Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "97165517090",
@@ -1349,7 +1517,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-m7myq",
-    "timestamp": "2024-11-12T11:12:24.934Z"
+    "timestamp": "2024-11-12T11:12:24.934Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "58096770819",
@@ -1357,7 +1526,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-a8huh",
-    "timestamp": "2024-11-12T09:01:44.981Z"
+    "timestamp": "2024-11-12T09:01:44.981Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "69742139307",
@@ -1365,7 +1535,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-o919a",
-    "timestamp": "2024-11-12T08:45:07.080Z"
+    "timestamp": "2024-11-12T08:45:07.080Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "37251222983",
@@ -1373,7 +1544,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-jbca6",
-    "timestamp": "2024-11-12T02:10:33.840Z"
+    "timestamp": "2024-11-12T02:10:33.840Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "82162820957",
@@ -1381,7 +1553,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-7mk52",
-    "timestamp": "2024-11-12T02:06:38.439Z"
+    "timestamp": "2024-11-12T02:06:38.439Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56611841128",
@@ -1389,7 +1562,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-prod-nqhao",
-    "timestamp": "2024-11-11T23:39:43.072Z"
+    "timestamp": "2024-11-11T23:39:43.072Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30759534083",
@@ -1397,7 +1571,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-nug7x",
-    "timestamp": "2024-11-11T19:21:52.901Z"
+    "timestamp": "2024-11-11T19:21:52.901Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "69140297181",
@@ -1405,7 +1580,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-prod-0thnx",
-    "timestamp": "2024-11-11T19:17:59.705Z"
+    "timestamp": "2024-11-11T19:17:59.705Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "50547544392",
@@ -1413,7 +1589,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-l1pez",
-    "timestamp": "2024-11-11T17:47:20.611Z"
+    "timestamp": "2024-11-11T17:47:20.611Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22565965101",
@@ -1421,7 +1598,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-yqw8v",
-    "timestamp": "2024-11-11T14:04:01.911Z"
+    "timestamp": "2024-11-11T14:04:01.911Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "49284400543",
@@ -1429,7 +1607,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-ezks8",
-    "timestamp": "2024-11-11T12:26:34.784Z"
+    "timestamp": "2024-11-11T12:26:34.784Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "78508671458",
@@ -1437,7 +1616,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-r812r",
-    "timestamp": "2024-11-11T08:00:15.831Z"
+    "timestamp": "2024-11-11T08:00:15.831Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "43470220941",
@@ -1445,7 +1625,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-y7z0u",
-    "timestamp": "2024-11-11T05:52:17.415Z"
+    "timestamp": "2024-11-11T05:52:17.415Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "69897591975",
@@ -1453,7 +1634,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-80q3u",
-    "timestamp": "2024-11-10T21:38:20.308Z"
+    "timestamp": "2024-11-10T21:38:20.308Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "21690096060",
@@ -1461,7 +1643,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-j49ho",
-    "timestamp": "2024-11-10T13:18:09.789Z"
+    "timestamp": "2024-11-10T13:18:09.789Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "78548499007",
@@ -1469,7 +1652,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-aw31y",
-    "timestamp": "2024-11-10T11:12:30.334Z"
+    "timestamp": "2024-11-10T11:12:30.334Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "86543509726",
@@ -1477,7 +1661,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-z1z1j",
-    "timestamp": "2024-11-10T08:40:21.315Z"
+    "timestamp": "2024-11-10T08:40:21.315Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "76039918334",
@@ -1485,7 +1670,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-mamgo",
-    "timestamp": "2024-11-10T02:01:11.543Z"
+    "timestamp": "2024-11-10T02:01:11.543Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "94932739195",
@@ -1493,7 +1679,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-x1jug",
-    "timestamp": "2024-11-09T17:19:26.670Z"
+    "timestamp": "2024-11-09T17:19:26.670Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "50997762650",
@@ -1501,7 +1688,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-n0ffc",
-    "timestamp": "2024-11-09T16:07:34.235Z"
+    "timestamp": "2024-11-09T16:07:34.235Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "14663587698",
@@ -1509,7 +1697,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-d3v1w",
-    "timestamp": "2024-11-09T13:49:55.720Z"
+    "timestamp": "2024-11-09T13:49:55.720Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "73130901780",
@@ -1517,7 +1706,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-wxuxr",
-    "timestamp": "2024-11-09T13:11:50.655Z"
+    "timestamp": "2024-11-09T13:11:50.655Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30010108467",
@@ -1525,7 +1715,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-wzrxv",
-    "timestamp": "2024-11-09T11:34:22.833Z"
+    "timestamp": "2024-11-09T11:34:22.833Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "63308863595",
@@ -1533,7 +1724,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-rzdcu",
-    "timestamp": "2024-11-09T11:09:30.409Z"
+    "timestamp": "2024-11-09T11:09:30.409Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "30446342924",
@@ -1541,7 +1733,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-u1yrz",
-    "timestamp": "2024-11-09T08:04:50.228Z"
+    "timestamp": "2024-11-09T08:04:50.228Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47456192457",
@@ -1549,7 +1742,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-prod-7vezi",
-    "timestamp": "2024-11-09T07:22:05.712Z"
+    "timestamp": "2024-11-09T07:22:05.712Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61056183576",
@@ -1557,7 +1751,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-ugt5j",
-    "timestamp": "2024-11-09T06:39:06.588Z"
+    "timestamp": "2024-11-09T06:39:06.588Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "73833351797",
@@ -1565,7 +1760,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-c2ckp",
-    "timestamp": "2024-11-09T05:23:50.804Z"
+    "timestamp": "2024-11-09T05:23:50.804Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "99374471612",
@@ -1573,7 +1769,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-tqnpg",
-    "timestamp": "2024-11-09T04:57:27.835Z"
+    "timestamp": "2024-11-09T04:57:27.835Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "25852523463",
@@ -1581,7 +1778,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-sefei",
-    "timestamp": "2024-11-09T04:44:17.129Z"
+    "timestamp": "2024-11-09T04:44:17.129Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "49856160245",
@@ -1589,7 +1787,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-rkcvp",
-    "timestamp": "2024-11-09T03:40:49.234Z"
+    "timestamp": "2024-11-09T03:40:49.234Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "72759225212",
@@ -1597,7 +1796,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-257fx",
-    "timestamp": "2024-11-09T00:29:34.602Z"
+    "timestamp": "2024-11-09T00:29:34.602Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "90697761214",
@@ -1605,7 +1805,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-oic94",
-    "timestamp": "2024-11-08T21:30:44.465Z"
+    "timestamp": "2024-11-08T21:30:44.465Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "18698514375",
@@ -1613,7 +1814,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-ls9gr",
-    "timestamp": "2024-11-08T21:24:21.765Z"
+    "timestamp": "2024-11-08T21:24:21.765Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "18388891112",
@@ -1621,7 +1823,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-sea61",
-    "timestamp": "2024-11-08T21:07:08.343Z"
+    "timestamp": "2024-11-08T21:07:08.343Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "25067571835",
@@ -1629,7 +1832,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-239y5",
-    "timestamp": "2024-11-08T17:32:44.064Z"
+    "timestamp": "2024-11-08T17:32:44.064Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "96502280496",
@@ -1637,7 +1841,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-m8b8d",
-    "timestamp": "2024-11-08T10:55:09.185Z"
+    "timestamp": "2024-11-08T10:55:09.185Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "61062601585",
@@ -1645,7 +1850,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-ebbxl",
-    "timestamp": "2024-11-08T10:41:37.992Z"
+    "timestamp": "2024-11-08T10:41:37.992Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "19036473378",
@@ -1653,7 +1859,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-1lj64",
-    "timestamp": "2024-11-08T10:20:35.343Z"
+    "timestamp": "2024-11-08T10:20:35.343Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "71802681544",
@@ -1661,7 +1868,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-55f36",
-    "timestamp": "2024-11-08T09:45:46.309Z"
+    "timestamp": "2024-11-08T09:45:46.309Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "33620603807",
@@ -1669,7 +1877,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-13mo7",
-    "timestamp": "2024-11-08T09:21:37.345Z"
+    "timestamp": "2024-11-08T09:21:37.345Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "49757613034",
@@ -1677,7 +1886,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-tq9d3",
-    "timestamp": "2024-11-08T08:30:23.698Z"
+    "timestamp": "2024-11-08T08:30:23.698Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "28366322100",
@@ -1685,7 +1895,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-qd8ol",
-    "timestamp": "2024-11-08T08:19:29.643Z"
+    "timestamp": "2024-11-08T08:19:29.643Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "12089887709",
@@ -1693,7 +1904,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-lp0vy",
-    "timestamp": "2024-11-08T07:55:22.638Z"
+    "timestamp": "2024-11-08T07:55:22.638Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47819986741",
@@ -1701,7 +1913,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-test-3agdu",
-    "timestamp": "2024-11-08T07:33:43.891Z"
+    "timestamp": "2024-11-08T07:33:43.891Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "42177028999",
@@ -1709,7 +1922,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-3v0rc",
-    "timestamp": "2024-11-08T04:52:42.769Z"
+    "timestamp": "2024-11-08T04:52:42.769Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "59975597646",
@@ -1717,7 +1931,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-vojxa",
-    "timestamp": "2024-11-08T04:31:25.931Z"
+    "timestamp": "2024-11-08T04:31:25.931Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "73141269708",
@@ -1725,7 +1940,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-7ph3h",
-    "timestamp": "2024-11-08T03:27:26.891Z"
+    "timestamp": "2024-11-08T03:27:26.891Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "41275519633",
@@ -1733,7 +1949,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-prod-b574x",
-    "timestamp": "2024-11-08T02:29:08.686Z"
+    "timestamp": "2024-11-08T02:29:08.686Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "77430240494",
@@ -1741,7 +1958,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-arauu",
-    "timestamp": "2024-11-08T01:39:16.452Z"
+    "timestamp": "2024-11-08T01:39:16.452Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "11222293655",
@@ -1749,7 +1967,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-j70t5",
-    "timestamp": "2024-11-08T00:57:17.634Z"
+    "timestamp": "2024-11-08T00:57:17.634Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "68009095439",
@@ -1757,7 +1976,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-q9mp2",
-    "timestamp": "2024-11-08T00:32:23.255Z"
+    "timestamp": "2024-11-08T00:32:23.255Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "73182224195",
@@ -1765,7 +1985,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-zsqzh",
-    "timestamp": "2024-11-07T15:27:55.970Z"
+    "timestamp": "2024-11-07T15:27:55.970Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "22057438700",
@@ -1773,7 +1994,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-9ris0",
-    "timestamp": "2024-11-07T11:46:50.791Z"
+    "timestamp": "2024-11-07T11:46:50.791Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "30538336932",
@@ -1781,7 +2003,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-9wrpu",
-    "timestamp": "2024-11-07T07:25:51.277Z"
+    "timestamp": "2024-11-07T07:25:51.277Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "33103907196",
@@ -1789,7 +2012,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-prod-p752g",
-    "timestamp": "2024-11-07T06:33:01.883Z"
+    "timestamp": "2024-11-07T06:33:01.883Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "40236603724",
@@ -1797,7 +2021,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-lxo1i",
-    "timestamp": "2024-11-07T03:46:47.792Z"
+    "timestamp": "2024-11-07T03:46:47.792Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "10566616628",
@@ -1805,7 +2030,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-7tq2t",
-    "timestamp": "2024-11-07T00:47:04.781Z"
+    "timestamp": "2024-11-07T00:47:04.781Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "63359307963",
@@ -1813,7 +2039,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-fzgfv",
-    "timestamp": "2024-11-06T18:27:50.909Z"
+    "timestamp": "2024-11-06T18:27:50.909Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "75433650487",
@@ -1821,7 +2048,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-b8q3z",
-    "timestamp": "2024-11-06T12:00:26.347Z"
+    "timestamp": "2024-11-06T12:00:26.347Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76450354778",
@@ -1829,7 +2057,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-shpb4",
-    "timestamp": "2024-11-06T03:55:31.687Z"
+    "timestamp": "2024-11-06T03:55:31.687Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "44019575923",
@@ -1837,7 +2066,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-psgr5",
-    "timestamp": "2024-11-06T03:07:16.294Z"
+    "timestamp": "2024-11-06T03:07:16.294Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "22620486648",
@@ -1845,7 +2075,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-l5ags",
-    "timestamp": "2024-11-06T03:02:51.222Z"
+    "timestamp": "2024-11-06T03:02:51.222Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "48443885521",
@@ -1853,7 +2084,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-test-qss6p",
-    "timestamp": "2024-11-05T19:43:14.702Z"
+    "timestamp": "2024-11-05T19:43:14.702Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "16228887475",
@@ -1861,7 +2093,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-19vcw",
-    "timestamp": "2024-11-05T19:04:04.769Z"
+    "timestamp": "2024-11-05T19:04:04.769Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "35158077649",
@@ -1869,7 +2102,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-emgjk",
-    "timestamp": "2024-11-05T17:57:21.124Z"
+    "timestamp": "2024-11-05T17:57:21.124Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "55042456604",
@@ -1877,7 +2111,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-dsz5u",
-    "timestamp": "2024-11-05T15:26:30.625Z"
+    "timestamp": "2024-11-05T15:26:30.625Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97609142709",
@@ -1885,7 +2120,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-19d6z",
-    "timestamp": "2024-11-05T09:34:23.794Z"
+    "timestamp": "2024-11-05T09:34:23.794Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "35108170056",
@@ -1893,7 +2129,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-q2yrg",
-    "timestamp": "2024-11-05T09:05:07.072Z"
+    "timestamp": "2024-11-05T09:05:07.072Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76469499713",
@@ -1901,7 +2138,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-fnr9m",
-    "timestamp": "2024-11-05T07:58:51.071Z"
+    "timestamp": "2024-11-05T07:58:51.071Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "95526199057",
@@ -1909,7 +2147,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-sfasq",
-    "timestamp": "2024-11-05T05:16:02.329Z"
+    "timestamp": "2024-11-05T05:16:02.329Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "21361125760",
@@ -1917,7 +2156,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-qpm7e",
-    "timestamp": "2024-11-05T04:49:01.028Z"
+    "timestamp": "2024-11-05T04:49:01.028Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "47232826208",
@@ -1925,7 +2165,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-prod-mjr5i",
-    "timestamp": "2024-11-05T02:12:39.452Z"
+    "timestamp": "2024-11-05T02:12:39.452Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "91626829629",
@@ -1933,7 +2174,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-cdd5f",
-    "timestamp": "2024-11-04T23:43:42.987Z"
+    "timestamp": "2024-11-04T23:43:42.987Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "83298245776",
@@ -1941,7 +2183,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-iv1yy",
-    "timestamp": "2024-11-04T21:28:10.459Z"
+    "timestamp": "2024-11-04T21:28:10.459Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "42430135466",
@@ -1949,7 +2192,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-a33rh",
-    "timestamp": "2024-11-04T21:14:31.264Z"
+    "timestamp": "2024-11-04T21:14:31.264Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "84094219139",
@@ -1957,7 +2201,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-3d4d2",
-    "timestamp": "2024-11-04T18:09:16.670Z"
+    "timestamp": "2024-11-04T18:09:16.670Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "71025984801",
@@ -1965,7 +2210,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-3hucv",
-    "timestamp": "2024-11-04T18:08:16.669Z"
+    "timestamp": "2024-11-04T18:08:16.669Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "82311015068",
@@ -1973,7 +2219,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-g6tan",
-    "timestamp": "2024-11-04T16:08:30.233Z"
+    "timestamp": "2024-11-04T16:08:30.233Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "46519363118",
@@ -1981,7 +2228,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-uqx08",
-    "timestamp": "2024-11-04T10:09:51.567Z"
+    "timestamp": "2024-11-04T10:09:51.567Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "73144981123",
@@ -1989,7 +2237,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-ifefn",
-    "timestamp": "2024-11-04T09:36:49.123Z"
+    "timestamp": "2024-11-04T09:36:49.123Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "12867883056",
@@ -1997,7 +2246,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-prod-pmhnw",
-    "timestamp": "2024-11-04T05:38:46.983Z"
+    "timestamp": "2024-11-04T05:38:46.983Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "27191406944",
@@ -2005,7 +2255,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-4lw71",
-    "timestamp": "2024-11-04T03:14:21.207Z"
+    "timestamp": "2024-11-04T03:14:21.207Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "13876929245",
@@ -2013,7 +2264,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-prod-t00zh",
-    "timestamp": "2024-11-03T21:56:38.875Z"
+    "timestamp": "2024-11-03T21:56:38.875Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "55444314459",
@@ -2021,7 +2273,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-cq4ep",
-    "timestamp": "2024-11-03T16:06:11.147Z"
+    "timestamp": "2024-11-03T16:06:11.147Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "15890603511",
@@ -2029,7 +2282,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-test-xjq3v",
-    "timestamp": "2024-11-03T14:16:34.950Z"
+    "timestamp": "2024-11-03T14:16:34.950Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "39842808708",
@@ -2037,7 +2291,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-0kh4b",
-    "timestamp": "2024-11-03T13:38:05.258Z"
+    "timestamp": "2024-11-03T13:38:05.258Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "21247793702",
@@ -2045,7 +2300,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-6qk2x",
-    "timestamp": "2024-11-03T11:07:37.102Z"
+    "timestamp": "2024-11-03T11:07:37.102Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "41319893285",
@@ -2053,7 +2309,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-u7d89",
-    "timestamp": "2024-11-03T10:49:14.355Z"
+    "timestamp": "2024-11-03T10:49:14.355Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "49795489742",
@@ -2061,7 +2318,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-knaid",
-    "timestamp": "2024-11-03T09:10:24.031Z"
+    "timestamp": "2024-11-03T09:10:24.031Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "31454877903",
@@ -2069,7 +2327,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "none",
-    "timestamp": "2024-11-03T07:05:40.266Z"
+    "timestamp": "2024-11-03T07:05:40.266Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "45379413790",
@@ -2077,7 +2336,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-pewhe",
-    "timestamp": "2024-11-03T06:25:36.178Z"
+    "timestamp": "2024-11-03T06:25:36.178Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "95892060194",
@@ -2085,7 +2345,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-xfslw",
-    "timestamp": "2024-11-03T03:18:36.696Z"
+    "timestamp": "2024-11-03T03:18:36.696Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "94133485012",
@@ -2093,7 +2354,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-owxqi",
-    "timestamp": "2024-11-02T23:03:43.928Z"
+    "timestamp": "2024-11-02T23:03:43.928Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "15268093838",
@@ -2101,7 +2363,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-prod-jkhwg",
-    "timestamp": "2024-11-02T22:57:37.204Z"
+    "timestamp": "2024-11-02T22:57:37.204Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "55766586771",
@@ -2109,7 +2372,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-ep8sh",
-    "timestamp": "2024-11-02T22:19:35.157Z"
+    "timestamp": "2024-11-02T22:19:35.157Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "82543547037",
@@ -2117,7 +2381,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-a9kyv",
-    "timestamp": "2024-11-02T21:22:29.845Z"
+    "timestamp": "2024-11-02T21:22:29.845Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "63775655712",
@@ -2125,7 +2390,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-x72x4",
-    "timestamp": "2024-11-02T20:49:15.432Z"
+    "timestamp": "2024-11-02T20:49:15.432Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "79465948919",
@@ -2133,7 +2399,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-xpoo5",
-    "timestamp": "2024-11-02T16:57:22.264Z"
+    "timestamp": "2024-11-02T16:57:22.264Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "81551176990",
@@ -2141,7 +2408,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-prod-el394",
-    "timestamp": "2024-11-02T14:15:21.483Z"
+    "timestamp": "2024-11-02T14:15:21.483Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "12008984032",
@@ -2149,7 +2417,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-qq728",
-    "timestamp": "2024-11-02T13:36:33.985Z"
+    "timestamp": "2024-11-02T13:36:33.985Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "40767009488",
@@ -2157,7 +2426,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-ug4lr",
-    "timestamp": "2024-11-02T12:36:17.250Z"
+    "timestamp": "2024-11-02T12:36:17.250Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "77645354867",
@@ -2165,7 +2435,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-k9myr",
-    "timestamp": "2024-11-02T10:03:52.104Z"
+    "timestamp": "2024-11-02T10:03:52.104Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "11826767308",
@@ -2173,7 +2444,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-ym4im",
-    "timestamp": "2024-11-02T09:14:58.626Z"
+    "timestamp": "2024-11-02T09:14:58.626Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "95404949749",
@@ -2181,7 +2453,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-test-hsmg9",
-    "timestamp": "2024-11-02T08:24:30.584Z"
+    "timestamp": "2024-11-02T08:24:30.584Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "32826937018",
@@ -2189,7 +2462,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-xi012",
-    "timestamp": "2024-11-02T05:09:06.711Z"
+    "timestamp": "2024-11-02T05:09:06.711Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97675593306",
@@ -2197,7 +2471,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-bbcuo",
-    "timestamp": "2024-11-02T04:15:56.226Z"
+    "timestamp": "2024-11-02T04:15:56.226Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47702531081",
@@ -2205,7 +2480,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-prod-3u1mq",
-    "timestamp": "2024-11-02T03:31:59.917Z"
+    "timestamp": "2024-11-02T03:31:59.917Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97214101106",
@@ -2213,7 +2489,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-8plp5",
-    "timestamp": "2024-11-02T01:16:35.298Z"
+    "timestamp": "2024-11-02T01:16:35.298Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "35895915849",
@@ -2221,7 +2498,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-0x064",
-    "timestamp": "2024-11-01T22:15:29.413Z"
+    "timestamp": "2024-11-01T22:15:29.413Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "12941916855",
@@ -2229,7 +2507,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-ny9nu",
-    "timestamp": "2024-11-01T22:05:53.508Z"
+    "timestamp": "2024-11-01T22:05:53.508Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "17538099132",
@@ -2237,7 +2516,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-odn9n",
-    "timestamp": "2024-11-01T14:21:00.826Z"
+    "timestamp": "2024-11-01T14:21:00.826Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "71315637592",
@@ -2245,7 +2525,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-xiafd",
-    "timestamp": "2024-11-01T13:38:14.873Z"
+    "timestamp": "2024-11-01T13:38:14.873Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "38811233165",
@@ -2253,7 +2534,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-2m84l",
-    "timestamp": "2024-11-01T10:55:55.478Z"
+    "timestamp": "2024-11-01T10:55:55.478Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "79260715850",
@@ -2261,7 +2543,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-re214",
-    "timestamp": "2024-11-01T10:37:23.844Z"
+    "timestamp": "2024-11-01T10:37:23.844Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "80593287962",
@@ -2269,7 +2552,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-qgpvm",
-    "timestamp": "2024-11-01T05:26:56.925Z"
+    "timestamp": "2024-11-01T05:26:56.925Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "31347306171",
@@ -2277,7 +2561,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-2mguc",
-    "timestamp": "2024-11-01T04:04:56.876Z"
+    "timestamp": "2024-11-01T04:04:56.876Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "71015610484",
@@ -2285,7 +2570,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-ev786",
-    "timestamp": "2024-11-01T03:27:42.766Z"
+    "timestamp": "2024-11-01T03:27:42.766Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "81255435944",
@@ -2293,7 +2579,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-pkjfp",
-    "timestamp": "2024-11-01T01:04:43.683Z"
+    "timestamp": "2024-11-01T01:04:43.683Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30059695112",
@@ -2301,7 +2588,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-h2x2r",
-    "timestamp": "2024-11-01T00:01:40.820Z"
+    "timestamp": "2024-11-01T00:01:40.820Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85278743203",
@@ -2309,7 +2597,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-s7lrd",
-    "timestamp": "2024-10-31T23:41:35.170Z"
+    "timestamp": "2024-10-31T23:41:35.170Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "68538441924",
@@ -2317,7 +2606,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-2tcrt",
-    "timestamp": "2024-10-31T22:35:05.242Z"
+    "timestamp": "2024-10-31T22:35:05.242Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61766646772",
@@ -2325,7 +2615,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-0y94y",
-    "timestamp": "2024-10-31T18:24:27.078Z"
+    "timestamp": "2024-10-31T18:24:27.078Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "53121169051",
@@ -2333,7 +2624,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-fchj2",
-    "timestamp": "2024-10-31T17:00:56.709Z"
+    "timestamp": "2024-10-31T17:00:56.709Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "26260853734",
@@ -2341,7 +2633,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-test-lyuzc",
-    "timestamp": "2024-10-31T17:00:23.808Z"
+    "timestamp": "2024-10-31T17:00:23.808Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "75506960191",
@@ -2349,7 +2642,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-lw689",
-    "timestamp": "2024-10-31T14:05:41.642Z"
+    "timestamp": "2024-10-31T14:05:41.642Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56481559703",
@@ -2357,7 +2651,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-a4syh",
-    "timestamp": "2024-10-31T13:08:50.108Z"
+    "timestamp": "2024-10-31T13:08:50.108Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "56053000164",
@@ -2365,7 +2660,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "none",
-    "timestamp": "2024-10-31T11:18:21.982Z"
+    "timestamp": "2024-10-31T11:18:21.982Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "44119549351",
@@ -2373,7 +2669,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-15hbr",
-    "timestamp": "2024-10-31T10:56:37.420Z"
+    "timestamp": "2024-10-31T10:56:37.420Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "51819969493",
@@ -2381,7 +2678,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-6txxd",
-    "timestamp": "2024-10-31T08:35:20.878Z"
+    "timestamp": "2024-10-31T08:35:20.878Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "54428912777",
@@ -2389,7 +2687,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-2xzyn",
-    "timestamp": "2024-10-31T07:00:40.005Z"
+    "timestamp": "2024-10-31T07:00:40.005Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "90384582575",
@@ -2397,7 +2696,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "none",
-    "timestamp": "2024-10-31T02:56:39.377Z"
+    "timestamp": "2024-10-31T02:56:39.377Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "55992558580",
@@ -2405,7 +2705,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-ndwe3",
-    "timestamp": "2024-10-31T00:45:55.141Z"
+    "timestamp": "2024-10-31T00:45:55.141Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "47811931584",
@@ -2413,7 +2714,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-8pndr",
-    "timestamp": "2024-10-30T16:04:03.582Z"
+    "timestamp": "2024-10-30T16:04:03.582Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "37469704756",
@@ -2421,7 +2723,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-prod-wxyv9",
-    "timestamp": "2024-10-30T14:52:36.497Z"
+    "timestamp": "2024-10-30T14:52:36.497Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "23549766470",
@@ -2429,7 +2732,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-test-h76oq",
-    "timestamp": "2024-10-30T14:49:48.967Z"
+    "timestamp": "2024-10-30T14:49:48.967Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47580401507",
@@ -2437,7 +2741,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-lfjqb",
-    "timestamp": "2024-10-30T14:34:55.799Z"
+    "timestamp": "2024-10-30T14:34:55.799Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97778997271",
@@ -2445,7 +2750,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-prod-n1mvr",
-    "timestamp": "2024-10-30T09:50:58.092Z"
+    "timestamp": "2024-10-30T09:50:58.092Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "44627463498",
@@ -2453,7 +2759,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-dg1e9",
-    "timestamp": "2024-10-30T08:28:33.173Z"
+    "timestamp": "2024-10-30T08:28:33.173Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "52051566505",
@@ -2461,7 +2768,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-b7se9",
-    "timestamp": "2024-10-30T04:54:42.685Z"
+    "timestamp": "2024-10-30T04:54:42.685Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "16482196002",
@@ -2469,7 +2777,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-4zzfg",
-    "timestamp": "2024-10-29T20:22:57.290Z"
+    "timestamp": "2024-10-29T20:22:57.290Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "68729701484",
@@ -2477,7 +2786,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-prod-whrkl",
-    "timestamp": "2024-10-29T17:43:02.555Z"
+    "timestamp": "2024-10-29T17:43:02.555Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "38672003274",
@@ -2485,7 +2795,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-km6db",
-    "timestamp": "2024-10-29T16:04:11.398Z"
+    "timestamp": "2024-10-29T16:04:11.398Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "58216000653",
@@ -2493,7 +2804,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-ca0l2",
-    "timestamp": "2024-10-29T04:53:33.640Z"
+    "timestamp": "2024-10-29T04:53:33.640Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "51530235617",
@@ -2501,7 +2813,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-u4fl2",
-    "timestamp": "2024-10-28T22:48:38.846Z"
+    "timestamp": "2024-10-28T22:48:38.846Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "94205713670",
@@ -2509,7 +2822,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-6he5h",
-    "timestamp": "2024-10-28T21:54:41.812Z"
+    "timestamp": "2024-10-28T21:54:41.812Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "29939071289",
@@ -2517,7 +2831,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-f1bn1",
-    "timestamp": "2024-10-28T16:58:05.723Z"
+    "timestamp": "2024-10-28T16:58:05.723Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "62694286393",
@@ -2525,7 +2840,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-tgfyh",
-    "timestamp": "2024-10-28T14:01:14.960Z"
+    "timestamp": "2024-10-28T14:01:14.960Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "48167701234",
@@ -2533,7 +2849,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-2ualy",
-    "timestamp": "2024-10-28T11:29:41.834Z"
+    "timestamp": "2024-10-28T11:29:41.834Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "29196820199",
@@ -2541,7 +2858,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-kmwx4",
-    "timestamp": "2024-10-28T10:09:30.644Z"
+    "timestamp": "2024-10-28T10:09:30.644Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "48019071798",
@@ -2549,7 +2867,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-5s9pk",
-    "timestamp": "2024-10-28T07:10:43.696Z"
+    "timestamp": "2024-10-28T07:10:43.696Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "98394791871",
@@ -2557,7 +2876,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-u5xtb",
-    "timestamp": "2024-10-28T07:08:59.084Z"
+    "timestamp": "2024-10-28T07:08:59.084Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76931077803",
@@ -2565,7 +2885,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-fsq6k",
-    "timestamp": "2024-10-28T04:12:33.853Z"
+    "timestamp": "2024-10-28T04:12:33.853Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "48228818620",
@@ -2573,7 +2894,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-test-h4xrd",
-    "timestamp": "2024-10-27T21:45:44.488Z"
+    "timestamp": "2024-10-27T21:45:44.488Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "84291533628",
@@ -2581,7 +2903,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-test-xhu87",
-    "timestamp": "2024-10-27T20:13:08.639Z"
+    "timestamp": "2024-10-27T20:13:08.639Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "24035264776",
@@ -2589,7 +2912,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-ft2qz",
-    "timestamp": "2024-10-27T17:29:08.912Z"
+    "timestamp": "2024-10-27T17:29:08.912Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "73424938315",
@@ -2597,7 +2921,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-7bp7h",
-    "timestamp": "2024-10-27T14:31:55.872Z"
+    "timestamp": "2024-10-27T14:31:55.872Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "56370188512",
@@ -2605,7 +2930,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-sjbyt",
-    "timestamp": "2024-10-27T14:21:41.961Z"
+    "timestamp": "2024-10-27T14:21:41.961Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "61169490508",
@@ -2613,7 +2939,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-kznu3",
-    "timestamp": "2024-10-27T03:57:13.797Z"
+    "timestamp": "2024-10-27T03:57:13.797Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "17592366960",
@@ -2621,7 +2948,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-99zv6",
-    "timestamp": "2024-10-27T01:48:38.194Z"
+    "timestamp": "2024-10-27T01:48:38.194Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "48234240485",
@@ -2629,7 +2957,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-yf14h",
-    "timestamp": "2024-10-26T21:46:32.439Z"
+    "timestamp": "2024-10-26T21:46:32.439Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23582731980",
@@ -2637,7 +2966,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-prod-899dg",
-    "timestamp": "2024-10-26T21:29:34.063Z"
+    "timestamp": "2024-10-26T21:29:34.063Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "77266598943",
@@ -2645,7 +2975,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-prod-efum0",
-    "timestamp": "2024-10-26T20:35:14.783Z"
+    "timestamp": "2024-10-26T20:35:14.783Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "59089359617",
@@ -2653,7 +2984,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-kkw5g",
-    "timestamp": "2024-10-26T18:36:48.666Z"
+    "timestamp": "2024-10-26T18:36:48.666Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "33991827973",
@@ -2661,7 +2993,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-t7dyu",
-    "timestamp": "2024-10-26T14:32:33.033Z"
+    "timestamp": "2024-10-26T14:32:33.033Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "89473928381",
@@ -2669,7 +3002,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-7hmqg",
-    "timestamp": "2024-10-26T10:09:47.978Z"
+    "timestamp": "2024-10-26T10:09:47.978Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "63253457322",
@@ -2677,7 +3011,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-h8j9z",
-    "timestamp": "2024-10-26T09:15:54.489Z"
+    "timestamp": "2024-10-26T09:15:54.489Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "25577911857",
@@ -2685,7 +3020,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-101i7",
-    "timestamp": "2024-10-26T02:53:18.704Z"
+    "timestamp": "2024-10-26T02:53:18.704Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "96513176739",
@@ -2693,7 +3029,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-4z9be",
-    "timestamp": "2024-10-26T02:38:05.116Z"
+    "timestamp": "2024-10-26T02:38:05.116Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "51342149970",
@@ -2701,7 +3038,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-828rz",
-    "timestamp": "2024-10-26T02:20:14.130Z"
+    "timestamp": "2024-10-26T02:20:14.130Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "73406041542",
@@ -2709,7 +3047,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-prod-d0q32",
-    "timestamp": "2024-10-25T19:34:37.204Z"
+    "timestamp": "2024-10-25T19:34:37.204Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "72502303674",
@@ -2717,7 +3056,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-v60wf",
-    "timestamp": "2024-10-25T11:40:47.712Z"
+    "timestamp": "2024-10-25T11:40:47.712Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "24467322885",
@@ -2725,7 +3065,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-ynypv",
-    "timestamp": "2024-10-25T11:35:47.466Z"
+    "timestamp": "2024-10-25T11:35:47.466Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "29547493187",
@@ -2733,7 +3074,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-6i41q",
-    "timestamp": "2024-10-25T09:00:20.709Z"
+    "timestamp": "2024-10-25T09:00:20.709Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "57818555820",
@@ -2741,7 +3083,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-prod-fuvfg",
-    "timestamp": "2024-10-25T08:35:55.765Z"
+    "timestamp": "2024-10-25T08:35:55.765Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "82001143583",
@@ -2749,7 +3092,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-y7krx",
-    "timestamp": "2024-10-25T07:21:19.764Z"
+    "timestamp": "2024-10-25T07:21:19.764Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "49077729232",
@@ -2757,7 +3101,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-2v29f",
-    "timestamp": "2024-10-25T02:05:56.239Z"
+    "timestamp": "2024-10-25T02:05:56.239Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "86817408205",
@@ -2765,7 +3110,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-d4y2k",
-    "timestamp": "2024-10-25T00:10:10.215Z"
+    "timestamp": "2024-10-25T00:10:10.215Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "11112333547",
@@ -2773,7 +3119,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-test-wjree",
-    "timestamp": "2024-10-24T23:49:28.963Z"
+    "timestamp": "2024-10-24T23:49:28.963Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "96201416849",
@@ -2781,7 +3128,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-vbdbr",
-    "timestamp": "2024-10-24T18:41:39.143Z"
+    "timestamp": "2024-10-24T18:41:39.143Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "36502104496",
@@ -2789,7 +3137,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-jmvk4",
-    "timestamp": "2024-10-24T14:55:07.686Z"
+    "timestamp": "2024-10-24T14:55:07.686Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "67726345074",
@@ -2797,7 +3146,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-yndzc",
-    "timestamp": "2024-10-24T11:18:48.918Z"
+    "timestamp": "2024-10-24T11:18:48.918Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "56854250167",
@@ -2805,7 +3155,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-test-fxwyd",
-    "timestamp": "2024-10-24T10:48:45.182Z"
+    "timestamp": "2024-10-24T10:48:45.182Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "54615661980",
@@ -2813,7 +3164,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-8sxmm",
-    "timestamp": "2024-10-24T10:29:41.718Z"
+    "timestamp": "2024-10-24T10:29:41.718Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "30597336532",
@@ -2821,7 +3173,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-escm7",
-    "timestamp": "2024-10-24T09:16:00.981Z"
+    "timestamp": "2024-10-24T09:16:00.981Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76090253105",
@@ -2829,7 +3182,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-3zy4n",
-    "timestamp": "2024-10-24T04:40:07.156Z"
+    "timestamp": "2024-10-24T04:40:07.156Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "14444268204",
@@ -2837,7 +3191,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-775s7",
-    "timestamp": "2024-10-23T22:43:55.061Z"
+    "timestamp": "2024-10-23T22:43:55.061Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "95295828864",
@@ -2845,7 +3200,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-1917u",
-    "timestamp": "2024-10-23T18:05:33.330Z"
+    "timestamp": "2024-10-23T18:05:33.330Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "86257188224",
@@ -2853,7 +3209,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-s5dec",
-    "timestamp": "2024-10-23T11:22:38.407Z"
+    "timestamp": "2024-10-23T11:22:38.407Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "58367806753",
@@ -2861,7 +3218,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-0gyj8",
-    "timestamp": "2024-10-23T10:43:03.440Z"
+    "timestamp": "2024-10-23T10:43:03.440Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "89596786837",
@@ -2869,7 +3227,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-pp8yt",
-    "timestamp": "2024-10-23T10:05:04.093Z"
+    "timestamp": "2024-10-23T10:05:04.093Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "16236163706",
@@ -2877,7 +3236,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-wfsxs",
-    "timestamp": "2024-10-23T06:22:47.537Z"
+    "timestamp": "2024-10-23T06:22:47.537Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "80180020314",
@@ -2885,7 +3245,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-gaj2u",
-    "timestamp": "2024-10-23T02:58:29.629Z"
+    "timestamp": "2024-10-23T02:58:29.629Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "70432032752",
@@ -2893,7 +3254,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-pwlaz",
-    "timestamp": "2024-10-23T02:06:14.186Z"
+    "timestamp": "2024-10-23T02:06:14.186Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "80038272361",
@@ -2901,7 +3263,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-0wy27",
-    "timestamp": "2024-10-22T19:27:48.099Z"
+    "timestamp": "2024-10-22T19:27:48.099Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "36929092636",
@@ -2909,7 +3272,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-jtmqv",
-    "timestamp": "2024-10-22T19:27:09.135Z"
+    "timestamp": "2024-10-22T19:27:09.135Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "74658816542",
@@ -2917,7 +3281,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-prod-46o3z",
-    "timestamp": "2024-10-22T18:40:19.551Z"
+    "timestamp": "2024-10-22T18:40:19.551Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "54287152575",
@@ -2925,7 +3290,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-2bvww",
-    "timestamp": "2024-10-22T14:38:33.971Z"
+    "timestamp": "2024-10-22T14:38:33.971Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "28989645457",
@@ -2933,7 +3299,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-fsuxi",
-    "timestamp": "2024-10-22T07:32:42.207Z"
+    "timestamp": "2024-10-22T07:32:42.207Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "64278489780",
@@ -2941,7 +3308,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-2mtrr",
-    "timestamp": "2024-10-22T07:22:37.365Z"
+    "timestamp": "2024-10-22T07:22:37.365Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "24995976481",
@@ -2949,7 +3317,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-lh71h",
-    "timestamp": "2024-10-22T01:25:32.528Z"
+    "timestamp": "2024-10-22T01:25:32.528Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "26647457579",
@@ -2957,7 +3326,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-8gueq",
-    "timestamp": "2024-10-21T22:54:00.553Z"
+    "timestamp": "2024-10-21T22:54:00.553Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "32186390943",
@@ -2965,7 +3335,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-led6t",
-    "timestamp": "2024-10-21T19:56:22.916Z"
+    "timestamp": "2024-10-21T19:56:22.916Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "29060586161",
@@ -2973,7 +3344,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-2gaxf",
-    "timestamp": "2024-10-21T13:09:50.750Z"
+    "timestamp": "2024-10-21T13:09:50.750Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "88838671523",
@@ -2981,7 +3353,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-qsadg",
-    "timestamp": "2024-10-21T10:42:11.371Z"
+    "timestamp": "2024-10-21T10:42:11.371Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "96537819007",
@@ -2989,7 +3362,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "none",
-    "timestamp": "2024-10-21T06:31:01.041Z"
+    "timestamp": "2024-10-21T06:31:01.041Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "16378228461",
@@ -2997,7 +3371,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-2zk70",
-    "timestamp": "2024-10-21T01:01:10.341Z"
+    "timestamp": "2024-10-21T01:01:10.341Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "51322993897",
@@ -3005,7 +3380,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-9zqym",
-    "timestamp": "2024-10-20T22:16:15.979Z"
+    "timestamp": "2024-10-20T22:16:15.979Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "99014034373",
@@ -3013,7 +3389,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-ld41k",
-    "timestamp": "2024-10-20T20:08:14.139Z"
+    "timestamp": "2024-10-20T20:08:14.139Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "94112303273",
@@ -3021,7 +3398,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-kknc6",
-    "timestamp": "2024-10-20T18:54:02.853Z"
+    "timestamp": "2024-10-20T18:54:02.853Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "72817241371",
@@ -3029,7 +3407,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-pcc09",
-    "timestamp": "2024-10-20T17:22:10.471Z"
+    "timestamp": "2024-10-20T17:22:10.471Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "29223775493",
@@ -3037,7 +3416,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-vu47v",
-    "timestamp": "2024-10-20T16:05:17.433Z"
+    "timestamp": "2024-10-20T16:05:17.433Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "95197601438",
@@ -3045,7 +3425,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-0l519",
-    "timestamp": "2024-10-20T12:00:29.195Z"
+    "timestamp": "2024-10-20T12:00:29.195Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "82233687215",
@@ -3053,7 +3434,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-di4ct",
-    "timestamp": "2024-10-20T07:07:08.842Z"
+    "timestamp": "2024-10-20T07:07:08.842Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "43590386170",
@@ -3061,7 +3443,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-hs7vj",
-    "timestamp": "2024-10-20T02:03:02.074Z"
+    "timestamp": "2024-10-20T02:03:02.074Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61242184369",
@@ -3069,7 +3452,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-mess5",
-    "timestamp": "2024-10-19T22:26:45.944Z"
+    "timestamp": "2024-10-19T22:26:45.944Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "94823821437",
@@ -3077,7 +3461,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-prod-zs4eq",
-    "timestamp": "2024-10-19T21:32:51.546Z"
+    "timestamp": "2024-10-19T21:32:51.546Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "13527259452",
@@ -3085,7 +3470,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-hs6yt",
-    "timestamp": "2024-10-19T21:24:21.392Z"
+    "timestamp": "2024-10-19T21:24:21.392Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "62201996253",
@@ -3093,7 +3479,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-gzhmf",
-    "timestamp": "2024-10-19T21:20:03.370Z"
+    "timestamp": "2024-10-19T21:20:03.370Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "68092401998",
@@ -3101,7 +3488,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-3j6zm",
-    "timestamp": "2024-10-19T21:06:21.020Z"
+    "timestamp": "2024-10-19T21:06:21.020Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "14743994854",
@@ -3109,7 +3497,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-ect8i",
-    "timestamp": "2024-10-19T16:20:22.315Z"
+    "timestamp": "2024-10-19T16:20:22.315Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "55830400144",
@@ -3117,7 +3506,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-t7nop",
-    "timestamp": "2024-10-19T14:31:10.935Z"
+    "timestamp": "2024-10-19T14:31:10.935Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "39834838970",
@@ -3125,7 +3515,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-wtp8z",
-    "timestamp": "2024-10-19T14:27:31.615Z"
+    "timestamp": "2024-10-19T14:27:31.615Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "57022494741",
@@ -3133,7 +3524,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-test-dl6oe",
-    "timestamp": "2024-10-19T13:10:03.363Z"
+    "timestamp": "2024-10-19T13:10:03.363Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "24057320558",
@@ -3141,7 +3533,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-rpa40",
-    "timestamp": "2024-10-19T12:45:42.002Z"
+    "timestamp": "2024-10-19T12:45:42.002Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "35456009579",
@@ -3149,7 +3542,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-lajbk",
-    "timestamp": "2024-10-19T12:16:21.007Z"
+    "timestamp": "2024-10-19T12:16:21.007Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "92177589385",
@@ -3157,7 +3551,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-n91ps",
-    "timestamp": "2024-10-19T12:04:40.325Z"
+    "timestamp": "2024-10-19T12:04:40.325Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "99001279242",
@@ -3165,7 +3560,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-8e7qs",
-    "timestamp": "2024-10-19T07:26:50.606Z"
+    "timestamp": "2024-10-19T07:26:50.606Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "53869672989",
@@ -3173,7 +3569,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-r399x",
-    "timestamp": "2024-10-19T05:48:25.891Z"
+    "timestamp": "2024-10-19T05:48:25.891Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "49700922083",
@@ -3181,7 +3578,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-veu3x",
-    "timestamp": "2024-10-19T01:13:56.485Z"
+    "timestamp": "2024-10-19T01:13:56.485Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "95506556889",
@@ -3189,7 +3587,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-zfoxy",
-    "timestamp": "2024-10-19T00:20:00.239Z"
+    "timestamp": "2024-10-19T00:20:00.239Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "42554692866",
@@ -3197,7 +3596,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-0hjds",
-    "timestamp": "2024-10-18T18:47:09.878Z"
+    "timestamp": "2024-10-18T18:47:09.878Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "67498859694",
@@ -3205,7 +3605,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-66g41",
-    "timestamp": "2024-10-18T06:40:26.852Z"
+    "timestamp": "2024-10-18T06:40:26.852Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "87531137113",
@@ -3213,7 +3614,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-cke1b",
-    "timestamp": "2024-10-18T02:50:26.000Z"
+    "timestamp": "2024-10-18T02:50:26.000Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "13969268166",
@@ -3221,7 +3623,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-prod-r6zpk",
-    "timestamp": "2024-10-18T01:14:01.676Z"
+    "timestamp": "2024-10-18T01:14:01.676Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "81613423690",
@@ -3229,7 +3632,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-km9wr",
-    "timestamp": "2024-10-17T20:53:52.572Z"
+    "timestamp": "2024-10-17T20:53:52.572Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "73926380973",
@@ -3237,7 +3641,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-rzohl",
-    "timestamp": "2024-10-17T20:27:26.533Z"
+    "timestamp": "2024-10-17T20:27:26.533Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "43600082306",
@@ -3245,7 +3650,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-tfnbx",
-    "timestamp": "2024-10-17T19:52:26.319Z"
+    "timestamp": "2024-10-17T19:52:26.319Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "27295524813",
@@ -3253,7 +3659,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-0dqja",
-    "timestamp": "2024-10-17T18:18:21.733Z"
+    "timestamp": "2024-10-17T18:18:21.733Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76052152317",
@@ -3261,7 +3668,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-prpeb",
-    "timestamp": "2024-10-17T17:47:18.177Z"
+    "timestamp": "2024-10-17T17:47:18.177Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "73854512700",
@@ -3269,7 +3677,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-prod-6eiv1",
-    "timestamp": "2024-10-17T11:19:29.967Z"
+    "timestamp": "2024-10-17T11:19:29.967Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "60892901881",
@@ -3277,7 +3686,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-9hbb6",
-    "timestamp": "2024-10-17T07:05:13.614Z"
+    "timestamp": "2024-10-17T07:05:13.614Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "96386969674",
@@ -3285,7 +3695,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-145ke",
-    "timestamp": "2024-10-17T03:15:44.854Z"
+    "timestamp": "2024-10-17T03:15:44.854Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "79256904172",
@@ -3293,7 +3704,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-bd5gl",
-    "timestamp": "2024-10-17T02:05:40.960Z"
+    "timestamp": "2024-10-17T02:05:40.960Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "77777946045",
@@ -3301,7 +3713,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-9gqh6",
-    "timestamp": "2024-10-17T01:51:59.068Z"
+    "timestamp": "2024-10-17T01:51:59.068Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "89885332842",
@@ -3309,7 +3722,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-r7hm9",
-    "timestamp": "2024-10-16T21:36:57.592Z"
+    "timestamp": "2024-10-16T21:36:57.592Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "63797280910",
@@ -3317,7 +3731,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-tjzya",
-    "timestamp": "2024-10-16T18:38:38.452Z"
+    "timestamp": "2024-10-16T18:38:38.452Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "51657972122",
@@ -3325,7 +3740,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-rmekp",
-    "timestamp": "2024-10-16T09:14:53.365Z"
+    "timestamp": "2024-10-16T09:14:53.365Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "84350560466",
@@ -3333,7 +3749,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-h6u8n",
-    "timestamp": "2024-10-16T06:45:44.485Z"
+    "timestamp": "2024-10-16T06:45:44.485Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "55956747760",
@@ -3341,7 +3758,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-prod-np5hs",
-    "timestamp": "2024-10-16T05:44:10.269Z"
+    "timestamp": "2024-10-16T05:44:10.269Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "41934119921",
@@ -3349,7 +3767,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-qp01p",
-    "timestamp": "2024-10-16T02:51:50.834Z"
+    "timestamp": "2024-10-16T02:51:50.834Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "99135725517",
@@ -3357,7 +3776,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-55ff1",
-    "timestamp": "2024-10-16T01:55:47.508Z"
+    "timestamp": "2024-10-16T01:55:47.508Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "79115031508",
@@ -3365,7 +3785,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-qfl32",
-    "timestamp": "2024-10-16T01:48:11.214Z"
+    "timestamp": "2024-10-16T01:48:11.214Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "79885042118",
@@ -3373,7 +3794,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-i4p82",
-    "timestamp": "2024-10-15T23:30:57.005Z"
+    "timestamp": "2024-10-15T23:30:57.005Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "21161643366",
@@ -3381,7 +3803,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-2kv9a",
-    "timestamp": "2024-10-15T19:37:33.223Z"
+    "timestamp": "2024-10-15T19:37:33.223Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "90714792455",
@@ -3389,7 +3812,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-a6q54",
-    "timestamp": "2024-10-15T12:37:03.430Z"
+    "timestamp": "2024-10-15T12:37:03.430Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "16326578886",
@@ -3397,7 +3821,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-d9wvz",
-    "timestamp": "2024-10-15T11:27:32.976Z"
+    "timestamp": "2024-10-15T11:27:32.976Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "18173547629",
@@ -3405,7 +3830,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-8g820",
-    "timestamp": "2024-10-15T10:52:53.846Z"
+    "timestamp": "2024-10-15T10:52:53.846Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "18589385232",
@@ -3413,7 +3839,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-dev-csas-linux-7vl5b",
-    "timestamp": "2024-10-15T09:27:18.114Z"
+    "timestamp": "2024-10-15T09:27:18.114Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "73563807198",
@@ -3421,7 +3848,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-mnu05",
-    "timestamp": "2024-10-15T07:39:29.826Z"
+    "timestamp": "2024-10-15T07:39:29.826Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "92934156930",
@@ -3429,7 +3857,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-trgo7",
-    "timestamp": "2024-10-15T07:10:40.681Z"
+    "timestamp": "2024-10-15T07:10:40.681Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "28005482736",
@@ -3437,7 +3866,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-2f0br",
-    "timestamp": "2024-10-15T06:45:39.193Z"
+    "timestamp": "2024-10-15T06:45:39.193Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "29852581991",
@@ -3445,7 +3875,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-d9wk1",
-    "timestamp": "2024-10-15T06:40:51.388Z"
+    "timestamp": "2024-10-15T06:40:51.388Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "25816673067",
@@ -3453,7 +3884,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-qy3cw",
-    "timestamp": "2024-10-15T03:56:16.595Z"
+    "timestamp": "2024-10-15T03:56:16.595Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "17243303709",
@@ -3461,7 +3893,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-fatyp",
-    "timestamp": "2024-10-15T01:46:18.994Z"
+    "timestamp": "2024-10-15T01:46:18.994Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "99639454237",
@@ -3469,7 +3902,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-prod-hsctu",
-    "timestamp": "2024-10-15T00:37:32.006Z"
+    "timestamp": "2024-10-15T00:37:32.006Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "23415460468",
@@ -3477,7 +3911,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-wi84m",
-    "timestamp": "2024-10-14T23:57:34.963Z"
+    "timestamp": "2024-10-14T23:57:34.963Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "72267053028",
@@ -3485,7 +3920,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-okodn",
-    "timestamp": "2024-10-14T22:03:12.529Z"
+    "timestamp": "2024-10-14T22:03:12.529Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "38613040925",
@@ -3493,7 +3929,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-ikn57",
-    "timestamp": "2024-10-14T21:31:03.680Z"
+    "timestamp": "2024-10-14T21:31:03.680Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "70492336848",
@@ -3501,7 +3938,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-0yhmg",
-    "timestamp": "2024-10-14T20:34:18.000Z"
+    "timestamp": "2024-10-14T20:34:18.000Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "16738442686",
@@ -3509,7 +3947,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-prod-a4ffk",
-    "timestamp": "2024-10-14T20:34:04.215Z"
+    "timestamp": "2024-10-14T20:34:04.215Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "45880983764",
@@ -3517,7 +3956,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-mldi2",
-    "timestamp": "2024-10-14T19:43:52.742Z"
+    "timestamp": "2024-10-14T19:43:52.742Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "98471700784",
@@ -3525,7 +3965,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-xdgqg",
-    "timestamp": "2024-10-14T18:33:57.615Z"
+    "timestamp": "2024-10-14T18:33:57.615Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23511401493",
@@ -3533,7 +3974,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-18ri5",
-    "timestamp": "2024-10-14T18:04:58.885Z"
+    "timestamp": "2024-10-14T18:04:58.885Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "52281193728",
@@ -3541,7 +3983,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-sv9b7",
-    "timestamp": "2024-10-14T16:37:52.619Z"
+    "timestamp": "2024-10-14T16:37:52.619Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "94063148334",
@@ -3549,7 +3992,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-prod-72ho9",
-    "timestamp": "2024-10-14T16:28:37.378Z"
+    "timestamp": "2024-10-14T16:28:37.378Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "39846528412",
@@ -3557,7 +4001,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-ai70e",
-    "timestamp": "2024-10-14T13:33:01.522Z"
+    "timestamp": "2024-10-14T13:33:01.522Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "63170226205",
@@ -3565,7 +4010,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-17fh7",
-    "timestamp": "2024-10-14T12:01:45.458Z"
+    "timestamp": "2024-10-14T12:01:45.458Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "40603198289",
@@ -3573,7 +4019,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-wh0i6",
-    "timestamp": "2024-10-14T09:07:19.113Z"
+    "timestamp": "2024-10-14T09:07:19.113Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "95345622578",
@@ -3581,7 +4028,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-czphj",
-    "timestamp": "2024-10-14T07:58:04.658Z"
+    "timestamp": "2024-10-14T07:58:04.658Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "48163901681",
@@ -3589,7 +4037,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-prod-3m65p",
-    "timestamp": "2024-10-14T00:10:51.108Z"
+    "timestamp": "2024-10-14T00:10:51.108Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "84412423703",
@@ -3597,7 +4046,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-jwxbs",
-    "timestamp": "2024-10-13T23:04:49.811Z"
+    "timestamp": "2024-10-13T23:04:49.811Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "59107747270",
@@ -3605,7 +4055,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-oxg1m",
-    "timestamp": "2024-10-13T21:36:18.129Z"
+    "timestamp": "2024-10-13T21:36:18.129Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "83400870243",
@@ -3613,7 +4064,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-a4qce",
-    "timestamp": "2024-10-13T20:32:36.661Z"
+    "timestamp": "2024-10-13T20:32:36.661Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56840120025",
@@ -3621,7 +4073,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-fqz0f",
-    "timestamp": "2024-10-13T18:16:37.834Z"
+    "timestamp": "2024-10-13T18:16:37.834Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22766936690",
@@ -3629,7 +4082,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-g5l1u",
-    "timestamp": "2024-10-13T17:23:46.801Z"
+    "timestamp": "2024-10-13T17:23:46.801Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "15766085276",
@@ -3637,7 +4091,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-obr4e",
-    "timestamp": "2024-10-13T11:53:04.161Z"
+    "timestamp": "2024-10-13T11:53:04.161Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "33836287025",
@@ -3645,7 +4100,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-xoy5v",
-    "timestamp": "2024-10-13T06:53:18.780Z"
+    "timestamp": "2024-10-13T06:53:18.780Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "76029126164",
@@ -3653,7 +4109,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-ogb2w",
-    "timestamp": "2024-10-13T03:29:06.003Z"
+    "timestamp": "2024-10-13T03:29:06.003Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "32078733763",
@@ -3661,7 +4118,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-jgwvf",
-    "timestamp": "2024-10-13T02:15:15.279Z"
+    "timestamp": "2024-10-13T02:15:15.279Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "77453810409",
@@ -3669,7 +4127,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-rkly3",
-    "timestamp": "2024-10-13T01:55:41.965Z"
+    "timestamp": "2024-10-13T01:55:41.965Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "41348438811",
@@ -3677,7 +4136,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-y8yas",
-    "timestamp": "2024-10-13T00:44:07.997Z"
+    "timestamp": "2024-10-13T00:44:07.997Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "36775349275",
@@ -3685,7 +4145,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-frv89",
-    "timestamp": "2024-10-12T20:08:41.083Z"
+    "timestamp": "2024-10-12T20:08:41.083Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "53770488619",
@@ -3693,7 +4154,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-mt97s",
-    "timestamp": "2024-10-12T19:37:46.602Z"
+    "timestamp": "2024-10-12T19:37:46.602Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "38937766552",
@@ -3701,7 +4163,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-755v3",
-    "timestamp": "2024-10-12T19:22:36.964Z"
+    "timestamp": "2024-10-12T19:22:36.964Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "12054133283",
@@ -3709,7 +4172,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-hzv7z",
-    "timestamp": "2024-10-12T18:08:59.227Z"
+    "timestamp": "2024-10-12T18:08:59.227Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "48958501917",
@@ -3717,7 +4181,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-ogap7",
-    "timestamp": "2024-10-12T17:00:43.201Z"
+    "timestamp": "2024-10-12T17:00:43.201Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "99546335735",
@@ -3725,7 +4190,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-8nplo",
-    "timestamp": "2024-10-12T11:57:02.220Z"
+    "timestamp": "2024-10-12T11:57:02.220Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "81773080632",
@@ -3733,7 +4199,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-q9r9p",
-    "timestamp": "2024-10-12T09:12:58.955Z"
+    "timestamp": "2024-10-12T09:12:58.955Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "12991354456",
@@ -3741,7 +4208,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-t8eem",
-    "timestamp": "2024-10-12T06:57:20.650Z"
+    "timestamp": "2024-10-12T06:57:20.650Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "91196382009",
@@ -3749,7 +4217,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-bify3",
-    "timestamp": "2024-10-12T04:07:43.435Z"
+    "timestamp": "2024-10-12T04:07:43.435Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23816595541",
@@ -3757,7 +4226,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-x8pc1",
-    "timestamp": "2024-10-12T02:30:11.705Z"
+    "timestamp": "2024-10-12T02:30:11.705Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "28613029338",
@@ -3765,7 +4235,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-ucyg3",
-    "timestamp": "2024-10-11T22:26:24.426Z"
+    "timestamp": "2024-10-11T22:26:24.426Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "37229530130",
@@ -3773,7 +4244,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-test-agl8l",
-    "timestamp": "2024-10-11T20:39:04.273Z"
+    "timestamp": "2024-10-11T20:39:04.273Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "65575801316",
@@ -3781,7 +4253,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-1rr1r",
-    "timestamp": "2024-10-11T20:10:58.291Z"
+    "timestamp": "2024-10-11T20:10:58.291Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "72680747015",
@@ -3789,7 +4262,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-muw4i",
-    "timestamp": "2024-10-11T19:45:08.739Z"
+    "timestamp": "2024-10-11T19:45:08.739Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "34255627065",
@@ -3797,7 +4271,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-byezg",
-    "timestamp": "2024-10-11T18:08:13.249Z"
+    "timestamp": "2024-10-11T18:08:13.249Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "59072295383",
@@ -3805,7 +4280,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-i224e",
-    "timestamp": "2024-10-11T12:04:53.005Z"
+    "timestamp": "2024-10-11T12:04:53.005Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "85485033048",
@@ -3813,7 +4289,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-d5gza",
-    "timestamp": "2024-10-11T09:55:16.485Z"
+    "timestamp": "2024-10-11T09:55:16.485Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "76012082739",
@@ -3821,7 +4298,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-test-34aan",
-    "timestamp": "2024-10-11T09:43:51.494Z"
+    "timestamp": "2024-10-11T09:43:51.494Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "88331483310",
@@ -3829,7 +4307,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-5lh1m",
-    "timestamp": "2024-10-11T09:02:10.006Z"
+    "timestamp": "2024-10-11T09:02:10.006Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "54978638585",
@@ -3837,7 +4316,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-wvkjq",
-    "timestamp": "2024-10-11T05:09:37.894Z"
+    "timestamp": "2024-10-11T05:09:37.894Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "88646925804",
@@ -3845,7 +4325,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-prod-vmdpc",
-    "timestamp": "2024-10-11T04:58:24.545Z"
+    "timestamp": "2024-10-11T04:58:24.545Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "13566013657",
@@ -3853,7 +4334,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-9tb7h",
-    "timestamp": "2024-10-11T04:40:00.230Z"
+    "timestamp": "2024-10-11T04:40:00.230Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22746332511",
@@ -3861,7 +4343,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-rvmgf",
-    "timestamp": "2024-10-11T03:24:40.255Z"
+    "timestamp": "2024-10-11T03:24:40.255Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "51074013819",
@@ -3869,7 +4352,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-xhahv",
-    "timestamp": "2024-10-10T22:25:47.223Z"
+    "timestamp": "2024-10-10T22:25:47.223Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "70094149069",
@@ -3877,7 +4361,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-wtt1p",
-    "timestamp": "2024-10-10T22:21:27.113Z"
+    "timestamp": "2024-10-10T22:21:27.113Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "59382493751",
@@ -3885,7 +4370,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-0vfj9",
-    "timestamp": "2024-10-10T21:47:34.094Z"
+    "timestamp": "2024-10-10T21:47:34.094Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22448754532",
@@ -3893,7 +4379,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-t9tw2",
-    "timestamp": "2024-10-10T21:19:26.317Z"
+    "timestamp": "2024-10-10T21:19:26.317Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "51662548844",
@@ -3901,7 +4388,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-jgawk",
-    "timestamp": "2024-10-10T14:44:21.370Z"
+    "timestamp": "2024-10-10T14:44:21.370Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "95625726778",
@@ -3909,7 +4397,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-kmn4l",
-    "timestamp": "2024-10-10T14:14:50.570Z"
+    "timestamp": "2024-10-10T14:14:50.570Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "47049057418",
@@ -3917,7 +4406,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-prod-0igf3",
-    "timestamp": "2024-10-10T14:03:00.388Z"
+    "timestamp": "2024-10-10T14:03:00.388Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "37776989296",
@@ -3925,7 +4415,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-if5ou",
-    "timestamp": "2024-10-10T13:08:48.497Z"
+    "timestamp": "2024-10-10T13:08:48.497Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "71733625405",
@@ -3933,7 +4424,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-bcx1o",
-    "timestamp": "2024-10-10T13:02:36.927Z"
+    "timestamp": "2024-10-10T13:02:36.927Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "76229689526",
@@ -3941,7 +4433,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-2o8rp",
-    "timestamp": "2024-10-10T10:42:46.194Z"
+    "timestamp": "2024-10-10T10:42:46.194Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "90481203853",
@@ -3949,7 +4442,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-prod-6ywgt",
-    "timestamp": "2024-10-10T09:54:30.317Z"
+    "timestamp": "2024-10-10T09:54:30.317Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "54019922751",
@@ -3957,7 +4451,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-lse6i",
-    "timestamp": "2024-10-10T09:01:10.121Z"
+    "timestamp": "2024-10-10T09:01:10.121Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "26895049341",
@@ -3965,7 +4460,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-qxwya",
-    "timestamp": "2024-10-10T09:00:18.836Z"
+    "timestamp": "2024-10-10T09:00:18.836Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "92172735708",
@@ -3973,7 +4469,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-c73z1",
-    "timestamp": "2024-10-10T05:42:11.893Z"
+    "timestamp": "2024-10-10T05:42:11.893Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "24179031831",
@@ -3981,7 +4478,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-jlcy3",
-    "timestamp": "2024-10-10T03:24:00.490Z"
+    "timestamp": "2024-10-10T03:24:00.490Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "13271468613",
@@ -3989,7 +4487,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-6z7p4",
-    "timestamp": "2024-10-09T23:01:54.814Z"
+    "timestamp": "2024-10-09T23:01:54.814Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "86688626552",
@@ -3997,7 +4496,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-mcku6",
-    "timestamp": "2024-10-09T21:08:11.710Z"
+    "timestamp": "2024-10-09T21:08:11.710Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "52880228378",
@@ -4005,7 +4505,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-3uklp",
-    "timestamp": "2024-10-09T20:57:34.629Z"
+    "timestamp": "2024-10-09T20:57:34.629Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "85623259156",
@@ -4013,7 +4514,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-rabdm",
-    "timestamp": "2024-10-09T18:05:58.471Z"
+    "timestamp": "2024-10-09T18:05:58.471Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "91011650390",
@@ -4021,7 +4523,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-sjdf9",
-    "timestamp": "2024-10-09T10:09:47.599Z"
+    "timestamp": "2024-10-09T10:09:47.599Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "82885926689",
@@ -4029,7 +4532,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-tcym8",
-    "timestamp": "2024-10-09T09:26:52.641Z"
+    "timestamp": "2024-10-09T09:26:52.641Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "75405831778",
@@ -4037,7 +4541,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-prod-1q6xm",
-    "timestamp": "2024-10-08T23:09:51.834Z"
+    "timestamp": "2024-10-08T23:09:51.834Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "26444611481",
@@ -4045,7 +4550,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-jw1lt",
-    "timestamp": "2024-10-08T21:02:42.797Z"
+    "timestamp": "2024-10-08T21:02:42.797Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "89498627318",
@@ -4053,7 +4559,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-prod-o15lg",
-    "timestamp": "2024-10-08T19:39:22.751Z"
+    "timestamp": "2024-10-08T19:39:22.751Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "65485495529",
@@ -4061,7 +4568,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-7ituu",
-    "timestamp": "2024-10-08T18:15:17.990Z"
+    "timestamp": "2024-10-08T18:15:17.990Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "29794613528",
@@ -4069,7 +4577,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-7pzgh",
-    "timestamp": "2024-10-08T17:51:10.667Z"
+    "timestamp": "2024-10-08T17:51:10.667Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "55635237008",
@@ -4077,7 +4586,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-test-4usy5",
-    "timestamp": "2024-10-08T17:15:41.889Z"
+    "timestamp": "2024-10-08T17:15:41.889Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97128845677",
@@ -4085,7 +4595,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-fiwyj",
-    "timestamp": "2024-10-08T15:45:03.004Z"
+    "timestamp": "2024-10-08T15:45:03.004Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "34505917130",
@@ -4093,7 +4604,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ECHO",
     "runner": "runner-csas-ops-csas-linux-prod-f27z3",
-    "timestamp": "2024-10-08T14:02:44.160Z"
+    "timestamp": "2024-10-08T14:02:44.160Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "21444848273",
@@ -4101,7 +4613,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-4y4ff",
-    "timestamp": "2024-10-08T10:06:05.685Z"
+    "timestamp": "2024-10-08T10:06:05.685Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "21073801198",
@@ -4109,7 +4622,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-a4x4v",
-    "timestamp": "2024-10-08T09:30:05.546Z"
+    "timestamp": "2024-10-08T09:30:05.546Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "75455827954",
@@ -4117,7 +4631,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-eovxn",
-    "timestamp": "2024-10-08T04:03:27.933Z"
+    "timestamp": "2024-10-08T04:03:27.933Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "78562219073",
@@ -4125,7 +4640,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-7u52s",
-    "timestamp": "2024-10-08T03:44:16.631Z"
+    "timestamp": "2024-10-08T03:44:16.631Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "46063302713",
@@ -4133,7 +4649,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-ec461",
-    "timestamp": "2024-10-08T02:55:24.182Z"
+    "timestamp": "2024-10-08T02:55:24.182Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "29448428235",
@@ -4141,7 +4658,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-ysbvh",
-    "timestamp": "2024-10-08T02:07:25.032Z"
+    "timestamp": "2024-10-08T02:07:25.032Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "38477476624",
@@ -4149,7 +4667,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-swvdy",
-    "timestamp": "2024-10-07T23:17:19.188Z"
+    "timestamp": "2024-10-07T23:17:19.188Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "24646107861",
@@ -4157,7 +4676,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-1aqwr",
-    "timestamp": "2024-10-07T20:44:18.727Z"
+    "timestamp": "2024-10-07T20:44:18.727Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "63816993216",
@@ -4165,7 +4685,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-prod-te1g5",
-    "timestamp": "2024-10-07T19:21:40.467Z"
+    "timestamp": "2024-10-07T19:21:40.467Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "51138098453",
@@ -4173,7 +4694,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-xjen9",
-    "timestamp": "2024-10-07T18:35:05.866Z"
+    "timestamp": "2024-10-07T18:35:05.866Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "35255135626",
@@ -4181,7 +4703,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-swqyq",
-    "timestamp": "2024-10-07T12:44:18.369Z"
+    "timestamp": "2024-10-07T12:44:18.369Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47489025038",
@@ -4189,7 +4712,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-w0oag",
-    "timestamp": "2024-10-07T12:35:30.795Z"
+    "timestamp": "2024-10-07T12:35:30.795Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61988988472",
@@ -4197,7 +4721,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-4i1mo",
-    "timestamp": "2024-10-07T07:35:38.264Z"
+    "timestamp": "2024-10-07T07:35:38.264Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "79840746206",
@@ -4205,7 +4730,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-oy7yd",
-    "timestamp": "2024-10-07T06:41:46.286Z"
+    "timestamp": "2024-10-07T06:41:46.286Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "77932561516",
@@ -4213,7 +4739,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-test-3kwpa",
-    "timestamp": "2024-10-07T01:45:48.062Z"
+    "timestamp": "2024-10-07T01:45:48.062Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "57107620815",
@@ -4221,7 +4748,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-392gv",
-    "timestamp": "2024-10-07T01:08:44.184Z"
+    "timestamp": "2024-10-07T01:08:44.184Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "85938712691",
@@ -4229,7 +4757,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-9jzmh",
-    "timestamp": "2024-10-06T23:34:45.362Z"
+    "timestamp": "2024-10-06T23:34:45.362Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "79214525984",
@@ -4237,7 +4766,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-test-lzbq1",
-    "timestamp": "2024-10-06T21:24:55.480Z"
+    "timestamp": "2024-10-06T21:24:55.480Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "36354971710",
@@ -4245,7 +4775,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-85lep",
-    "timestamp": "2024-10-06T20:46:43.126Z"
+    "timestamp": "2024-10-06T20:46:43.126Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "97412224296",
@@ -4253,7 +4784,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-m6dik",
-    "timestamp": "2024-10-06T17:51:47.384Z"
+    "timestamp": "2024-10-06T17:51:47.384Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "90085358261",
@@ -4261,7 +4793,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-test-lqvds",
-    "timestamp": "2024-10-06T14:03:59.173Z"
+    "timestamp": "2024-10-06T14:03:59.173Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "37086202593",
@@ -4269,7 +4802,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-prod-08sfv",
-    "timestamp": "2024-10-06T11:20:53.055Z"
+    "timestamp": "2024-10-06T11:20:53.055Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "91311395779",
@@ -4277,7 +4811,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-8m3gi",
-    "timestamp": "2024-10-06T09:00:21.925Z"
+    "timestamp": "2024-10-06T09:00:21.925Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "69559107476",
@@ -4285,7 +4820,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-7w8e9",
-    "timestamp": "2024-10-06T07:55:25.224Z"
+    "timestamp": "2024-10-06T07:55:25.224Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "99894804008",
@@ -4293,7 +4829,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "none",
-    "timestamp": "2024-10-06T06:56:07.374Z"
+    "timestamp": "2024-10-06T06:56:07.374Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "56206984371",
@@ -4301,7 +4838,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-1yfsv",
-    "timestamp": "2024-10-06T05:24:17.589Z"
+    "timestamp": "2024-10-06T05:24:17.589Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "10685470389",
@@ -4309,7 +4847,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-au8cr",
-    "timestamp": "2024-10-06T04:43:46.153Z"
+    "timestamp": "2024-10-06T04:43:46.153Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "11732976075",
@@ -4317,7 +4856,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-8q5ae",
-    "timestamp": "2024-10-06T03:15:39.527Z"
+    "timestamp": "2024-10-06T03:15:39.527Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "58343434969",
@@ -4325,7 +4865,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-v5g7v",
-    "timestamp": "2024-10-06T03:13:14.074Z"
+    "timestamp": "2024-10-06T03:13:14.074Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "74144878690",
@@ -4333,7 +4874,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-3q0ef",
-    "timestamp": "2024-10-06T01:42:04.104Z"
+    "timestamp": "2024-10-06T01:42:04.104Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61666994951",
@@ -4341,7 +4883,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-zubia",
-    "timestamp": "2024-10-06T01:25:44.140Z"
+    "timestamp": "2024-10-06T01:25:44.140Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "61730488128",
@@ -4349,7 +4892,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-vm4rt",
-    "timestamp": "2024-10-05T23:16:53.605Z"
+    "timestamp": "2024-10-05T23:16:53.605Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "23700871002",
@@ -4357,7 +4901,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-c1c1x",
-    "timestamp": "2024-10-05T20:50:20.121Z"
+    "timestamp": "2024-10-05T20:50:20.121Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "13307580357",
@@ -4365,7 +4910,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-uvktq",
-    "timestamp": "2024-10-05T17:45:25.374Z"
+    "timestamp": "2024-10-05T17:45:25.374Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "15083134985",
@@ -4373,7 +4919,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-6tttm",
-    "timestamp": "2024-10-05T13:50:53.246Z"
+    "timestamp": "2024-10-05T13:50:53.246Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "71213278273",
@@ -4381,7 +4928,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-test-191s6",
-    "timestamp": "2024-10-05T13:17:22.415Z"
+    "timestamp": "2024-10-05T13:17:22.415Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "22801330045",
@@ -4389,7 +4937,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-9y7f9",
-    "timestamp": "2024-10-05T11:20:41.614Z"
+    "timestamp": "2024-10-05T11:20:41.614Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "53901924523",
@@ -4397,7 +4946,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-g1myr",
-    "timestamp": "2024-10-05T09:04:19.371Z"
+    "timestamp": "2024-10-05T09:04:19.371Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "25811509385",
@@ -4405,7 +4955,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-dectk",
-    "timestamp": "2024-10-05T04:30:48.565Z"
+    "timestamp": "2024-10-05T04:30:48.565Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "31363976948",
@@ -4413,7 +4964,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-prod-c24e1",
-    "timestamp": "2024-10-05T03:59:27.537Z"
+    "timestamp": "2024-10-05T03:59:27.537Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "66316232947",
@@ -4421,7 +4973,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-sduhr",
-    "timestamp": "2024-10-05T03:47:17.963Z"
+    "timestamp": "2024-10-05T03:47:17.963Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "98255533857",
@@ -4429,7 +4982,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-maq40",
-    "timestamp": "2024-10-05T01:58:43.522Z"
+    "timestamp": "2024-10-05T01:58:43.522Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "33894529304",
@@ -4437,7 +4991,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-waac2",
-    "timestamp": "2024-10-05T00:18:45.716Z"
+    "timestamp": "2024-10-05T00:18:45.716Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "21755780571",
@@ -4445,7 +5000,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-test-dw9qa",
-    "timestamp": "2024-10-04T22:19:37.156Z"
+    "timestamp": "2024-10-04T22:19:37.156Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "10068530065",
@@ -4453,7 +5009,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-test-rew95",
-    "timestamp": "2024-10-04T21:20:02.654Z"
+    "timestamp": "2024-10-04T21:20:02.654Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "46486779516",
@@ -4461,7 +5018,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-ge19c",
-    "timestamp": "2024-10-04T15:31:03.597Z"
+    "timestamp": "2024-10-04T15:31:03.597Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "26246428263",
@@ -4469,7 +5027,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-mm3zw",
-    "timestamp": "2024-10-04T15:16:45.719Z"
+    "timestamp": "2024-10-04T15:16:45.719Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "30778550421",
@@ -4477,7 +5036,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-ops-csas-linux-prod-2k10t",
-    "timestamp": "2024-10-04T14:13:11.696Z"
+    "timestamp": "2024-10-04T14:13:11.696Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "96564436208",
@@ -4485,7 +5045,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-f3r8x",
-    "timestamp": "2024-10-04T12:52:40.471Z"
+    "timestamp": "2024-10-04T12:52:40.471Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "98028781256",
@@ -4493,7 +5054,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-9hvlg",
-    "timestamp": "2024-10-04T11:21:13.127Z"
+    "timestamp": "2024-10-04T11:21:13.127Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "57377199779",
@@ -4501,7 +5063,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-j0l4p",
-    "timestamp": "2024-10-04T06:42:48.857Z"
+    "timestamp": "2024-10-04T06:42:48.857Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "13567212513",
@@ -4509,7 +5072,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-dev-csas-linux-test-xdnb1",
-    "timestamp": "2024-10-04T05:06:10.010Z"
+    "timestamp": "2024-10-04T05:06:10.010Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47903121856",
@@ -4517,7 +5081,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-o0nsg",
-    "timestamp": "2024-10-04T03:43:02.566Z"
+    "timestamp": "2024-10-04T03:43:02.566Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "97152891115",
@@ -4525,7 +5090,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-tl95f",
-    "timestamp": "2024-10-04T02:36:41.637Z"
+    "timestamp": "2024-10-04T02:36:41.637Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "98601659330",
@@ -4533,7 +5099,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-ops-csas-linux-prod-l2o3o",
-    "timestamp": "2024-10-04T01:20:51.542Z"
+    "timestamp": "2024-10-04T01:20:51.542Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "48941879056",
@@ -4541,7 +5108,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-ops-csas-linux-0yqeo",
-    "timestamp": "2024-10-04T01:05:39.087Z"
+    "timestamp": "2024-10-04T01:05:39.087Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "80160056994",
@@ -4549,7 +5117,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-fho7j",
-    "timestamp": "2024-10-03T21:00:16.956Z"
+    "timestamp": "2024-10-03T21:00:16.956Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "94910582857",
@@ -4557,7 +5126,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-f8w6q",
-    "timestamp": "2024-10-03T20:01:34.960Z"
+    "timestamp": "2024-10-03T20:01:34.960Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "57449128354",
@@ -4565,7 +5135,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-ydov9",
-    "timestamp": "2024-10-03T19:16:06.256Z"
+    "timestamp": "2024-10-03T19:16:06.256Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "64490910389",
@@ -4573,7 +5144,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-ops-csas-linux-prod-434zl",
-    "timestamp": "2024-10-03T18:17:50.679Z"
+    "timestamp": "2024-10-03T18:17:50.679Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "32544417853",
@@ -4581,7 +5153,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-4bkdc",
-    "timestamp": "2024-10-03T16:15:29.934Z"
+    "timestamp": "2024-10-03T16:15:29.934Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "27207913513",
@@ -4589,7 +5162,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-v3gfk",
-    "timestamp": "2024-10-03T16:13:17.356Z"
+    "timestamp": "2024-10-03T16:13:17.356Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "56907879170",
@@ -4597,7 +5171,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-ops-csas-linux-bcr52",
-    "timestamp": "2024-10-03T10:08:48.744Z"
+    "timestamp": "2024-10-03T10:08:48.744Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "82207175172",
@@ -4605,7 +5180,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-s07b7",
-    "timestamp": "2024-10-03T04:20:07.264Z"
+    "timestamp": "2024-10-03T04:20:07.264Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "78265097609",
@@ -4613,7 +5189,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-ifzgg",
-    "timestamp": "2024-10-03T03:58:05.980Z"
+    "timestamp": "2024-10-03T03:58:05.980Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "64822024035",
@@ -4621,7 +5198,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-nuwwa",
-    "timestamp": "2024-10-03T01:35:26.084Z"
+    "timestamp": "2024-10-03T01:35:26.084Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "46694308413",
@@ -4629,7 +5207,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-p54p8",
-    "timestamp": "2024-10-02T22:49:56.687Z"
+    "timestamp": "2024-10-02T22:49:56.687Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "96029030459",
@@ -4637,7 +5216,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-test-ljjo3",
-    "timestamp": "2024-10-02T19:02:24.250Z"
+    "timestamp": "2024-10-02T19:02:24.250Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "23358012901",
@@ -4645,7 +5225,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-q0l9u",
-    "timestamp": "2024-10-02T18:42:58.032Z"
+    "timestamp": "2024-10-02T18:42:58.032Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "22235729899",
@@ -4653,7 +5234,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-ops-csas-linux-prod-zeb6r",
-    "timestamp": "2024-10-02T18:09:50.264Z"
+    "timestamp": "2024-10-02T18:09:50.264Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "63969034520",
@@ -4661,7 +5243,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-prod-382gc",
-    "timestamp": "2024-10-02T14:46:39.396Z"
+    "timestamp": "2024-10-02T14:46:39.396Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "52903556318",
@@ -4669,7 +5252,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-tjujt",
-    "timestamp": "2024-10-02T10:50:53.411Z"
+    "timestamp": "2024-10-02T10:50:53.411Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "42748926746",
@@ -4677,7 +5261,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-ramrx",
-    "timestamp": "2024-10-02T04:59:33.850Z"
+    "timestamp": "2024-10-02T04:59:33.850Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "17034252742",
@@ -4685,7 +5270,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-prod-3util",
-    "timestamp": "2024-10-02T04:23:38.979Z"
+    "timestamp": "2024-10-02T04:23:38.979Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "72919871196",
@@ -4693,7 +5279,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-iucr2",
-    "timestamp": "2024-10-02T02:20:31.911Z"
+    "timestamp": "2024-10-02T02:20:31.911Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "39115356213",
@@ -4701,7 +5288,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-wi6w6",
-    "timestamp": "2024-10-01T23:10:03.092Z"
+    "timestamp": "2024-10-01T23:10:03.092Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "53691072640",
@@ -4709,7 +5297,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-l1ihc",
-    "timestamp": "2024-10-01T22:12:16.384Z"
+    "timestamp": "2024-10-01T22:12:16.384Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "77996480898",
@@ -4717,7 +5306,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-mxwxu",
-    "timestamp": "2024-10-01T21:19:28.329Z"
+    "timestamp": "2024-10-01T21:19:28.329Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "68086672149",
@@ -4725,7 +5315,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-5tkp0",
-    "timestamp": "2024-10-01T19:03:21.269Z"
+    "timestamp": "2024-10-01T19:03:21.269Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "73560501833",
@@ -4733,7 +5324,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-qzk0x",
-    "timestamp": "2024-10-01T14:41:28.687Z"
+    "timestamp": "2024-10-01T14:41:28.687Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "44859148904",
@@ -4741,7 +5333,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-test-oo97a",
-    "timestamp": "2024-10-01T14:40:03.484Z"
+    "timestamp": "2024-10-01T14:40:03.484Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "22507707044",
@@ -4749,7 +5342,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-dev-csas-linux-1bmno",
-    "timestamp": "2024-10-01T07:50:35.702Z"
+    "timestamp": "2024-10-01T07:50:35.702Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "72265162953",
@@ -4757,7 +5351,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-prod-ghc5s",
-    "timestamp": "2024-10-01T06:47:48.235Z"
+    "timestamp": "2024-10-01T06:47:48.235Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "98547362909",
@@ -4765,7 +5360,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-dev-csas-linux-test-x67n9",
-    "timestamp": "2024-10-01T06:44:24.062Z"
+    "timestamp": "2024-10-01T06:44:24.062Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "37025972485",
@@ -4773,7 +5369,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-ei1z2",
-    "timestamp": "2024-10-01T06:33:06.052Z"
+    "timestamp": "2024-10-01T06:33:06.052Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "64112339977",
@@ -4781,7 +5378,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-5b4q0",
-    "timestamp": "2024-10-01T05:09:59.452Z"
+    "timestamp": "2024-10-01T05:09:59.452Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "85550259039",
@@ -4789,7 +5387,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-test-47lsm",
-    "timestamp": "2024-10-01T02:33:28.793Z"
+    "timestamp": "2024-10-01T02:33:28.793Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "81522119736",
@@ -4797,7 +5396,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-6em3g",
-    "timestamp": "2024-10-01T02:04:49.915Z"
+    "timestamp": "2024-10-01T02:04:49.915Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "89383213569",
@@ -4805,7 +5405,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-yuwxa",
-    "timestamp": "2024-10-01T01:40:50.403Z"
+    "timestamp": "2024-10-01T01:40:50.403Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "79932300020",
@@ -4813,7 +5414,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-test-7cxcj",
-    "timestamp": "2024-09-30T23:26:42.450Z"
+    "timestamp": "2024-09-30T23:26:42.450Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "23525225589",
@@ -4821,7 +5423,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-j76m9",
-    "timestamp": "2024-09-30T19:50:34.857Z"
+    "timestamp": "2024-09-30T19:50:34.857Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "58780220283",
@@ -4829,7 +5432,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-ops-csas-linux-s9qvf",
-    "timestamp": "2024-09-30T19:14:25.285Z"
+    "timestamp": "2024-09-30T19:14:25.285Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "34202077067",
@@ -4837,7 +5441,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-dev-csas-linux-0910y",
-    "timestamp": "2024-09-30T10:31:07.884Z"
+    "timestamp": "2024-09-30T10:31:07.884Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "60514217059",
@@ -4845,7 +5450,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-test-gi24z",
-    "timestamp": "2024-09-30T03:36:29.592Z"
+    "timestamp": "2024-09-30T03:36:29.592Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "21345270520",
@@ -4853,7 +5459,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-ops-csas-linux-n05n2",
-    "timestamp": "2024-09-29T22:15:22.859Z"
+    "timestamp": "2024-09-29T22:15:22.859Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "95654382293",
@@ -4861,7 +5468,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-ops-csas-linux-prod-8n26u",
-    "timestamp": "2024-09-29T21:53:24.258Z"
+    "timestamp": "2024-09-29T21:53:24.258Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "86608325258",
@@ -4869,7 +5477,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-ujweb",
-    "timestamp": "2024-09-29T21:13:53.694Z"
+    "timestamp": "2024-09-29T21:13:53.694Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "75745642336",
@@ -4877,7 +5486,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-dev-csas-linux-391me",
-    "timestamp": "2024-09-29T16:43:54.451Z"
+    "timestamp": "2024-09-29T16:43:54.451Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "58845608877",
@@ -4885,7 +5495,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_LEDGER",
     "runner": "runner-csas-dev-csas-linux-test-axmy8",
-    "timestamp": "2024-09-29T16:05:17.402Z"
+    "timestamp": "2024-09-29T16:05:17.402Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "10885620220",
@@ -4893,7 +5504,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-dev-csas-linux-1ffx8",
-    "timestamp": "2024-09-29T12:05:47.213Z"
+    "timestamp": "2024-09-29T12:05:47.213Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "86546423934",
@@ -4901,7 +5513,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-5ea88",
-    "timestamp": "2024-09-29T10:54:02.874Z"
+    "timestamp": "2024-09-29T10:54:02.874Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "42081539359",
@@ -4909,7 +5522,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-9rieh",
-    "timestamp": "2024-09-29T09:58:40.679Z"
+    "timestamp": "2024-09-29T09:58:40.679Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "43801628572",
@@ -4917,7 +5531,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-xkni9",
-    "timestamp": "2024-09-29T07:42:40.873Z"
+    "timestamp": "2024-09-29T07:42:40.873Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "47943828082",
@@ -4925,7 +5540,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_HAVEN",
     "runner": "runner-csas-ops-csas-linux-prod-dbgci",
-    "timestamp": "2024-09-29T05:21:29.262Z"
+    "timestamp": "2024-09-29T05:21:29.262Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "20509478530",
@@ -4933,7 +5549,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-3qm5m",
-    "timestamp": "2024-09-29T01:07:25.236Z"
+    "timestamp": "2024-09-29T01:07:25.236Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "56909345686",
@@ -4941,7 +5558,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-ps5lb",
-    "timestamp": "2024-09-29T00:24:37.557Z"
+    "timestamp": "2024-09-29T00:24:37.557Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "49351441903",
@@ -4949,7 +5567,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-test-mslpr",
-    "timestamp": "2024-09-29T00:20:58.785Z"
+    "timestamp": "2024-09-29T00:20:58.785Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "51675707212",
@@ -4957,7 +5576,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-3fw7k",
-    "timestamp": "2024-09-29T00:07:11.467Z"
+    "timestamp": "2024-09-29T00:07:11.467Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "62284730580",
@@ -4965,7 +5585,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-pwjah",
-    "timestamp": "2024-09-28T21:53:12.575Z"
+    "timestamp": "2024-09-28T21:53:12.575Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "31095244592",
@@ -4973,7 +5594,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-z3s4b",
-    "timestamp": "2024-09-28T21:49:00.360Z"
+    "timestamp": "2024-09-28T21:49:00.360Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "40136393887",
@@ -4981,7 +5603,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-ops-csas-linux-15naa",
-    "timestamp": "2024-09-28T19:26:45.208Z"
+    "timestamp": "2024-09-28T19:26:45.208Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "45214921433",
@@ -4989,7 +5612,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-xlxox",
-    "timestamp": "2024-09-28T19:16:47.991Z"
+    "timestamp": "2024-09-28T19:16:47.991Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "95773056516",
@@ -4997,7 +5621,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUMMIT",
     "runner": "runner-csas-dev-csas-linux-2mgkq",
-    "timestamp": "2024-09-28T18:42:37.290Z"
+    "timestamp": "2024-09-28T18:42:37.290Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "44324079286",
@@ -5005,7 +5630,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-xgmsg",
-    "timestamp": "2024-09-28T18:34:46.923Z"
+    "timestamp": "2024-09-28T18:34:46.923Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "19963789514",
@@ -5013,7 +5639,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-ops-csas-linux-prod-dmrd8",
-    "timestamp": "2024-09-28T13:59:08.379Z"
+    "timestamp": "2024-09-28T13:59:08.379Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "74165276858",
@@ -5021,7 +5648,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-1thej",
-    "timestamp": "2024-09-28T12:04:27.797Z"
+    "timestamp": "2024-09-28T12:04:27.797Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "59945625598",
@@ -5029,7 +5657,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-test-vbyum",
-    "timestamp": "2024-09-28T11:21:30.901Z"
+    "timestamp": "2024-09-28T11:21:30.901Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "38732395677",
@@ -5037,7 +5666,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_CORE",
     "runner": "runner-csas-ops-csas-linux-prod-36a97",
-    "timestamp": "2024-09-28T10:25:33.627Z"
+    "timestamp": "2024-09-28T10:25:33.627Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "69669764911",
@@ -5045,7 +5675,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-om2z2",
-    "timestamp": "2024-09-28T07:14:57.638Z"
+    "timestamp": "2024-09-28T07:14:57.638Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "63528760221",
@@ -5053,7 +5684,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-dev-csas-linux-prdju",
-    "timestamp": "2024-09-28T06:06:33.328Z"
+    "timestamp": "2024-09-28T06:06:33.328Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "23320567197",
@@ -5061,7 +5693,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_PANEL",
     "runner": "runner-csas-dev-csas-linux-qbani",
-    "timestamp": "2024-09-28T03:03:41.157Z"
+    "timestamp": "2024-09-28T03:03:41.157Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "42768973451",
@@ -5069,7 +5702,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FLOW",
     "runner": "runner-csas-dev-csas-linux-abzvh",
-    "timestamp": "2024-09-28T02:18:33.180Z"
+    "timestamp": "2024-09-28T02:18:33.180Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "77419886740",
@@ -5077,7 +5711,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-test-krkvj",
-    "timestamp": "2024-09-28T02:15:41.526Z"
+    "timestamp": "2024-09-28T02:15:41.526Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "64204559121",
@@ -5085,7 +5720,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_ANCHOR",
     "runner": "runner-csas-ops-csas-linux-6zo2i",
-    "timestamp": "2024-09-28T01:52:46.463Z"
+    "timestamp": "2024-09-28T01:52:46.463Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "29874801299",
@@ -5093,7 +5729,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_PULSE",
     "runner": "runner-csas-ops-csas-linux-t1v2l",
-    "timestamp": "2024-09-27T23:41:29.577Z"
+    "timestamp": "2024-09-27T23:41:29.577Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "44712550763",
@@ -5101,7 +5738,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_DATASTORE",
     "runner": "runner-csas-dev-csas-linux-bgjf9",
-    "timestamp": "2024-09-27T23:35:00.240Z"
+    "timestamp": "2024-09-27T23:35:00.240Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "93076028312",
@@ -5109,7 +5747,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-7t1hh",
-    "timestamp": "2024-09-27T23:05:34.637Z"
+    "timestamp": "2024-09-27T23:05:34.637Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "84738628306",
@@ -5117,7 +5756,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_FORTRESS",
     "runner": "runner-csas-dev-csas-linux-2g4ly",
-    "timestamp": "2024-09-27T20:55:31.023Z"
+    "timestamp": "2024-09-27T20:55:31.023Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "15703478349",
@@ -5125,7 +5765,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-dev-csas-linux-37nvz",
-    "timestamp": "2024-09-27T19:35:03.012Z"
+    "timestamp": "2024-09-27T19:35:03.012Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "77276956000",
@@ -5133,7 +5774,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SUNBANK",
     "runner": "runner-csas-ops-csas-linux-prod-sgyoc",
-    "timestamp": "2024-09-27T19:21:23.393Z"
+    "timestamp": "2024-09-27T19:21:23.393Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "12658260794",
@@ -5141,7 +5783,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_JORGE",
     "runner": "runner-csas-dev-csas-linux-test-a53x0",
-    "timestamp": "2024-09-27T16:50:29.078Z"
+    "timestamp": "2024-09-27T16:50:29.078Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "38512137269",
@@ -5149,7 +5792,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GIORGIO",
     "runner": "runner-csas-ops-csas-linux-p4791",
-    "timestamp": "2024-09-27T15:01:43.758Z"
+    "timestamp": "2024-09-27T15:01:43.758Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "94137108839",
@@ -5157,7 +5801,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_TREASURY",
     "runner": "runner-csas-dev-csas-linux-iquhd",
-    "timestamp": "2024-09-27T14:06:51.203Z"
+    "timestamp": "2024-09-27T14:06:51.203Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "60346232760",
@@ -5165,7 +5810,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_GATEWAY",
     "runner": "runner-csas-ops-csas-linux-prod-ooi8g",
-    "timestamp": "2024-09-27T13:02:35.348Z"
+    "timestamp": "2024-09-27T13:02:35.348Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "42014936860",
@@ -5173,7 +5819,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-wqczo",
-    "timestamp": "2024-09-27T12:58:55.611Z"
+    "timestamp": "2024-09-27T12:58:55.611Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "77693376811",
@@ -5181,7 +5828,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-ops-csas-linux-pv1oo",
-    "timestamp": "2024-09-27T12:39:59.449Z"
+    "timestamp": "2024-09-27T12:39:59.449Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "84567307304",
@@ -5189,7 +5837,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-dev-csas-linux-test-xab64",
-    "timestamp": "2024-09-27T10:00:27.630Z"
+    "timestamp": "2024-09-27T10:00:27.630Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "81028460170",
@@ -5197,7 +5846,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-prod-1d09m",
-    "timestamp": "2024-09-27T09:07:13.235Z"
+    "timestamp": "2024-09-27T09:07:13.235Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "72477431444",
@@ -5205,7 +5855,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-fcrak",
-    "timestamp": "2024-09-27T08:11:23.430Z"
+    "timestamp": "2024-09-27T08:11:23.430Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "13157050697",
@@ -5213,7 +5864,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_SPARK",
     "runner": "runner-csas-ops-csas-linux-pxh9y",
-    "timestamp": "2024-09-27T07:03:19.868Z"
+    "timestamp": "2024-09-27T07:03:19.868Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "61066594820",
@@ -5221,7 +5873,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BEACON",
     "runner": "runner-csas-ops-csas-linux-prod-hw38w",
-    "timestamp": "2024-09-27T06:13:13.479Z"
+    "timestamp": "2024-09-27T06:13:13.479Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "30819236266",
@@ -5229,7 +5882,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-dev-csas-linux-c6bmo",
-    "timestamp": "2024-09-27T05:55:27.326Z"
+    "timestamp": "2024-09-27T05:55:27.326Z",
+    "runner_group": "csas-linux"
   },
   {
     "id": "51440847037",
@@ -5237,7 +5891,8 @@
     "organization": "csas-ops",
     "SAS": "SAS_BRIDGE",
     "runner": "runner-csas-ops-csas-linux-otcot",
-    "timestamp": "2024-09-27T02:58:15.076Z"
+    "timestamp": "2024-09-27T02:58:15.076Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "44160401130",
@@ -5245,7 +5900,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_STREAM",
     "runner": "runner-csas-dev-csas-linux-bcaoi",
-    "timestamp": "2024-09-27T00:16:07.015Z"
+    "timestamp": "2024-09-27T00:16:07.015Z",
+    "runner_group": "csas-linux-prod"
   },
   {
     "id": "83625136974",
@@ -5253,7 +5909,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NEXUS",
     "runner": "runner-csas-dev-csas-linux-m5fje",
-    "timestamp": "2024-09-26T23:28:22.488Z"
+    "timestamp": "2024-09-26T23:28:22.488Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "33577162246",
@@ -5261,7 +5918,8 @@
     "organization": "csas-dev",
     "SAS": "SAS_NODE",
     "runner": "runner-csas-dev-csas-linux-test-u41r6",
-    "timestamp": "2024-09-26T22:40:13.584Z"
+    "timestamp": "2024-09-26T22:40:13.584Z",
+    "runner_group": "csas-linux-test"
   },
   {
     "id": "35153957049",
@@ -5269,6 +5927,7 @@
     "organization": "csas-dev",
     "SAS": "SAS_SHIELD",
     "runner": "runner-csas-dev-csas-linux-test-gkful",
-    "timestamp": "2024-09-26T20:50:34.236Z"
+    "timestamp": "2024-09-26T20:50:34.236Z",
+    "runner_group": "csas-linux-test"
   }
 ]
