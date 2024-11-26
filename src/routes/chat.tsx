@@ -1,11 +1,10 @@
-import * as React from 'react';
 import { createFileRoute } from '@tanstack/react-router';
-import { ChatBot } from '@/chat/chatbot';
+import { Chat } from '@/chat';
 
 export const Route = createFileRoute('/chat')({
   component: RouteComponent,
 });
 
 function RouteComponent() {
-  return <ChatBot />;
+  return <Chat />;
 }
