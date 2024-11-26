@@ -28,6 +28,9 @@ export const useThread = (
           console.log(`Created new thread ${data.thread_id}`);
         });
       }
+    } else {
+      setThreadId(threadId);
+      client.getThread(threadId).then(setThread);
     }
   }, [threadId]);
 
